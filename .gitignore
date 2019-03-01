@@ -1,0 +1,8 @@
+
+*.txt
+.DS_Store
+pdfs/.DS_Store
+pics/.DS_Store
+simple/*.*
+simple/pdfs/*.*
+simple/pics/*.*
