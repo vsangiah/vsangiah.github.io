@@ -1,0 +1,82 @@
+
+html,body,div,p,span,a{
+  font-family:'Nunito',sans-serif;
+  line-height:1.4;
+  font-size:15px;
+  padding:0px;
+  margin:0px;
+  text-decoration:none;
+}
+body{
+  width:80%;
+  max-width:990px;
+  min-width:900px;
+  padding:30px 0px 250px 0px;
+  margin: 0px auto 0px auto;
+  background-color:#F5F5F5;
+}
+p,div{
+  margin-top:3px;
+}
+a{
+  color:#0026C1;
+}
+a:hover{
+  font-weight:bold;
+  text-decoration:underline;
+  cursor:pointer;
+}
+div.section{
+  background-color:white;
+  margin:0px 0px 20px 0px;
+  border: 1px solid grey;
+  padding:20px;
+}
+div.subsection{
+  margin-top:15px;
+}
+h1{
+  margin:0px 0px 8px 0px;
+  font-weight:bold;
+  color:DarkGreen;
+  font-size:130%;
+}
+h2{
+  margin:0px 0px 6px 0px;
+  font-weight:bold;
+  color:DarkGreen;
+  font-size:100%;
+}
+p.abstract{
+  text-align:justify;
+  line-height:1.3;
+  display:none
+}
+p.quote{text-align:justify;
+  line-height:1.3;
+  display:block;
+  margin-left:15px;
+}
+p.title{
+  font-weight:bold;
+  margin:0px 0px 8px 0px;
+  font-size:235%;
+  color:DarkGreen;
+}
+p.subtitle{
+  margin:0px 0px 20px 0px;
+  font-size:135%;
+  color:Gray;
+  font-weight:bold;
+}
+color {
+  color:DarkGreen;
+}
+paper{
+  font-weight:bold;
+  color:DarkGreen;
+}
+journal{
+  color:#AE2000;
+  text-decoration:underline;
+}

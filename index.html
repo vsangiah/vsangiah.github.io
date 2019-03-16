@@ -8,26 +8,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="author" content="Borja Petit">
   <link rel="icon" type="image/png" href="pdfs/home/icon.png" />
+  <link rel="stylesheet" type="text/css" href="src/cssfile.css">
   <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
-<style>
-  html,body,div,p,span,a{font-family:'Nunito',sans-serif;line-height:1.4;font-size:15px;padding:0px;margin:0px;text-decoration:none;}
-  body{width:80%;max-width:990px;min-width:900px;padding:30px 0px 250px 0px;margin: 0px auto 0px auto;background-color:#F5F5F5;}
-  p,div{margin-top:3px;}
-  a{color:#0026C1;}
-  a:hover{font-weight:bold;text-decoration:underline;cursor:pointer;}
-  div.section{background-color:#F5F5F5;margin:0px 0px 20px 0px;border: 1px solid grey;padding:20px;background-color:white;}
-  div.subsection{margin-top:15px;}
-  div.sectiontitle{margin:0px 0px 8px 0px;font-weight:bold;color:DarkGreen;}
-  p.abstract{text-align:justify;line-height:1.3;display:none}
-  p.quote{text-align:justify;line-height:1.3;display:block;margin-left:10px;}
-  p.title{margin:0px;margin-bottom:12px;font-size:235%;color:DarkGreen;}
-  p.subtitle{margin:0px;margin-bottom:20px;font-size:135%;color:Gray;font-weight:normal;}
-  color {color:DarkGreen;}
-  paper{font-weight:bold;color:DarkGreen;}
-  journal{color:#AE2000;text-decoration:underline}
-</style>
 <body>
 
 <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
@@ -38,27 +22,35 @@
 <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
 
 <div class="section" id="info">
+
   <img id ="mypic" src="pdfs/home/picture.jpg" width="245px" style="float:right;text-align:right;margin:7px 10px 0px 40px;padding:0px;border-radius:0%;border:1px black solid">
-  <div class="sectiontitle">WELCOME</div>
+
+  <h2>WELCOME</h2>
   <p>I'm a PhD candidate in Economics at <a id="cemfi">CEMFI</a> since September 2015. I work under the supervision of Profs. <a id="nezih">Nezih Guner</a> and <a id="josep">Josep Pijoan-Mas</a>. I will join <a id="nhh">NHH Norwegian School of Economics</a> as an Assistant Professor in Macroeconomics in September 2019.</p>
   <br>
-  <div class="sectiontitle">RESEARCH INTERESTS</div>
+
+  <h2>RESEARCH INTERESTS</h2>
   <p>I'm a quantitative macroeconomics working on family, public and labor economics.</p>
   <br>
-  <div class="sectiontitle">CURRICULUM VITAE</div>
+
+  <h2>CURRICULUM VITAE</h2>
   <p>Download my curriculum vitae in <a target="_blank" href="pdfs/borjapetit_cv.pdf">PDF</a>.</p>
   <br>
-  <div class="sectiontitle">CONTACT INFORMATION</div>
-  <p><color>Email</color>: <a class="email" href="mailto:bpetit@cemfi.edu.es">bpetit [at] cemfi.edu.es</a></p>
-  <p><color>Phone</color>: +34 914 290 551</p>
-  <p><color>Address</color>: Casado del Alisal 5, 28014 Madrid, Spain</p>
-  <p><color>Profiles</color>: <a id ="linkedin">LinkedIn</a>, <a id="ssrn">SSRN</a>, <a id="google">Google Scholar</a>, <a id="ideas">Ideas</a></p>
+
+  <h2>CONTACT INFORMATION</h2><p>
+  <color>Email</color> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a class="email" href="mailto:bpetit@cemfi.edu.es">bpetit [at] cemfi.edu.es</a><br>
+  <color>Phone</color> &nbsp;&nbsp;&nbsp;&nbsp; +34 914 290 551<br>
+  <color>Address</color> &nbsp;&nbsp;Casado del Alisal 5, 28014 Madrid, Spain<br></p>
+  <!--<color>Profiles</color> &nbsp;&nbsp;&nbsp;&nbsp; <a id ="linkedin">LinkedIn</a>, <a id="ssrn">SSRN</a>, <a id="google">Google Scholar</a>, <a id="ideas">Ideas</a></p>-->
+
 </div>
 
 <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
 
 <div class="section">
-  <div class="sectiontitle">WORKING PAPERS</div>
+
+  <h1>WORKING PAPERS</h1>
+
   <div class="subsection" id="fertilitytax">
     <paper>Intergenerational effects of child-related tax benefits in the US</paper>
     <p><journal>Job Market Paper</journal>, January 2019.</p>
@@ -69,6 +61,7 @@
       Abstract: The presence of children in US households reduces tax liabilities through deductions and tax credits. Through the lens of the quantity-quality trade-off, these benefits distort parental choices over the number and human capital of children by altering their relative implicit price. This paper quantifies the effects of child-related tax benefits on fertility and intergenerational mobility using a general equilibrium life-cycle model with endogenous fertility choices and parental investments in children's human capital, calibrated to US data. I show that tax benefits increase fertility by 16%, but they do so at the expense of lowering human capital of children. More importantly, these effects are particularly strong among low educated mothers, which widens the gap in human capital between children of low and high educated mothers. As a result, the intergenerational persistence of education increases by 37% when tax benefits are introduced. I also show that education subsidies are also effective at fostering fertility but, as opposed to tax benefits, they do not decrease children's human capital, nor intergenerational mobility.
     </p>
   </div>
+
   <div class="subsection" id="lpw">
     <paper>Monetary policy implications of state-dependent prices and wages</paper>&nbsp; (<u>Submitted</u>)
     <p>Joint work with <a id="jim">James Costain</a> and <a id="anton">Anton Nakov</a>.</p>
@@ -81,27 +74,33 @@
       Abstract: This paper studies the dynamic general equilibrium effects of monetary shocks in a “control cost” model of state-dependent retail price adjustment and state-dependent wage adjustment. Suppliers of retail goods and of labor are both monopolistic competitors that face idiosyncratic productivity shocks and nominal rigidities. Stickiness arises because precise choice is costly: decision-makers tolerate errors both in the timing of adjustments, and in the new level at which the price or wage is set, because making these choices with perfect precision would be excessively costly. The model is calibrated to microdata on the size and frequency of price and wage changes. We find that the impact multiplier of a money growth shock on consumption and labor in our calibrated state-dependent model is similar to that in a Calvo model with the same adjustment frequencies, though the response is less persistent than it would be under the Calvo mechanism. Wage rigidity accounts for most of the nonneutrality that occurs in a model where both prices and wages are sticky; hence, a model with both rigidities produces substantially larger real effects of monetary shocks than does a model with sticky prices only. We find that the state-dependence of nominal rigidity strongly decreases the slope of the Phillips curve as trend inflation declines. This result is not driven by downward wage rigidity; adjustment costs are symmetric in our model. Here, instead, price- and wage-setters prefer to adjust less frequently when trend inflation is low, making short-run inflation less reactive to shocks.</span>
     </p>
   </div>
+
 </div>
 
 <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
 
 <div class="section">
-  <div class="sectiontitle">WORK IN PROGRESS</div>
+
+  <h1>WORK IN PROGRESS</h1>
+
   <div class="subsection">
     <paper>Aggregate implications of firing costs with endogenous firm productivity growth</paper>
-    <p><a onclick="ShowHide('abs_firings');UpdateText(this)">show abstract</a></p>
+    <p><a onclick="ShowHide('abs_firings');UpdateText(this)">show abstract</a> |
+    draft (coming soon)</p>
     <p class="abstract" id="abs_firings">
       Abstract: This paper quantifies the aggregate implications of firing costs in a firm dynamics model with endogenous firm productivity growth through innovation. Innovation makes the firm productivity distribution endogenous, and thus, potentially affected by distortions. This allows the model to capture both the static (allocative efficiency) and dynamic effects (shifts in the productivity distribution) of firing costs. I calibrate the parameters of the model so as to match some key features of Spanish firms in terms of firm growth and firing and hiring behaviour.
     </p>
   </div>
+
   <div class="subsection">
     <paper>Endogenous firm productivity dynamics</paper>
     <p>Joint work with <a id="jc">Juan Carlos Ruiz-Garcia</a>.</p>
     <p><a onclick="ShowHide('abs_producdyn');UpdateText(this)">show abstract</a></p>
     <p class="abstract" id="abs_producdyn">
-      Research idea: The literature on firm dynamics typically assumes that firm's productivity follows an AR(1) process. There are two reasons that motivate departing from this assumption. First, the AR(1) assumption implies that productivity persistence and uncertainty are constant across firms, which is not supported by the data. Second, the AR(1) assumption implies that productivity dynamics are unaffected by policies and frictions. In this paper, we provide a simple way to endogenize the dynamics of firms' productivity, adopting a control-cost approach widely used in the rational inattention literature. Our methodology does not add computational cost to a standard firm dynamics model, and therefore, it allows for easy extensions for policy analysis without increasing model complexity.
+      Abstract: The literature on firm dynamics typically assumes that firm's productivity follows an AR(1) process. There are two reasons that motivate departing from this assumption. First, the AR(1) assumption implies that productivity persistence and uncertainty are constant across firms, which is not supported by the data. Second, the AR(1) assumption implies that productivity dynamics are unaffected by policies and frictions. In this paper, we provide a simple way to endogenize the dynamics of firms' productivity, adopting a control-cost approach widely used in the rational inattention literature. Our methodology does not add computational cost to a standard firm dynamics model, and therefore, it allows for easy extensions for policy analysis without increasing model complexity.
     </p>
   </div>
+
   <div class="subsection">
     <paper>Intergenerational welfare dependence</paper>
     <p>Joint work with <a id="javi">Javier López Segovia</a>.</p>
@@ -110,81 +109,33 @@
       Abstract: US data shows a strong integenerational correlation in welfare participation. Existing evidence shows that both intergenerational transmission of economic status and welfare culture (stigma cost) are important in accounting for such correlation. In this paper, we propose a life-cycle model with incomplete markets to disentangle the relative importance of these two sources of intergenerational persistence in welfare programs participation. Additionally, we evaluate the welfare and intergenerational effects of different reforms in the presence of intergenerational transmission of welfare culture.
     </p>
   </div>
+
 </div>
 
 <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
 
 <div class="section">
-  <div class="sectiontitle">TEACHING</div>
+
+  <h1>TEACHING</h1>
+
   <div class="subsection">
-    <color><u>Master in Economics and Finance, CEMFI</u></color>
+    <h2>Master in Economics and Finance, CEMFI</h2>
     <p><a id="macro1">Macroeconomics II</a>. Teaching assistant: Spring 2019 (scheduled).</p>
     <p class="quote">This course expands the knowledge acquired in the Macroeconomics I course, extending the set of models and theories following recent developments in the discipline.</p>
     <p><a id="macro2">Macroeconomics I</a>. Teaching assistant: Winter 2016, Winter 2017 (evaluations: <a id="macro1w16">2016</a>, <a id="macro1w17">2017</a>).</p>
     <p class="quote">This course provides the student with a basic knowledge in macroeconomics through the analysis of the neo-classical growth model and its implications for aggregate allocations in the long run.</p>
   </div>
+
   <div class="subsection">
-    <color><u>Master in Banking Supervision, CEMFI & Bank of Spain</u></color>
+    <h2>Master in Banking Supervision, CEMFI & Bank of Spain</h2>
     <p><a id="quant">Quantitative Methods</a>. Teaching assistant: Fall 2017, Spring 2018 (evaluations: <a id="quanteval">2017 & 2018</a>).</p>
     <p class="quote">This course revisits basic concepts in mathematics and statistics.</p>
   </div>
+
 </div>
 
 <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
 
-<script>
-
-  /* Code *********************************************************************/
-  $('a'                  ).attr('target','_blank');
-  $('a[class=simple]'    ).attr('target','_self');
-  $('a[class=toc]'       ).attr('target','_self');
-  $('a[class=tocactive]' ).attr('target','_self');
-
-  /* Institutions *************************************************************/
-  $('a[id=cemfi]'        ).attr('href','https://www.cemfi.es/');
-  $('a[id=nhh]'          ).attr('href','https://www.nhh.no/en/departments/economics/');
-
-  /* Profiles ******************************************************************/
-  $('a[id=ssrn]'         ).attr('href','https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=3308699');
-  $('a[id=google]'       ).attr('href','https://scholar.google.es/citations?user=ySzuvdUAAAAJ&hl=en');
-  $('a[id=ideas]'        ).attr('href','https://ideas.repec.org/f/ppe880.html');
-  $('a[id=linkedin]'     ).attr('href','https://www.linkedin.com/in/borjapetit/');
-
-  /* People *******************************************************************/
-  $('a[id=jim]'          ).attr('href','https://sites.google.com/site/jimcostain/');
-  $('a[id=anton]'        ).attr('href','https://sites.google.com/site/antonnakov/');
-  $('a[id=josep]'        ).attr('href','https://www.cemfi.es/~pijoan/Welcome.html');
-  $('a[id=nezih]'        ).attr('href','https://www.cemfi.es/~guner/');
-  $('a[id=jc]'           ).attr('href','https://www.cemfi.es/studies/phd/ruiz.asp');
-  $('a[id=javi]'         ).attr('href','https://www.cemfi.es/studies/phd/lopez.asp');
-
-  /* Papers *******************************************************************/
-  $('a[id=jmp]'          ).attr('href','pdfs/research/JMP_petit.pdf');
-  $('a[id=jmp_slides]'   ).attr('href','pdfs/research/JMP_petit_slides.pdf');
-  $('a[id=lpw_cepr]'     ).attr('href','https://cepr.org/active/publications/discussion_papers/dp.php?dpno=13398');
-  $('a[id=lpw_wp]'       ).attr('href','pdfs/research/CostainNakovPetit_draft.pdf');
-  $('a[id=lpw_slides]'   ).attr('href','pdfs/research/CostainNakovPetit_slides.pdf');
-
-  /* Courses ******************************************************************/
-  $('a[id=macro1]'       ).attr('href','https://www.cemfi.es/studies/master/course.asp?c=101118');
-  $('a[id=macro1w16]'    ).attr('href','pdfs/teaching/teaching_evaluation_macroI_15-16.pdf');
-  $('a[id=macro1w17]'    ).attr('href','pdfs/teaching/teaching_evaluation_macroI_16-17.pdf');
-  $('a[id=macro2]'       ).attr('href','https://www.cemfi.es/studies/master/course.asp?c=101114');
-  $('a[id=quant]'        ).attr('href','https://www.cemfi.es/studies/dsb/index.asp');
-  $('a[id=quanteval]'    ).attr('href','pdfs/teaching/PETIT_certificado_MSB.pdf');
-
-  function ShowHide(elementId){
-      var element = document.getElementById(elementId);
-      if(element.style.display != "block"){element.style.display = "block";}
-      else{element.style.display = "none";}};
-
-  function UpdateText(element){
-      if(element.innerHTML.indexOf("show abstract") != -1){element.innerHTML = "hide abstract"}
-      else{element.innerHTML = "show abstract";}};
-
-</script>
-
-<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
-
+<script src="src/jsfile.js"></script>
 </body>
 </html>
