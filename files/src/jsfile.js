@@ -44,5 +44,5 @@ function ShowHide(elementId){
     else{element.style.display = "none";}};
 
 function UpdateText(element){
-    if(element.innerHTML.indexOf("show abstract") != -1){element.innerHTML = "hide abstract";}
-    else{element.innerHTML = "show abstract";}};
+    if(element.innerHTML.indexOf("abstract \u229E") != -1){element.innerHTML = "abstract \u229F";}
+    else{element.innerHTML = "abstract \u229E";}};

@@ -26,6 +26,18 @@ a:hover{
   text-decoration:underline;
   cursor:pointer;
 }
+p.title{
+  font-weight:bold;
+  margin:0px 0px 8px 0px;
+  font-size:235%;
+  color:DarkGreen;
+}
+p.subtitle{
+  margin:0px 0px 20px 0px;
+  font-size:135%;
+  color:Gray;
+  font-weight:bold;
+}
 div.section{
   background-color:white;
   margin:0px 0px 20px 0px;
@@ -50,24 +62,13 @@ h2{
 p.abstract{
   text-align:justify;
   line-height:1.3;
-  display:none
+  display:none;
+  margin-top:6px;
 }
 p.quote{text-align:justify;
   line-height:1.3;
   display:block;
   margin-left:15px;
-}
-p.title{
-  font-weight:bold;
-  margin:0px 0px 8px 0px;
-  font-size:235%;
-  color:DarkGreen;
-}
-p.subtitle{
-  margin:0px 0px 20px 0px;
-  font-size:135%;
-  color:Gray;
-  font-weight:bold;
 }
 color {
   color:DarkGreen;
@@ -75,8 +76,11 @@ color {
 paper{
   font-weight:bold;
   color:DarkGreen;
+  text-decoration:none;
+  display:inline;
 }
 journal{
   color:#AE2000;
   text-decoration:underline;
+  margin-top:3px;
 }
