@@ -84,3 +84,9 @@ journal{
   text-decoration:underline;
   margin-top:3px;
 }
+.plus::after{
+  content:" \00229E"
+}
+.minus::after{
+  content:" \00229F"
+}
