@@ -66,11 +66,13 @@ p.abstract{
 }
 .hidden{
   display:none;
+  /*padding:10px;
+  background-color:#F7F7F7;*/
 }
-p.quote{text-align:justify;
+p.quote{
+  text-align:justify;
   line-height:1.3;
-  display:block;
-  margin-left:15px;
+  margin-left:20px;
 }
 color {
   color:DarkGreen;
