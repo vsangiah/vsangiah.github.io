@@ -22,7 +22,7 @@ a{
   color:#0026C1;
 }
 a:hover{
-  font-weight:bold;
+  /*font-weight:bold;*/
   text-decoration:underline;
   cursor:pointer;
 }
@@ -62,8 +62,10 @@ h2{
 p.abstract{
   text-align:justify;
   line-height:1.3;
-  display:none;
   margin-top:6px;
+}
+.hidden{
+  display:none;
 }
 p.quote{text-align:justify;
   line-height:1.3;

@@ -38,9 +38,21 @@ $('a[id=macro2]'       ).attr('href','https://www.cemfi.es/studies/master/course
 $('a[id=quant]'        ).attr('href','https://www.cemfi.es/studies/dsb/index.asp');
 $('a[id=quanteval]'    ).attr('href','files/pdfs/teaching/PETIT_certificado_MSB.pdf');
 
-function ShowHide(elementId,element2){
+$(document).on("click", "a.plus", function(event){
+    event.preventDefault();
+    $(this).parent('div,p').next('.hidden').slideDown();
+    $(this).attr('class', 'minus');
+});
+
+$(document).on("click", "a.minus", function(event){
+    event.preventDefault();
+    $(this).parent('div,p').next('.hidden').slideUp();
+    $(this).attr('class', 'plus');
+});
+
+/*function ShowHide(elementId,element2){
     var element = document.getElementById(elementId);
     if(element.style.display != "block"){element.style.display = "block";}
         else{element.style.display = "none";};
     if(element2.className != "plus"){element2.className = "plus";}
-        else{element2.className = "minus";}};
+        else{element2.className = "minus";}};*/
