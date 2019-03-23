@@ -24,8 +24,8 @@ $('a[id=jc]'           ).attr('href','https://www.cemfi.es/studies/phd/ruiz.asp'
 $('a[id=javi]'         ).attr('href','https://www.cemfi.es/studies/phd/lopez.asp');
 
 /* Papers *******************************************************************/
-$('a[id=jmp]'          ).attr('href','files/pdfs/research/JMP_petit.pdf');
-$('a[id=jmp_slides]'   ).attr('href','files/pdfs/research/JMP_petit_slides.pdf');
+$('a[id=jmp]'          ).attr('href','files/pdfs/research/petit_childtax.pdf');
+$('a[id=jmp_slides]'   ).attr('href','files/pdfs/research/petit_childtax_slides.pdf');
 $('a[id=jmp_bib]'      ).attr('href','files/bib/jmp.bib');
 $('a[id=lpw_cepr]'     ).attr('href','https://cepr.org/active/publications/discussion_papers/dp.php?dpno=13398');
 $('a[id=lpw_wp]'       ).attr('href','files/pdfs/research/CostainNakovPetit_draft.pdf');
