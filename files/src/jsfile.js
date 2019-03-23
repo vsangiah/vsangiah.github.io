@@ -24,13 +24,14 @@ $('a[id=jc]'           ).attr('href','https://www.cemfi.es/studies/phd/ruiz.asp'
 $('a[id=javi]'         ).attr('href','https://www.cemfi.es/studies/phd/lopez.asp');
 
 /* Papers *******************************************************************/
-$('a[id=jmp]'          ).attr('href','files/pdfs/research/petit_childtax.pdf');
-$('a[id=jmp_slides]'   ).attr('href','files/pdfs/research/petit_childtax_slides.pdf');
-$('a[id=jmp_bib]'      ).attr('href','files/bib/jmp.bib');
-$('a[id=lpw_cepr]'     ).attr('href','https://cepr.org/active/publications/discussion_papers/dp.php?dpno=13398');
-$('a[id=lpw_wp]'       ).attr('href','files/pdfs/research/CostainNakovPetit_draft.pdf');
-$('a[id=lpw_slides]'   ).attr('href','files/pdfs/research/CostainNakovPetit_slides.pdf');
-$('a[id=lpw_bib]'      ).attr('href','files/bib/costainnakovpetit2018.bib');
+$('a[id=childtax]'        ).attr('href','files/pdfs/research/petit_childtax.pdf');
+$('a[id=childtax_slides]' ).attr('href','files/pdfs/research/petit_childtax_slides.pdf');
+$('a[id=childtax_bib]'    ).attr('href','files/bib/jmp.bib');
+$('a[id=lpw_cepr]'        ).attr('href','https://cepr.org/active/publications/discussion_papers/dp.php?dpno=13398');
+$('a[id=lpw_wp]'          ).attr('href','files/pdfs/research/CostainNakovPetit_draft.pdf');
+$('a[id=lpw_slides]'      ).attr('href','files/pdfs/research/CostainNakovPetit_slides.pdf');
+$('a[id=lpw_bib]'         ).attr('href','files/bib/costainnakovpetit2018.bib');
+$('a[id=firings]'         ).attr('href','files/pdfs/research/petit_firing.pdf');
 
 /* Courses ******************************************************************/
 $('a[id=macro1]'       ).attr('href','https://www.cemfi.es/studies/master/course.asp?c=101118');
