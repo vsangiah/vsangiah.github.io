@@ -19,10 +19,10 @@ p,div{
   margin-top:3px;
 }
 a{
-  color:#0026C1;
+  color:#0026A1;
 }
 a:hover{
-  /*font-weight:bold;*/
+  font-weight:bold;
   text-decoration:underline;
   cursor:pointer;
 }
@@ -43,6 +43,7 @@ div.section{
   margin:0px 0px 20px 0px;
   border: 1px solid grey;
   padding:20px;
+  clear:both;
 }
 div.subsection{
   margin-top:15px;
@@ -66,8 +67,6 @@ p.abstract{
 }
 .hidden{
   display:none;
-  /*padding:10px;
-  background-color:#F7F7F7;*/
 }
 p.quote{
   text-align:justify;
@@ -79,7 +78,7 @@ color {
 }
 paper{
   font-weight:bold;
-  color:DarkGreen;
+  color:darkgreen;
   text-decoration:none;
   display:inline;
 }
