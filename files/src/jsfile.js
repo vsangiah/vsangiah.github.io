@@ -43,13 +43,13 @@ $('a[id=quanteval]'    ).attr('href','files/pdfs/teaching/PETIT_certificado_MSB.
 
 $(document).on("click", "a.plus", function(event){
     event.preventDefault();
-    $(this).parent('div,p').next('.hidden').slideDown();
+    $(this).parent('div,p,li').next('.hidden').slideDown();
     $(this).attr('class', 'minus');
 });
 
 $(document).on("click", "a.minus", function(event){
     event.preventDefault();
-    $(this).parent('div,p').next('.hidden').slideUp();
+    $(this).parent('div,p,li').next('.hidden').slideUp();
     $(this).attr('class', 'plus');
 });
 
