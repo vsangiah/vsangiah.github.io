@@ -98,6 +98,10 @@ journal{
   /*text-decoration:underline;*/
   margin-top:3px;
 }
+red{
+  color:red;
+  font-style:normal;
+}
 alert{
   color:red;
   font-style:normal;
