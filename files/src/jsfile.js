@@ -28,6 +28,7 @@ $('a[id=childtax]'        ).attr('href','files/pdfs/research/petit_childtax.pdf'
 $('a[id=childtax_slides]' ).attr('href','files/pdfs/research/petit_childtax_slides.pdf');
 $('a[id=childtax_bib]'    ).attr('href','files/bib/jmp.bib');
 $('a[id=lpw_cepr]'        ).attr('href','https://cepr.org/active/publications/discussion_papers/dp.php?dpno=13398');
+$('a[id=lpw_bde]'         ).attr('href','https://www.bde.es/f/webbde/SES/Secciones/Publicaciones/PublicacionesSeriadas/DocumentosTrabajo/19/Fich/dt1910e.pdf');
 $('a[id=lpw_wp]'          ).attr('href','files/pdfs/research/CostainNakovPetit_draft.pdf');
 $('a[id=lpw_slides]'      ).attr('href','files/pdfs/research/CostainNakovPetit_slides.pdf');
 $('a[id=lpw_bib]'         ).attr('href','files/bib/costainnakovpetit2018.bib');
