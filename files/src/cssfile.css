@@ -26,6 +26,20 @@ a:hover{
   text-decoration:underline;
   cursor:pointer;
 }
+a.toc{
+  font-size:135%;
+  color:Gray;
+  font-weight:bold;
+  padding-left:15px;
+  text-decoration:none;
+}
+a.toca,a.toc:hover{
+  font-size:135%;
+  color:darkgreen;
+  font-weight:bold;
+  padding-left:15px;
+  text-decoration:none;
+}
 p.title{
   font-weight:bold;
   margin:0px 0px 8px 0px;

@@ -3,7 +3,7 @@
 $('a'                  ).attr('target','_blank');
 $('a[class=simple]'    ).attr('target','_self');
 $('a[class=toc]'       ).attr('target','_self');
-$('a[class=tocactive]' ).attr('target','_self');
+$('a[class=toca]'      ).attr('target','_self');
 
 /* Institutions *************************************************************/
 $('a[id=cemfi]'        ).attr('href','https://www.cemfi.es/');
