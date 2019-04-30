@@ -27,18 +27,21 @@ a:hover{
   cursor:pointer;
 }
 a.toc{
-  font-size:135%;
+  font-size:110%;
   color:Gray;
   font-weight:bold;
-  padding-left:15px;
   text-decoration:none;
+  margin-left:15px;
+  padding-top:6px;
 }
 a.toca,a.toc:hover{
-  font-size:135%;
+  font-size:110%;
   color:darkgreen;
   font-weight:bold;
-  padding-left:15px;
   text-decoration:none;
+  margin-left:15px;
+  border-top:3px solid darkgreen;
+  padding-top:6px;
 }
 p.title{
   font-weight:bold;
