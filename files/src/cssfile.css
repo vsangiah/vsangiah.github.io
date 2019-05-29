@@ -20,6 +20,7 @@ div,p,span,a{
 }
 p,div{
   margin-top:3px;
+  text-align: justify;
 }
 a{
   color:#0026A1;
