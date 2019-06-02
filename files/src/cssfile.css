@@ -35,8 +35,7 @@ a.toc,a.toca,a.toc:hover{
   color:Gray;
   font-weight:bold;
   text-decoration:none;
-  margin-left:15px;
-  margin-bottom:15px;
+  margin:0px 0px 15px 15px;
   padding-top:6px;
 }
 a.toca,a.toc:hover{
@@ -49,46 +48,63 @@ p.title{
   color:DarkGreen;
 }
 p.subtitle{
-  margin:0px 0px 15px 0px;
-  font-size:135%;
-  color:Gray;
-  font-weight:bold;
-}
-div.section{
-  background-color:white;
-  margin:0px 0px 20px 0px;
-  border: 1px solid grey;
-  padding:20px;
-  clear:both;
-  overflow: auto;
-}
-div.subsection{
-  margin-top:15px;
+  margin: 0px 0px 15px 0px;
+  font-size: 135%;
+  color: Gray;
+  font-weight: bold;
 }
 h1{
-  margin:0px 0px 8px 0px;
-  font-weight:bold;
-  color:DarkGreen;
-  font-size:130%;
+  margin: 0px 0px 10px 10px;
+  font-weight: bold;
+  color: DarkGreen;
+  font-size: 150%;
+  text-align: left;
+}
+h1{
+  margin: 0px 0px 10px 0px;
+  font-weight: bold;
+  color: DarkGreen;
+  font-size: 170%;
+  text-align: left;
 }
 h2{
-  margin:0px 0px 6px 0px;
-  font-weight:bold;
-  color:DarkGreen;
-  font-size:100%;
+  margin: 0px 0px 6px 0px;
+  font-weight: bold;
+  color: DarkGreen;
+  font-size: 100%;
 }
-h3{
-  margin:0px 0px 6px 0px;
-  font-weight:normal;
-  color:DarkGreen;
-  font-size:100%;
+.section,.subsection{
+  border: 1px solid grey;
+  background-color: white;
+  clear: both;
+  overflow: auto;
 }
-p.abstract{
-  text-align:justify;
+.section{
+  margin: 0px 0px 20px 0px;
+  padding: 20px 20px 20px 20px;
+}
+.subsection{
+  margin: 15px 0px 0px 0px;
+  padding: 15px 17px 15px 17px;
+}
+.abstract{
   line-height:1.3;
-  margin-top:3px;
   color:#494949;
-  padding:5px 10px 0px 10px;
+  margin-top:8px;
+  text-indent: -65px;
+	padding-left: 65px
+}
+.abstract::before{
+  content:"Abstract:"
+}
+.hidden{
+  display:none;
+}
+.small{
+  line-height:1.3;
+  font-size: 95%;
+  margin-top:8px;
+  color: #494949;
 }
 color {
   color:DarkGreen;
@@ -97,25 +113,21 @@ a.paper,paper{
   font-weight:bold;
   color:darkgreen;
   text-decoration:none;
-  display:inline;
 }
 a.paper:hover{
-  text-decoration:none;
-  background-color:darkgreen;
   color:white;
-  padding: 0px 5px 0px 5px;
+  padding: 0px 2px 0px 2px;
+  background-color:darkgreen;
 }
 journal{
   color:#AE2000;
   margin-top:3px;
 }
-red{
+red,alert{
   color:red;
   font-style:normal;
 }
 alert{
-  color:red;
-  font-style:normal;
   font-weight:bold;
 }
 .plus::after{
@@ -124,17 +136,7 @@ alert{
 .minus::after{
   content:" \00229F"
 }
-.hidden{
-  display:none;
-}
-.small{
-  font-size:95%;
-  color:#494949;
-  font-style: italic;
-}
 ul{
-  margin:0px;
-  padding:0px;
-  margin-top:7px;
-  margin-left:20px;
+  margin:7px 0px 0px 0px;
+  padding:0px 0px 0px 20px;
 }
