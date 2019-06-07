@@ -11,7 +11,7 @@ body{
   width:90%;
   max-width:950px;
   min-width:900px;
-  padding:40px 0px 250px 0px;
+  padding:60px 0px 250px 0px;
   margin: 0px auto 0px auto;
   background-color:#F5F5F5;
 }
@@ -130,6 +130,9 @@ alert{
   font-weight:bold;
 }
 ul{
-  margin:7px 0px 0px 0px;
+  margin:9px 0px 0px 0px;
   padding:0px 0px 0px 20px;
+}
+li{
+  margin-bottom:3px;
 }
