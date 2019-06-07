@@ -41,19 +41,16 @@ $(document).on("click", "a.minus", function(event){
     $(this).attr('class', 'plus');
 });
 
-/*function ShowHide(elementId){
-  var element = document.getElementById(elementId);
-  if(element.style.display != "block"){element.style.display = "block";}
-    else{element.style.display = "none";};}
-  if(element2.className != "plus"){element2.className = "plus";}
-    else{element2.className = "minus";}
-  };*/
+$(document).on("click", "a.showmore", function(event){
+    event.preventDefault();
+    $(this).parent('p').attr('class','abstract2');
+    $(this).attr('class','showless');
+});
 
-
-
-
-
-
-
+$(document).on("click", "a.showless", function(event){
+    event.preventDefault();
+    $(this).parent('p').attr('class','abstract');
+    $(this).attr('class','showmore');
+});
 
 /******************************************************************************/
