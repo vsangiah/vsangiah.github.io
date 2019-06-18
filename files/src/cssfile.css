@@ -121,9 +121,9 @@ alert{
   font-weight:bold;
 }
 ul{
-  margin:9px 0px 0px 0px;
+  margin:0px;
   padding:0px 0px 0px 20px;
 }
-li{
-  margin-bottom:3px;
+li:not(:last-child) {
+  margin-bottom:8px;
 }
