@@ -3,7 +3,8 @@
  MAIN STRUCTURE
 *******************************************************************************/
 
-html,body,div,p,span,a{
+/*html,body,div,p,span,a*/
+*{
   font-family:'Roboto Condensed','Nunito',Arial,sans-serif;
   line-height:1.4;
   font-size:16px;
@@ -51,8 +52,8 @@ ul.simple>li {
   width:100%;
   height:55px;
   min-width:900px;
-  margin:0px 100px 0px 0px;
-  padding:5px 0px 5px 0px;
+  margin:0px 0px 0px 0px;
+  padding:10px 0px 3px 30px;
   background-color:white;
   border-bottom: 2px solid grey;
 }
@@ -61,15 +62,15 @@ ul.simple>li {
   padding:0px;
   font-weight: bold;
   color: DarkGreen;
-  font-size: 235%;
-  margin-left:200px;
+  font-size: 200%;
+  margin-right:30px;
 }
 .navigation{
   margin:0px;
   padding:0px;
   float:right;
   font-weight:bold;
-  text-align:right;
+  text-align:left;
   position:relative;
   margin:16px 200px 0px 0px;
 }
@@ -78,10 +79,12 @@ a.toc,a.toca,a.toc:hover{
   font-size:120%;
   text-decoration:none;
   margin:0px 0px 0px 20px;
+  padding-bottom:5px;
 }
 a.toca,a.toc:hover{
   color:darkgreen;
-  border-bottom:2px solid darkgreen;
+  border-bottom:3px solid darkgreen;
+  font-weight:normal;
 }
 
 /*******************************************************************************
@@ -90,7 +93,9 @@ a.toca,a.toc:hover{
 
 body{
   padding:0px 0px 250px 0px;
-  margin: 110px 200px 400px 200px;
+  width:90%;
+  max-width:990px;
+  margin: 110px auto 400px auto;
   background-color:#F5F5F5;
 }
 h1{
