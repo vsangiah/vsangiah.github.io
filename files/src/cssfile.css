@@ -3,7 +3,6 @@
  MAIN STRUCTURE
 *******************************************************************************/
 
-/*html,body,div,p,span,a*/
 *{
   font-family:'Roboto Condensed','Nunito',Arial,sans-serif;
   line-height:1.4;
@@ -13,7 +12,7 @@
   text-decoration:none;
   color:#494949;
 }
-div,p,span,a{
+div,p,span,a,i{
   font-size:inherit;
   color:inherit;
 }
@@ -61,7 +60,6 @@ ul.simple>li {
   margin:0px;
   padding:0px;
   font-weight: bold;
-  color: DarkGreen;
   font-size: 200%;
   margin-right:30px;
 }
@@ -82,8 +80,6 @@ a.toc,a.toca,a.toc:hover{
   padding-bottom:5px;
 }
 a.toca,a.toc:hover{
-  color:darkgreen;
-  border-bottom:3px solid darkgreen;
   font-weight:normal;
 }
 
@@ -101,14 +97,12 @@ body{
 h1{
   margin: 0px 0px 10px 0px;
   font-weight: normal;
-  color: DarkGreen;
   font-size: 200%;
   text-align: left;
 }
 h2{
   margin: 0px 0px 6px 0px;
   font-weight: bold;
-  color: DarkGreen;
   font-size: 100%;
 }
 .section,.subsection{
@@ -145,11 +139,11 @@ h2{
 }
 paper{
   font-weight:bold;
-  color:darkgreen;
   text-decoration:none;
-}
-color {
-  color:DarkGreen;
+  display:block;
+  margin:0px;
+  padding:0px;
+  margin-bottom:7px;
 }
 journal{
   color:#AE2000;
@@ -162,4 +156,37 @@ red{
 alert{
   color:red;
   font-weight:bold;
+}
+a.plus,a.minus{
+  display:inline-block;
+  margin-right:5px;
+}
+a.plus::before{
+  content:"Show "
+}
+a.plus::after{
+  content:" \229E"
+}
+a.minus::before{
+  content:"Hide "
+}
+a.minus::after{
+  content:" \229F"
+}
+
+/*******************************************************************************
+ SET MAIN COLOR
+*******************************************************************************/
+
+paper,color,h2,h1,a.toca,a.toc:hover,.title{
+  color:darkgreen;
+}
+a.toca,a.toc:hover{
+  border-bottom:3px solid darkgreen;
+}
+a.plus{
+  color:#494949;
+}
+a.minus{
+  color:#494949;
 }

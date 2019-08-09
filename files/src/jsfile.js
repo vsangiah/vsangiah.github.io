@@ -31,15 +31,17 @@ $('a[id=javi]'         ).attr('href','https://www.cemfi.es/studies/phd/lopez.asp
 
 $(document).on("click", "a.plus", function(event){
     event.preventDefault();
-    $(this).parent('div,p,li').next('.hidden').slideDown();
+    $(this).next('.hidden').slideDown();
     $(this).attr('class', 'minus');
 });
 
 $(document).on("click", "a.minus", function(event){
     event.preventDefault();
-    $(this).parent('div,p,li').next('.hidden').slideUp();
+    $(this).next('.hidden').slideUp();
     $(this).attr('class', 'plus');
 });
+
+/* parent('div,p,li,span').*/
 
 $(document).on("click", "a.showmore", function(event){
     event.preventDefault();
