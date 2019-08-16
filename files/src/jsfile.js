@@ -27,21 +27,19 @@ $('a[id=nezih]'        ).attr('href','https://www.cemfi.es/~guner/');
 $('a[id=jc]'           ).attr('href','https://www.cemfi.es/studies/phd/ruiz.asp');
 $('a[id=javi]'         ).attr('href','https://www.cemfi.es/studies/phd/lopez.asp');
 
-/* Code ***********************************************************************/
+/* Show/Hide functions *********************************************************/
 
 $(document).on("click", "a.plus", function(event){
     event.preventDefault();
-    $(this).next('.hidden').slideDown();
+    $(this).next('.hidden').slideDown('slow');
     $(this).attr('class', 'minus');
 });
 
 $(document).on("click", "a.minus", function(event){
     event.preventDefault();
-    $(this).next('.hidden').slideUp();
+    $(this).next('.hidden').slideUp('slow');
     $(this).attr('class', 'plus');
 });
-
-/* parent('div,p,li,span').*/
 
 $(document).on("click", "a.showmore", function(event){
     event.preventDefault();
@@ -54,5 +52,13 @@ $(document).on("click", "a.showless", function(event){
     $(this).parent('p').attr('class','abstract');
     $(this).attr('class','showmore');
 });
+
+/* Make hide/show elements visible when using a mobile device *****************/
+
+var mobile = (/iphone|ipod|android|blackberry|mini|windows\sce|palm/i.test(navigator.userAgent.toLowerCase()));
+  if (mobile) {
+    $('.plus').css('display', 'none');
+    $('.hidden').css('display', 'block'); }
+  else{  };
 
 /******************************************************************************/
