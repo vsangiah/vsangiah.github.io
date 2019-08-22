@@ -173,6 +173,10 @@ a.minus::before{
 a.minus::after{
   content:" \229F"
 }
+a.plus:hover,a.minus:hover{
+  color:#0026A1;
+  font-weight:normal;
+}
 
 /*******************************************************************************
  SET MAIN COLOR
