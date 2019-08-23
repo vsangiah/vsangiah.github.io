@@ -4,7 +4,7 @@
 *******************************************************************************/
 
 *{
-  font-family:'Roboto Condensed','Nunito',Arial,sans-serif;
+  font-family:Helvetica,Arial,'Roboto Condensed',sans-serif;
   line-height:1.4;
   font-size:16px;
   padding:0px;
@@ -24,7 +24,7 @@ a{
   color:#0026A1;
 }
 a:hover{
-  font-weight:bold;
+  font-weight:normal;
   text-decoration:underline;
   cursor:pointer;
 }
