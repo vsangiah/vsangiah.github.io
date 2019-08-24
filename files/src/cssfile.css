@@ -10,6 +10,9 @@
   padding:0px;
   margin:0px;
   text-decoration:none;
+  color:inherit;
+}
+html{
   color:#494949;
 }
 div,p,span,a,i{
