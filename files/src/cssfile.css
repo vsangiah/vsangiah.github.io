@@ -21,7 +21,7 @@ div,p,span,a,i{
 }
 p,div{
   margin-top:3px;
-  text-align:justify;
+  text-align:left;
 }
 a{
   color:#0026A1;
@@ -123,8 +123,9 @@ h2{
   padding: 12px 17px 12px 17px;
 }
 .abstract{
-  font-size:100%;
+  font-size:95%;
   line-height:1.3;
+  text-align:justify;
 }
 
 /*******************************************************************************
@@ -180,6 +181,12 @@ a.plus:hover,a.minus:hover{
   color:#0026A1;
   font-weight:normal;
 }
+.justify{
+  text-align:justify;
+}
+.block{
+  display:block;
+}
 
 /*******************************************************************************
  SET MAIN COLOR
@@ -196,4 +203,47 @@ a.plus{
 }
 a.minus{
   color:#494949;
+}
+.sidenote{
+  text-align:right;
+  float:right;
+}
+.notmobile{
+  padding:0px;
+  margin:0px;
+}
+.mobile{
+  display:none;
+}
+
+/*******************************************************************************
+ ADDAPT FOR MOBILE PHONES
+*******************************************************************************/
+
+@media screen and (max-width: 700px) {
+  *{
+    font-size: 90%;
+  }
+  .navbar {
+    width:100%;
+    height:45px;
+    padding:8px 0px 3px 30px;
+  }
+  .title{
+    font-size: 150%;
+    margin-top:0px;
+  }
+  a.toc,a.toca,a.toc:hover{
+    font-size:100%;
+    margin:0px 0px 0px 5px;
+  }
+  body{
+    margin: 90px auto 400px auto;
+  }
+  .sidenote{
+    text-align:left;
+    float:none;
+    display:block;
+    margin-top:5px;
+  }
 }
