@@ -82,7 +82,7 @@ a.toc,a.toca,a.toc:hover{
   margin:0px 0px 0px 20px;
   padding-bottom:5px;
 }
-a.toca,a.toc:hover{
+a.toca,a.toca:hover,a.toc:hover{
   font-weight:normal;
 }
 
@@ -230,7 +230,7 @@ a.minus{
 *******************************************************************************/
 
 @media (max-width: 700px) {
-  *{
+  *,p,div{
     font-size:14px;
   }
   .navbar {
@@ -241,13 +241,10 @@ a.minus{
   }
   .title{
     font-size:20px;
-    margin-top:0px;
-    margin-left:auto;
-    margin-right:auto;
-    margin-bottom:5px;
+    margin:0px auto 5px auto;
     display:block;
   }
-  a.toc,a.toca,a.toc:hover{
+  a.toc,a.toca,a.toc:hover,a.toca:hover{
     font-size:14px;
     margin:0px 5px 0px 0px;
   }
