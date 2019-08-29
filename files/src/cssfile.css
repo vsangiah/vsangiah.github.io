@@ -4,13 +4,14 @@
 *******************************************************************************/
 
 *{
-  font-family:Helvetica,Arial,'Roboto Condensed',sans-serif;
+  font-family:Helvetica,Arial,sans-serif;
   line-height:1.4;
   font-size:16px;
   padding:0px;
   margin:0px;
   text-decoration:none;
   color:inherit;
+  text-align:left;
 }
 html{
   color:#494949;
@@ -21,18 +22,15 @@ div,p,span,a,i{
 }
 p,div{
   margin-top:3px;
-  text-align:left;
 }
 a{
   color:#0026A1;
 }
 a:hover{
-  font-weight:normal;
   text-decoration:underline;
   cursor:pointer;
 }
 ul{
-  margin:0px;
   padding:5px 0px 0px 20px;
 }
 li:not(:last-child) {
@@ -47,28 +45,28 @@ ul.simple>li {
 *******************************************************************************/
 
 .navbar {
-  position:fixed;
   top:0;
   left:0;
+  position:fixed;
   overflow:hidden;
   width:100%;
   height:55px;
   min-width:900px;
-  margin:0px 0px 0px 0px;
+  margin:0px;
   padding:10px 0px 3px 30px;
   background-color:white;
   border-bottom: 2px solid grey;
 }
 .title{
-  margin:0px;
   padding:0px;
+  margin:0px;
   font-weight: bold;
   font-size: 30px;
   margin-right:30px;
 }
 .navigation{
-  margin:0px;
   padding:0px;
+  margin:0px;
   float:right;
   font-weight:bold;
   text-align:left;
@@ -80,7 +78,7 @@ a.toc,a.toca,a.toc:hover{
   font-size:18px;
   text-decoration:none;
   margin:0px 0px 0px 20px;
-  padding-bottom:5px;
+  padding: 0px 0px 5px 0px;
 }
 a.toca,a.toca:hover,a.toc:hover{
   font-weight:normal;
@@ -91,22 +89,21 @@ a.toca,a.toca:hover,a.toc:hover{
 *******************************************************************************/
 
 body{
-  padding:0px 0px 250px 0px;
-  width:90%;
-  max-width:990px;
+  width: 90%;
+  max-width: 990px;
+  background-color: #F5F5F5;
+  padding: 0px 0px 250px 0px;
   margin: 110px auto 400px auto;
-  background-color:#F5F5F5;
 }
 h1{
   margin: 0px 0px 10px 0px;
   font-weight: normal;
   font-size: 25px;
-  text-align: left;
 }
 h2{
   margin: 0px 0px 6px 0px;
   font-weight: normal;
-  font-size:16px;
+  font-size: 16px;
 }
 .section,.subsection{
   border: 2px solid grey;
@@ -120,50 +117,42 @@ h2{
 }
 .subsection{
   margin: 15px 0px 0px 0px;
-  padding: 12px 17px 12px 17px;
-}
-.abstract{
-  font-size:15px;
-  line-height:1.3;
-  text-align:justify;
+  padding: 10px 15px 10px 15px;
 }
 
 /*******************************************************************************
  OTHER COMMANDS
 *******************************************************************************/
 
+paper{
+  margin-bottom:5px;
+  font-weight:normal;
+  text-decoration:none;
+}
+journal{
+  font-weight:normal;
+  text-decoration:none;
+  color:brown;
+  font-style: italic;
+}
+.abstract{
+  text-align:justify;
+}
 .hidden{
   display:none;
 }
 .small{
-  line-height:1.3;
   font-size: 15px;
-  margin-top:8px;
-  color: #494949;
 }
-paper{
-  font-weight:normal;
-  text-decoration:none;
+.justify{
+  text-align:justify;
+}
+.block{
   display:block;
-  margin:0px;
-  padding:0px;
-  margin-bottom:7px;
-}
-journal{
-  color:#AE2000;
-  margin-top:3px;
-}
-red{
-  color:red;
-  font-style:normal;
-}
-alert{
-  color:red;
-  font-weight:bold;
 }
 a.plus,a.minus{
-  display:inline-block;
   margin-right:5px;
+  display:block;
 }
 a.plus::before{
   content:"Show "
@@ -179,13 +168,6 @@ a.minus::after{
 }
 a.plus:hover,a.minus:hover{
   color:#0026A1;
-  font-weight:normal;
-}
-.justify{
-  text-align:justify;
-}
-.block{
-  display:block;
 }
 
 /*******************************************************************************
@@ -208,13 +190,6 @@ a.minus{
   text-align:right;
   float:right;
 }
-.notmobile{
-  padding:0px;
-  margin:0px;
-}
-.mobile{
-  display:none;
-}
 .picdiv{
   float:right;
   text-align:center;
@@ -230,7 +205,7 @@ a.minus{
 *******************************************************************************/
 
 @media (max-width: 700px) {
-  *,p,div{
+  *{
     font-size:14px;
   }
   .navbar {
@@ -263,12 +238,13 @@ a.minus{
     display:block;
     margin-top:5px;
   }
-  .picdiv{
-    width:70%;
-    float:none;
-    text-align:center;
-    margin:5px auto 5px auto;
-    padding:0px;
+  .hidemobile{
     display:none;
+  }
+  .plus{
+    display:none;
+  }
+  .hidden{
+    display:block;
   }
 }
