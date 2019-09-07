@@ -15,6 +15,7 @@
 }
 html{
   color:#494949;
+  min-width:700px;
 }
 div,p,span,a,i{
   font-size:inherit;
@@ -204,9 +205,12 @@ a.minus{
  ADDAPT FOR MOBILE PHONES
 *******************************************************************************/
 
-@media (max-width: 700px) , (hover: none) and (pointer: coarse) {
+@media (hover: none) and (pointer: coarse) {
   *{
     font-size:14px;
+  }
+  html{
+    width:100%;
   }
   .navbar {
     width:100%;
@@ -238,7 +242,7 @@ a.minus{
     display:block;
     margin-top:5px;
   }
-  .minus,.plus{
+  a.minus,a.plus{
     display:none;
   }
   .hidden{
