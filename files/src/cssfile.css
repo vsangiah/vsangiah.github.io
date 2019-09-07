@@ -204,7 +204,7 @@ a.minus{
  ADDAPT FOR MOBILE PHONES
 *******************************************************************************/
 
-@media (max-width: 700px) {
+@media (max-width: 700px) , (hover: none) and (pointer: coarse) {
   *{
     font-size:14px;
   }
@@ -238,10 +238,7 @@ a.minus{
     display:block;
     margin-top:5px;
   }
-  .hidemobile{
-    display:none;
-  }
-  .plus{
+  .minus,.plus{
     display:none;
   }
   .hidden{

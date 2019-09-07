@@ -34,9 +34,12 @@ $(document).on("click", "a.showless", function(event){
 
 /* Make hide/show elements visible when using a mobile device *****************/
 
+/*
 var mobile = (/iphone|ipod|android|blackberry|mini|windows\sce|palm/i.test(navigator.userAgent.toLowerCase()));
   if (mobile) {
     $('.plus').css('display', 'none'); }
+    $('.hidden').css('display', 'block'); }
   else{  };
+*/
 
 /******************************************************************************/
