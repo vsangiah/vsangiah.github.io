@@ -32,7 +32,7 @@ $('a[id=tonibraun]'    ).attr('href','https://www.frbatlanta.org/research/econom
 $('a[id=fertility_wp]' ).attr('href','files/papers/petit_childtax.pdf');
 
 $('a[id=firing_wp]'    ).attr('href','files/papers/petit_firing.pdf');
-$('a[id=firing_code]'  ).attr('href','files/papers/petit_firing_codes.zip');
+$('a[id=firing_code]'  ).attr('href','files/papers/petit_firing_code.zip');
 
 $('a[id=lpw_wp]'       ).attr('href','files/papers/costainnakovpetit_lpw.pdf');
 $('a[id=lpw_cepr]'     ).attr('href','https://cepr.org/active/publications/discussion_papers/dp.php?dpno=13398');
