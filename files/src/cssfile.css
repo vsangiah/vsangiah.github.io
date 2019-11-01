@@ -86,7 +86,7 @@ h1{
 h2{
   margin: 0px 0px 6px 0px;
   font-weight:normal;
-  font-size: 16px;
+  font-size:16px;
 }
 .section,.subsection{
   border: 2px solid grey;
@@ -119,6 +119,10 @@ journal{
 }
 .abstract{
   text-align:justify;
+  font-size:15px;
+  /*background-color:#F8F8F8;
+  padding:5px 8px 5px 8px;
+  border: 1px solid black;*/
 }
 .hidden{
   display:none;
