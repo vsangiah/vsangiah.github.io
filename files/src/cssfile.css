@@ -88,7 +88,7 @@ h2{
   font-weight:bold;
   font-size:16px;
 }
-.section,.subsection{
+.section{
   border: 2px solid grey;
   background-color: white;
   clear: both;
@@ -100,7 +100,7 @@ h2{
 }
 .subsection{
   margin: 15px 0px 0px 0px;
-  padding: 10px 15px 10px 15px;
+  padding: 0px;
 }
 
 /*******************************************************************************
