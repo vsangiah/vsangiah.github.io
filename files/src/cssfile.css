@@ -53,18 +53,18 @@ ul.simple>li {
   padding:0px;
   margin:0px;
   font-weight:bold;
-  font-size: 30px;
+  font-size: 25px;
   margin-right:20px;
 }
 a.toc,a.toca,a.toc:hover{
   color:Gray;
-  font-size:18px;
+  font-weight:bold;
   text-decoration:none;
   margin:0px 0px 0px 20px;
   padding: 0px 0px 5px 0px;
 }
 a.toca,a.toca:hover,a.toc:hover{
-  font-weight:normal;
+  font-weight:bold;
 }
 
 /*******************************************************************************
