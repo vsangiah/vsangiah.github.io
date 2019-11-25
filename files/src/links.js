@@ -10,7 +10,7 @@ $('a[id=ssrn]'         ).attr('href','https://papers.ssrn.com/sol3/cf_dev/AbsByA
 $('a[id=google]'       ).attr('href','https://scholar.google.es/citations?user=ySzuvdUAAAAJ&hl=en');
 $('a[id=ideas]'        ).attr('href','https://ideas.repec.org/f/ppe880.html');
 $('a[id=linkedin]'     ).attr('href','https://www.linkedin.com/in/borjapetit/');
-$('a[id=twitter]'      ).attr('href','https://https://twitter.com/borjapetit');
+$('a[id=twitter]'      ).attr('href','https://twitter.com/borjapetit');
 $('a[id=skype]'        ).attr('href','skype:borjapetit');
 
 $('a[id=email_pers]'   ).attr('href','mailto:bpetitzarzalejos@gmail.com');
