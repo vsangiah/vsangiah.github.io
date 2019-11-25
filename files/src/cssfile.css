@@ -149,13 +149,13 @@ a.plus:hover,a.minus:hover{
   color:#0026A1;
 }
 a.plus::before{
-  content:" \229E Show "
+  content:" \229E \0020 Show "
 }
 /*a.plus::after{
   content:" \229E"
 }*/
 a.minus::before{
-  content:" \229F Hide "
+  content:" \229F \0020 Hide "
 }
 /*a.minus::after{
   content:" \229F \229F "
