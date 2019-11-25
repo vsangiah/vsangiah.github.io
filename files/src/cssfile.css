@@ -149,17 +149,17 @@ a.plus:hover,a.minus:hover{
   color:#0026A1;
 }
 a.plus::before{
-  content:" \2295 \0020 Show "
+  content:"Show "
 }
-/*a.plus::after{
-  content:" \229E"
-}*/
+a.plus::after{
+  content:"\0020\229E"
+}
 a.minus::before{
-  content:" \2296 \0020 Hide "
+  content:"Hide "
 }
-/*a.minus::after{
-  content:" \229F \229F "
-}*/
+a.minus::after{
+  content:"\0020\229F"
+}
 .picdiv{
   float:right;
   text-align:center;
