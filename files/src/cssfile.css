@@ -139,20 +139,19 @@ journal{
 }
 a.plus,a.minus{
   margin-right:5px;
-  /*display:block;*/
-  color:#494949;
+  /*color:#494949;*/
 }
 a.plus:hover,a.minus:hover{
   color:#0026A1;
 }
-a.plus::before{
+/*a.plus::before{
   content:"Show "
-}
-a.plus::after{
-  content:"\0020\229E"
 }
 a.minus::before{
   content:"Hide "
+}*/
+a.plus::after{
+  content:"\0020\229E"
 }
 a.minus::after{
   content:"\0020\229F"
