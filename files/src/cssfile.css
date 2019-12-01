@@ -18,7 +18,7 @@ html{
   min-width:700px;
 }
 body{
-  width: 90%;
+  width:90%;
   max-width: 990px;
   background-color: #F5F5F5;
   padding: 0px 0px 250px 0px;
@@ -65,7 +65,7 @@ ul.simple>li {
   padding: 0px;
   margin: 0px;
   font-weight:bold;
-  font-size: 25px;
+  font-size: 27px;
   margin-right:40px;
   color:darkgreen;
 }
@@ -88,7 +88,7 @@ a.toca,a.toca:hover,a.toc:hover{
 h1{
   margin: 0px 0px 10px 0px;
   font-weight:bold;
-  font-size: 16px;
+  font-size: 18px;
   color:darkgreen;
 }
 h2{
@@ -159,7 +159,7 @@ a.minus::after{
 .picdiv{
   float:right;
   text-align:center;
-  margin:5px 5px 5px 40px;
+  margin:0px 10px 5px 40px;
   padding:0px;
   width:50%;
   max-width:245px;
