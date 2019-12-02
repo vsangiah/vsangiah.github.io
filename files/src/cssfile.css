@@ -153,12 +153,12 @@ a.minus::before{
 a.plus::after{
   /*content:"\0020\229E"*/
   margin-left:5px;
-  content: url('Icomas.gif');
+  content: url('icon_show.gif');
 }
 a.minus::after{
   /*content:"\0020\229F"*/
   margin-left:5px;
-  content: url('icomenos.gif');
+  content: url('icon_hide.gif');
 }
 .picdiv{
   float:right;
