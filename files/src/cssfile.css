@@ -158,7 +158,7 @@ a.plus::after{
 a.minus::after{
   /*content:"\0020\229F"*/
   margin-left:5px;
-  content: url('Icomenos.gif');
+  content: url('icomenos.gif');
 }
 .picdiv{
   float:right;
