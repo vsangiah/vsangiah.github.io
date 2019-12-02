@@ -151,10 +151,14 @@ a.minus::before{
   content:"Hide "
 }*/
 a.plus::after{
-  content:"\0020\229E"
+  /*content:"\0020\229E"*/
+  margin-left:5px;
+  content: url('Icomas.gif');
 }
 a.minus::after{
-  content:"\0020\229F"
+  /*content:"\0020\229F"*/
+  margin-left:5px;
+  content: url('Icomenos.gif');
 }
 .picdiv{
   float:right;
