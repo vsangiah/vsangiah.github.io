@@ -181,6 +181,9 @@ a.minus::after{
   html,body{
     width:98%;
   }
+  .abstrac{
+    font-size:12px;
+  }
   a.toc,a.toca,a.toc:hover,a.toca:hover{
     margin:0px 5px 0px 0px;
   }
@@ -189,5 +192,8 @@ a.minus::after{
   }
   .hidden{
     display:block;
+  }
+  .plusno {
+    display:none;
   }
 }
