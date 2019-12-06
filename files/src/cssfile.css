@@ -130,9 +130,8 @@ journal{
   text-decoration:none;
   color:#882d17;
 }
-.abstract{
+.justify{
   text-align:justify;
-  font-size:15px;
 }
 .hidden{
   display:none;
@@ -144,19 +143,11 @@ a.plus,a.minus{
 a.plus:hover,a.minus:hover{
   color:#0026A1;
 }
-/*a.plus::before{
-  content:"Show "
-}
-a.minus::before{
-  content:"Hide "
-}*/
 a.plus::after{
-  /*content:"\0020\229E"*/
   margin-left:5px;
   content: url('icon_show.gif');
 }
 a.minus::after{
-  /*content:"\0020\229F"*/
   margin-left:5px;
   content: url('icon_hide.gif');
 }
@@ -181,8 +172,7 @@ a.minus::after{
   html,body{
     width:98%;
   }
-  .abstrac,.hidden{
-    font-size:12px;
+  .hidden{
     display:block;
   }
   a.toc,a.toca,a.toc:hover,a.toca:hover{
