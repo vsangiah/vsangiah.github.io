@@ -181,19 +181,14 @@ a.minus::after{
   html,body{
     width:98%;
   }
-  .abstrac{
+  .abstrac,.hidden{
     font-size:12px;
+    display:block;
   }
   a.toc,a.toca,a.toc:hover,a.toca:hover{
     margin:0px 5px 0px 0px;
   }
-  a.minus,a.plus{
-    display:none;
-  }
-  .hidden{
-    display:block;
-  }
-  .plusno {
+  a.minus,a.plus,.plusno{
     display:none;
   }
 }
