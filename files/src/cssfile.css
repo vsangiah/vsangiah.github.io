@@ -175,8 +175,11 @@ a.minus::after{
   .hidden{
     display:block;
   }
+  .title{
+    display:block;
+  }
   a.toc,a.toca,a.toc:hover,a.toca:hover{
-    margin:0px 5px 0px 0px;
+    margin:0px 7px 0px 0px;
   }
   a.minus,a.plus,.plusno{
     display:none;
