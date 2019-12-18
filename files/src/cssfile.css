@@ -12,6 +12,7 @@
   text-decoration:none;
   color:inherit;
   text-align:left;
+  -webkit-text-size-adjust:none;
 }
 html{
   color:#494949;
