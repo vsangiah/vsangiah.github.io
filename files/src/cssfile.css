@@ -112,6 +112,12 @@ h2{
   margin: 15px 0px 0px 0px;
   padding: 0px;
 }
+.indexbox{
+  display:grid;
+  grid-template-columns:235px auto;
+  grid-column-gap:30px;
+  grid-row-gap:0px;
+}
 
 /*******************************************************************************
  OTHER COMMANDS
@@ -184,5 +190,11 @@ a.minus::after{
   }
   a.minus,a.plus,.plusno{
     display:none;
+  }
+  .hidemobile{
+    display:none;
+  }
+  .indexbox{
+    display:block
   }
 }
