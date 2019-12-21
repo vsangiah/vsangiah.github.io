@@ -158,15 +158,6 @@ a.minus::after{
   margin-left:5px;
   content: url('icon_hide.gif');
 }
-.picdiv{
-  float:right;
-  text-align:center;
-  margin:0px 10px 5px 40px;
-  padding:0px;
-  width:50%;
-  max-width:235px;
-  min-width:120px;
-}
 
 /*******************************************************************************
  ADDAPT FOR MOBILE PHONES
@@ -184,6 +175,7 @@ a.minus::after{
   }
   .title{
     display:block;
+    margin-bottom:20px;
   }
   a.toc,a.toca,a.toc:hover,a.toca:hover{
     margin:0px 7px 0px 0px;
