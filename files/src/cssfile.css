@@ -16,7 +16,6 @@
 }
 html{
   color:#494949;
-  min-width:700px;
 }
 body{
   width:90%;
@@ -59,8 +58,10 @@ ul.simple>li {
 *******************************************************************************/
 
 .navbar {
-  margin: 0px 0px 25px 0px;
-  padding:0px;
+border:2px solid grey;
+  background-color:white;
+  margin: 0px 0px 20px 0px;
+  padding:10px 20px 10px 20px;
 }
 .title{
   padding: 0px;
@@ -79,7 +80,6 @@ a.toc,a.toca,a.toc:hover{
 a.toca,a.toca:hover,a.toc:hover{
   font-weight:bold;
   color:darkgreen;
-  border-bottom:3px solid darkgreen;
 }
 
 /*******************************************************************************
@@ -118,7 +118,14 @@ h2{
   grid-column-gap:30px;
   grid-row-gap:0px;
 }
-
+.divteaching{
+  padding:0px;
+  margin:0px;
+  display:grid;
+  grid-template-columns:50% 50%;
+  grid-column-gap:13px;
+  grid-row-gap:10px;
+}
 /*******************************************************************************
  OTHER COMMANDS
 *******************************************************************************/
@@ -163,19 +170,23 @@ a.minus::after{
  ADDAPT FOR MOBILE PHONES
 *******************************************************************************/
 
-@media (hover: none) and (pointer: coarse) {
+@media (hover: none) and (pointer: coarse) , screen and (max-width:700px){
   *{
     font-size:13px;
   }
   html,body{
     width:98%;
   }
-  .hidden{
-    display:block;
+  h1{
+    font-size: 14px;
+  }
+  h2{
+    font-size:13px;
   }
   .title{
     display:block;
-    margin-bottom:20px;
+    margin-bottom:7px;
+    font-size: 20px;
   }
   a.toc,a.toca,a.toc:hover,a.toca:hover{
     margin:0px 7px 0px 0px;
@@ -187,6 +198,13 @@ a.minus::after{
     display:none;
   }
   .indexbox{
-    display:block
+    display:block;
+  }
+  .divteaching{
+    grid-template-columns:100%;
+    grid-row-gap:10px;
+  }
+  .subsection{
+    margin: 9px 0px 0px 0px;
   }
 }
