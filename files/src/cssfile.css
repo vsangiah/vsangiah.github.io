@@ -19,7 +19,7 @@ html{
 }
 body{
   width:90%;
-  max-width: 990px;
+  max-width: 900px;
   background-color: #F5F5F5;
   padding: 0px 0px 250px 0px;
   margin: 40px auto 400px auto;
@@ -68,12 +68,15 @@ ul.simple>li {
   font-weight:bold;
   font-size: 26px;
   text-align:left;
-  display:block;
+  display:inline;
   margin-bottom:10px;
+  margin-right:30px;
 }
 a.toc,a.toca,a.toc:hover{
+  font-size: 16px;
   padding: 0px;
   color:Gray;
+  font-weight:bold;
   text-decoration:none;
   margin:0px 20px 0px 00px;
 }
@@ -185,6 +188,8 @@ a.minus::after{
   .title{
     text-align:center;
     font-size: 18px;
+    display:block;
+    margin-right:0;
   }
   a.toc,a.toca,a.toc:hover,a.toca:hover{
     margin:0px 5px 0px 5px;
