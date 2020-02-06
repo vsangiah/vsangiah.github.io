@@ -117,7 +117,7 @@ h2{
 }
 .indexbox{
   display:grid;
-  grid-template-columns: 235px auto ;
+  grid-template-columns: auto 235px ;
   grid-column-gap:30px;
   grid-row-gap:0px;
 }
