@@ -19,7 +19,7 @@ html{
 }
 body{
   width:90%;
-  max-width: 900px;
+  max-width: 990px;
   background-color: #F5F5F5;
   padding: 0px 0px 250px 0px;
   margin: 40px auto 400px auto;
@@ -37,17 +37,19 @@ p,div{
   margin-top:3px;
 }
 a{
-  color:#0026A1;
+  color:#374A74;
 }
 a:hover{
+  color:#0026A1;
   text-decoration:underline;
   cursor:pointer;
 }
 ul{
-  padding:5px 0px 0px 20px;
+  padding:00px 0px 0px 20px;
+  list-style-type:square;
 }
 li:not(:last-child) {
-  margin-bottom:8px;
+  margin-bottom:5px;
 }
 ul.simple>li {
   margin-bottom:0px;
