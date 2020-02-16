@@ -148,10 +148,11 @@ a.minus::after{
   }
   html,body{
     width:95%;
+    margin:auto;
+    padding:0px:
   }
   body{
-    margin:20px auto 250px auto;
-    padding:0px;
+    margin: 20px auto 250px auto;
   }
   .navbar{
     display: block;
