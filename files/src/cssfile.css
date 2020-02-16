@@ -21,17 +21,10 @@ body{
   width:90%;
   max-width: 990px;
   background-color: #F5F5F5;
-  padding: 0px 0px 250px 0px;
   margin: 40px auto 400px auto;
 }
 div,p,span,a,i{
   font-size:inherit;
-  color:inherit;
-}
-span{
-  margin:0px;
-  padding:0px;
-  display:inline;
 }
 p,div{
   margin-top:3px;
@@ -45,11 +38,11 @@ a:hover{
   cursor:pointer;
 }
 ul{
-  padding:00px 0px 0px 20px;
+  padding:0px 0px 0px 20px;
   list-style-type:square;
 }
 li:not(:last-child) {
-  margin-bottom:5px;
+  margin-bottom:8px;
 }
 ul.simple>li {
   margin-bottom:0px;
@@ -60,31 +53,24 @@ ul.simple>li {
 *******************************************************************************/
 
 .navbar{
-  text-align:left;
-  margin: 0px 0px 20px 0px;
+  margin: 0px 5px 18px 5px;
+  font-weight:bold;
+  display: flex;
+  justify-content: space-between;
 }
 .title{
-  padding: 0px;
-  margin: 0px;
   color:darkgreen;
-  font-weight:bold;
-  font-size: 26px;
-  text-align:left;
-  display:inline;
-  margin-bottom:10px;
-  margin-right:30px;
+  font-size:26px;
+  margin: 9px 30px 0px 0px;
 }
-a.toc,a.toca,a.toc:hover{
-  font-size: 16px;
-  padding: 0px;
+a.toc,a.toca{
   color:Gray;
-  font-weight:bold;
-  text-decoration:none;
-  margin:0px 20px 0px 00px;
+  font-size: 16px;
+  margin:30px 0px 0px 20px;
 }
 a.toca,a.toca:hover,a.toc:hover{
-  font-weight:bold;
   color:darkgreen;
+  text-decoration:none;
 }
 
 /*******************************************************************************
@@ -98,39 +84,24 @@ h1{
   color:darkgreen;
 }
 h2{
-  margin: 0px 0px 6px 0px;
   font-weight:bold;
-  font-size:15px;
   color:darkgreen;
 }
 .section{
-  border: 2px solid grey;
-  background-color: white;
-  clear: both;
-  overflow:fixed;
-}
-.section{
+  padding: 20px 25px 20px 25px;
   margin: 0px 0px 20px 0px;
-  padding: 20px 20px 20px 20px;
+  background-color: white;
+  border: 2px solid grey;
 }
 .subsection{
-  margin: 15px 0px 0px 0px;
-  padding: 0px;
+  margin-top:15px;
 }
 .indexbox{
   display:grid;
   grid-template-columns: auto 235px ;
   grid-column-gap:30px;
-  grid-row-gap:0px;
 }
-.divteaching{
-  padding:0px;
-  margin:0px;
-  display:grid;
-  grid-template-columns:50% 50%;
-  grid-column-gap:13px;
-  grid-row-gap:10px;
-}
+
 /*******************************************************************************
  OTHER COMMANDS
 *******************************************************************************/
@@ -139,14 +110,9 @@ color{
   color:darkgreen;
 }
 paper{
-  margin-bottom:5px;
-  font-weight:normal;
-  text-decoration:none;
   color:darkgreen;
 }
 journal{
-  font-weight:normal;
-  text-decoration:none;
   color:#882d17;
 }
 .justify{
@@ -155,11 +121,13 @@ journal{
 .hidden{
   display:none;
 }
+
+/*******************************************************************************
+ SHOW MORE BOTTONS
+*******************************************************************************/
+
 a.plus,a.minus{
   margin-right:5px;
-}
-a.plus:hover,a.minus:hover{
-  color:#0026A1;
 }
 a.plus::after{
   margin-left:5px;
@@ -174,33 +142,39 @@ a.minus::after{
  ADDAPT FOR MOBILE PHONES
 *******************************************************************************/
 
-@media (hover: none) and (pointer: coarse) , screen and (max-width:700px){
+@media (hover: none) and (pointer: coarse) , screen and (max-width:700px) {
   *{
     font-size:14px;
   }
   html,body{
-    width:98%;
+    width:95%;
   }
   body{
-    margin-top: 20px;
+    margin:20px auto 250px auto;
+    padding:0px;
   }
   .navbar{
+    display: block;
     text-align:center;
   }
   .title{
     text-align:center;
     font-size: 18px;
     display:block;
-    margin-right:0;
+    margin: 0px 0px -10px 0px;
   }
   a.toc,a.toca,a.toc:hover,a.toca:hover{
+    font-size:14px;
     margin:0px 5px 0px 5px;
   }
-  h1{
-    font-size: 14px;
+  .section{
+    margin: 0px 0px 15px 0px;
   }
-  h2{
-    font-size:14px;
+  .subsection{
+    margin-top:9px;
+  }
+  h1,h2{
+    font-size: 14px;
   }
   a.minus,a.plus,.plusno{
     display:none;
@@ -211,11 +185,6 @@ a.minus::after{
   .indexbox{
     display:block;
   }
-  .divteaching{
-    grid-template-columns:100%;
-    grid-row-gap:10px;
-  }
-  .subsection{
-    margin: 9px 0px 0px 0px;
-  }
 }
+
+/******************************************************************************/
