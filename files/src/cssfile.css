@@ -38,11 +38,11 @@ a:hover{
   cursor:pointer;
 }
 ul{
-  padding:0px 0px 0px 20px;
+  padding: 8px 0px 0px 20px;
   list-style-type:square;
 }
 li:not(:last-child) {
-  margin-bottom:8px;
+  margin-bottom:6px;
 }
 ul.simple>li {
   margin-bottom:0px;
@@ -54,7 +54,7 @@ ul.simple>li {
 
 .navbar{
   margin: 0px 5px 14px 5px;
-  font-weight:bold;
+  font-weight:normal;
   display: flex;
   justify-content: space-between;
 }
@@ -62,6 +62,7 @@ ul.simple>li {
   color:darkgreen;
   font-size:26px;
   margin: 9px 30px 0px 0px;
+  font-weight:bold;
 }
 a.toc,a.toca{
   color:Gray;
@@ -71,6 +72,7 @@ a.toc,a.toca{
 a.toca,a.toca:hover,a.toc:hover{
   color:darkgreen;
   text-decoration:none;
+  font-weight:bold;
 }
 
 /*******************************************************************************
@@ -98,8 +100,8 @@ h2{
 }
 .indexbox{
   display:grid;
-  grid-template-columns: auto 235px ;
-  grid-column-gap:30px;
+  grid-template-columns: 260px auto  ; /*235px ;*/
+  grid-column-gap:40px;
 }
 
 /*******************************************************************************
