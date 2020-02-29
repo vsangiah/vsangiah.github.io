@@ -53,12 +53,13 @@ ul.simple>li {
 *******************************************************************************/
 
 .navbar{
-  margin: 0px 5px 14px 5px;
+  margin: 0px 5px 20px 5px;
   font-weight:normal;
   display: flex;
   justify-content: space-between;
 }
 .title{
+  text-align:center;
   color:darkgreen;
   font-size:26px;
   margin: 9px 30px 0px 0px;
@@ -162,9 +163,9 @@ a.minus::after{
   }
   .title{
     text-align:center;
-    font-size: 18px;
+    font-size: 20px;
     display:block;
-    margin: 0px 0px -10px 0px;
+    margin: 30px 0px -10px 0px;
   }
   a.toc,a.toca,a.toc:hover,a.toca:hover{
     font-size:14px;
@@ -178,6 +179,12 @@ a.minus::after{
   }
   h1,h2{
     font-size: 14px;
+  }
+  h1{
+    margin: 0px 0px 5px 0px;
+  }
+  h2{
+    margin: 0px 0px 5px 0px;
   }
   a.minus,a.plus,.plusno{
     display:none;
