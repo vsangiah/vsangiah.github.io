@@ -81,7 +81,7 @@ a.toca,a.toca:hover,a.toc:hover{
 *******************************************************************************/
 
 h1{
-  margin: 0px 0px 10px 0px;
+  margin: 0px 0px 5px 0px;
   font-weight:bold;
   font-size: 17px;
   color:darkgreen;
@@ -181,7 +181,7 @@ a.minus::after{
     font-size: 14px;
   }
   h1{
-    margin: 0px 0px 5px 0px;
+    margin: 0px 0px 0px 0px;
   }
   h2{
     margin: 0px 0px 5px 0px;
