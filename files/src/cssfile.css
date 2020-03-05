@@ -45,7 +45,7 @@ li:not(:last-child) {
   margin-bottom:6px;
 }
 ul.simple>li {
-  margin-bottom:0px;
+  margin-bottom:2px;
 }
 
 /*******************************************************************************
@@ -101,7 +101,7 @@ h2{
 }
 .indexbox{
   display:grid;
-  grid-template-columns: 260px auto  ; /*235px ;*/
+  grid-template-columns: 260px auto  ;
   grid-column-gap:40px;
 }
 
@@ -130,14 +130,16 @@ journal{
 *******************************************************************************/
 
 a.plus,a.minus{
-  margin-right:5px;
+  margin-right:3px;
 }
 a.plus::after{
-  margin-left:5px;
+  margin-left:3px;
+  content: "\2295";
   content: url('icon_show.gif');
 }
 a.minus::after{
-  margin-left:5px;
+  margin-left:3px;
+  content:"\2296";
   content: url('icon_hide.gif');
 }
 
@@ -175,7 +177,7 @@ a.minus::after{
     margin: 0px 0px 15px 0px;
   }
   .subsection{
-    margin-top:9px;
+    margin-top:15px;
   }
   h1,h2{
     font-size: 14px;
