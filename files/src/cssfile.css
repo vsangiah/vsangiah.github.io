@@ -14,9 +14,6 @@
   text-align:left;
   -webkit-text-size-adjust:none;
 }
-html{
-  color:#494949;
-}
 body{
   width:90%;
   max-width: 990px;
@@ -29,11 +26,7 @@ div,p,span,a,i{
 p,div{
   margin-top:3px;
 }
-a{
-  color:#374A74;
-}
 a:hover{
-  color:#0026A1;
   text-decoration:underline;
   cursor:pointer;
 }
@@ -46,6 +39,14 @@ li:not(:last-child) {
 }
 ul.simple>li {
   margin-bottom:2px;
+}
+li.o{
+  margin-left:20px;
+  list-style-type:circle;
+}
+li.n{
+  margin-left:15px;
+  list-style-type:none;
 }
 
 /*******************************************************************************
@@ -60,18 +61,15 @@ ul.simple>li {
 }
 .title{
   text-align:center;
-  color:darkgreen;
   font-size:26px;
   margin: 9px 30px 0px 0px;
   font-weight:bold;
 }
 a.toc,a.toca{
-  color:Gray;
   font-size: 16px;
   margin:30px 0px 0px 20px;
 }
 a.toca,a.toca:hover,a.toc:hover{
-  color:darkgreen;
   text-decoration:none;
   font-weight:bold;
 }
@@ -84,11 +82,9 @@ h1{
   margin: 0px 0px 5px 0px;
   font-weight:bold;
   font-size: 17px;
-  color:darkgreen;
 }
 h2{
   font-weight:bold;
-  color:darkgreen;
 }
 .section{
   padding: 20px 25px 20px 25px;
@@ -106,9 +102,21 @@ h2{
 }
 
 /*******************************************************************************
- OTHER COMMANDS
+ COLORS
 *******************************************************************************/
 
+html{
+  color:#494949;
+}
+.title{
+  color:darkgreen;
+}
+h1{
+  color:darkgreen;
+}
+h2{
+  color:darkgreen;
+}
 color{
   color:darkgreen;
 }
@@ -118,6 +126,23 @@ paper{
 journal{
   color:#882d17;
 }
+a{
+  color:#374A74;
+}
+a:hover{
+  color:#0026A1;
+}
+a.toc{
+  color:Gray;
+}
+a.toca,a.toca:hover,a.toc:hover{
+  color:darkgreen;
+}
+
+/*******************************************************************************
+ OTHER COMMANDS
+*******************************************************************************/
+
 .justify{
   text-align:justify;
 }
@@ -187,6 +212,9 @@ a.minus::after{
   }
   h2{
     margin: 0px 0px 5px 0px;
+  }
+  ul.simple{
+    padding: 3px 0px 0px 20px;
   }
   a.minus,a.plus,.plusno{
     display:none;
