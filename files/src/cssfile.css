@@ -58,7 +58,7 @@ li.n{
   display: flex;
   justify-content: space-between;
   background-color: white;
-  border: 2px solid grey;
+  border-bottom: 2px solid grey;
 }
 .title{
   text-align:center;
