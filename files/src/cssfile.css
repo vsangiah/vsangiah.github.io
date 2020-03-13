@@ -190,10 +190,10 @@ a.minus::after{
   .navbar{
     display: block;
     text-align:center;
-    border: 2px solid grey;
-    background-color: white;
-    margin: 0px 0px 15px 0px;
-    padding: 2px 20px 10px 20px;
+    border: 0px solid grey;
+    background-color: inherit;
+    margin: 0px auto 5px auto;
+    /*padding: 2px 20px 10px 20px;*/
   }
   .title{
     display:block;
