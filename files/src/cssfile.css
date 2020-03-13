@@ -5,13 +5,13 @@
 
 *{
   font-family:Helvetica,Arial,sans-serif;
-  line-height:1.4;
-  font-size:15px;
-  padding:0px;
   margin:0px;
-  text-decoration:none;
+  padding:0px;
   color:inherit;
+  font-size:15px;
   text-align:left;
+  line-height:1.4;
+  text-decoration:none;
   -webkit-text-size-adjust:none;
 }
 body{
@@ -25,8 +25,8 @@ p,div{
   margin-top:3px;
 }
 a:hover{
-  text-decoration:underline;
   cursor:pointer;
+  text-decoration:underline;
 }
 ul{
   padding: 8px 0px 0px 20px;
@@ -52,27 +52,27 @@ li.n{
 *******************************************************************************/
 
 .navbar{
+  display:flex;
+  font-weight:normal;
+  background-color:white;
   margin: 0px 0px 30px 0px;
   padding:5px 30px 10px 30px;
-  font-weight:normal;
-  display: flex;
-  justify-content: space-between;
-  background-color: white;
   border-bottom: 2px solid grey;
+  justify-content: space-between;
 }
 .title{
-  text-align:center;
   font-size:26px;
-  margin: 9px 30px 0px 0px;
   font-weight:bold;
+  text-align:center;
+  margin: 9px 30px 0px 0px;
 }
 a.toc,a.toca{
   font-size: 16px;
   margin:30px 0px 0px 20px;
 }
 a.toca,a.toca:hover,a.toc:hover{
-  text-decoration:none;
   font-weight:bold;
+  text-decoration:none;
 }
 
 /*******************************************************************************
@@ -82,23 +82,23 @@ a.toca,a.toca:hover,a.toc:hover{
 .section{
   width:90%;
   max-width: 990px;
-  padding: 20px 25px 20px 25px;
-  margin: 0px auto 20px auto;
-  background-color: white;
   border: 2px solid grey;
+  background-color: white;
+  margin: 0px auto 20px auto;
+  padding: 20px 25px 20px 25px;
 }
 .subsection{
   margin-top:15px;
 }
 .indexbox{
   display:grid;
-  grid-template-columns: 260px auto  ;
   grid-column-gap:40px;
+  grid-template-columns: 260px auto;
 }
 h1{
-  margin: 0px 0px 5px 0px;
-  font-weight:bold;
   font-size: 17px;
+  font-weight:bold;
+  margin: 0px 0px 5px 0px;
 }
 h2{
   font-weight:bold;
@@ -182,7 +182,7 @@ a.minus::after{
   html,body{
     width:95%;
     margin:auto;
-    padding:0px:
+    padding:0px;
   }
   body{
     margin: 20px auto 250px auto;
@@ -190,15 +190,15 @@ a.minus::after{
   .navbar{
     display: block;
     text-align:center;
+    border: 2px solid grey;
+    background-color: white;
     margin: 0px 0px 15px 0px;
     padding: 2px 20px 10px 20px;
-    background-color: white;
-    border: 2px solid grey;
   }
   .title{
-    text-align:center;
-    font-size: 20px;
     display:block;
+    font-size: 20px;
+    text-align:center;
     margin: 10px 0px -10px 0px;
   }
   a.toc,a.toca,a.toc:hover,a.toca:hover{
@@ -223,10 +223,7 @@ a.minus::after{
   ul.simple{
     padding: 3px 0px 0px 20px;
   }
-  a.minus,a.plus,.plusno{
-    display:none;
-  }
-  .hidemobile{
+  a.minus,a.plus,.plusno,.hidemobile{
     display:none;
   }
   .indexbox{
