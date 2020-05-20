@@ -8,7 +8,7 @@
   margin:0px;
   padding:0px;
   color:inherit;
-  font-size:15px;
+  font-size:14px;
   text-align:left;
   line-height:1.4;
   text-decoration:none;
@@ -23,9 +23,9 @@ header{
 }
 body{
   background-color: #F1F1F1;
-  margin: 85px 0px 1200px 0px;
+  margin: 30px 0px 1200px 0px;
 }
-div,p,span,a,i{
+div,p,span,a,i,ul,ol,lis{
   font-size:inherit;
 }
 p,div{
@@ -36,17 +36,17 @@ a:hover{
   text-decoration:underline;
 }
 ul{
-  padding: 8px 0px 0px 20px;
+  padding: 5px 0px 0px 20px;
   list-style-type:square;
 }
 li:not(:last-child) {
-  margin-bottom:6px;
+  margin-bottom:8px;
 }
 ul.simple>li {
   margin-bottom:2px;
 }
 li.o{
-  margin-left:20px;
+  margin-left:10px;
   list-style-type:circle;
 }
 li.n{
@@ -58,28 +58,15 @@ li.n{
  NAVIGATION BAR
 *******************************************************************************/
 
-.navbar{
-  display:flex;
-  font-weight:normal;
-  background-color:white;
-  margin: 0px 0px 0px 0px;
-  padding:5px 30px 10px 30px;
-  border-bottom: 2px solid grey;
-  justify-content:space-between;
-}
 .title{
-  font-size:26px;
+  font-size:25px;
   font-weight:bold;
   text-align:center;
-  margin: 9px 30px 0px 0px;
 }
-a.toc,a.toca{
-  font-size: 16px;
-  margin:30px 0px 0px 20px;
-}
-a.toca,a.toca:hover,a.toc:hover{
-  font-weight:bold;
-  text-decoration:none;
+.subtitle{
+  font-size:20px;
+  font-weight:normal;
+  text-align:center;
 }
 
 /*******************************************************************************
@@ -95,15 +82,15 @@ a.toca,a.toca:hover,a.toc:hover{
   padding: 20px 25px 20px 25px;
 }
 .subsection{
-  margin-top:15px;
+  margin-top:12px;
 }
 .indexbox{
   display:grid;
   grid-column-gap:40px;
-  grid-template-columns: 260px auto;
+  grid-template-columns: auto 260px;
 }
 h1{
-  font-size: 17px;
+  font-size: 16px;
   font-weight:bold;
   margin: 0px 0px 5px 0px;
 }
@@ -118,20 +105,11 @@ h2{
 html{
   color:#494949;
 }
-.title{
+.title,h1,h2,color,paper{
   color:darkgreen;
 }
-h1{
-  color:darkgreen;
-}
-h2{
-  color:darkgreen;
-}
-color{
-  color:darkgreen;
-}
-paper{
-  color:darkgreen;
+.subtitle{
+  color:grey;
 }
 journal{
   color:#882d17;
@@ -141,12 +119,6 @@ a{
 }
 a:hover{
   color:#0026A1;
-}
-a.toc{
-  color:Gray;
-}
-a.toca,a.toca:hover,a.toc:hover{
-  color:darkgreen;
 }
 
 /*******************************************************************************
@@ -159,6 +131,9 @@ a.toca,a.toca:hover,a.toc:hover{
 .hidden{
   display:none;
 }
+paper{
+  font-weight:bold;
+}
 
 /*******************************************************************************
  SHOW MORE BOTTONS
@@ -166,6 +141,7 @@ a.toca,a.toca:hover,a.toc:hover{
 
 a.plus,a.minus{
   margin-right:3px;
+  display: inline-block;
 }
 a.plus::after{
   margin-left:3px;
@@ -183,7 +159,7 @@ a.minus::after{
 *******************************************************************************/
 
 @media (hover: none) and (pointer: coarse) , screen and (max-width:700px) {
-  *{
+  html,header,body,a,div,p,h1,h2,h3,h4,ul,ol,li{
     font-size:14px;
   }
   html,header,body{
@@ -200,31 +176,17 @@ a.minus::after{
   body{
     margin: 20px auto 250px auto;
   }
-  .navbar{
-    display: block;
-    text-align:center;
-    border: 0px solid grey;
-    background-color: inherit;
-    margin: 0px auto 0px auto;
-  }
   .title{
-    display:block;
     font-size: 20px;
-    text-align:center;
-    margin: 10px 0px -10px 0px;
   }
-  a.toc,a.toca,a.toc:hover,a.toca:hover{
-    font-size:14px;
-    margin:0px 5px 0px 5px;
+  .subtitle{
+    font-size: 17px;
   }
   .section{
     margin: 0px 0px 15px 0px;
   }
   .subsection{
     margin-top:15px;
-  }
-  h1,h2{
-    font-size: 14px;
   }
   h1{
     margin: 0px 0px 0px 0px;
