@@ -22,7 +22,7 @@ header{
   height:85px;
 }
 body{
-  background-color: #F1F1F1;
+  background-color: #F7F7F7;
   margin: 30px 0px 1200px 0px;
 }
 div,p,span,a,i,ul,ol,lis{
@@ -59,9 +59,10 @@ li.n{
 *******************************************************************************/
 
 .title{
-  font-size:25px;
+  font-size:27px;
   font-weight:bold;
   text-align:center;
+  margin:0px 0px 10px 0px;
 }
 .subtitle{
   font-size:20px;
@@ -75,7 +76,7 @@ li.n{
 
 .section{
   width:90%;
-  max-width: 990px;
+  max-width: 900px;
   border: 2px solid grey;
   background-color: white;
   margin: 0px auto 20px auto;
