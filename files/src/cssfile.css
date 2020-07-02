@@ -4,11 +4,11 @@
 *******************************************************************************/
 
 *{
-  font-family:Helvetica,Arial,sans-serif;
+  font-family:'Roboto',Helvetica,Arial,sans-serif;
   margin:0px;
   padding:0px;
   color:inherit;
-  font-size:14px;
+  font-size:15px;
   text-align:left;
   line-height:1.4;
   text-decoration:none;
@@ -22,7 +22,7 @@ header{
   height:85px;
 }
 body{
-  background-color: #F7F7F7;
+  background-color:#F7F7F7;
   margin: 30px 0px 1200px 0px;
 }
 div,p,span,a,i,ul,ol,lis{
@@ -59,7 +59,7 @@ li.n{
 *******************************************************************************/
 
 .title{
-  font-size:27px;
+  font-size:32px;
   font-weight:bold;
   text-align:center;
   margin:0px 0px 10px 0px;
@@ -76,7 +76,7 @@ li.n{
 
 .section{
   width:90%;
-  max-width: 900px;
+  max-width: 950px;
   border: 2px solid grey;
   background-color: white;
   margin: 0px auto 20px auto;
@@ -88,7 +88,7 @@ li.n{
 .indexbox{
   display:grid;
   grid-column-gap:40px;
-  grid-template-columns: auto 260px;
+  grid-template-columns: auto 270px;/*auto 260px;*/
 }
 h1{
   font-size: 16px;
@@ -107,7 +107,11 @@ html{
   color:#494949;
 }
 .title,h1,h2,color,paper{
-  color:darkgreen;
+  color:#006400;
+  color:royalblue;
+}
+paper{
+  color:royalblue;
 }
 .subtitle{
   color:grey;
