@@ -4,7 +4,7 @@
 *******************************************************************************/
 
 *{
-  font-family:'Roboto',Helvetica,Arial,sans-serif;
+  font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;
   margin:0px;
   padding:0px;
   color:inherit;
@@ -109,9 +109,11 @@ html{
 .title,h1,h2,color,paper{
   color:#006400;
   color:royalblue;
+  color:#494949;
 }
 paper{
   color:royalblue;
+  color:#494949;
 }
 .subtitle{
   color:grey;
@@ -182,7 +184,7 @@ a.minus::after{
     margin: 20px auto 250px auto;
   }
   .title{
-    font-size: 20px;
+    font-size: 24px;
   }
   .subtitle{
     font-size: 17px;
