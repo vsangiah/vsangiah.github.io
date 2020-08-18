@@ -23,7 +23,7 @@ header{
 }
 body{
   background-color:#F7F7F7;
-  margin: 30px 0px 1200px 0px;
+  margin: 30px 0px 600px 0px;
 }
 div,p,span,a,i,ul,ol,lis{
   font-size:inherit;
@@ -76,7 +76,7 @@ li.n{
 
 .section{
   width:90%;
-  max-width: 950px;
+  max-width: 1100px;
   border: 2px solid grey;
   background-color: white;
   margin: 0px auto 20px auto;
@@ -88,7 +88,7 @@ li.n{
 .indexbox{
   display:grid;
   grid-column-gap:40px;
-  grid-template-columns: auto 270px;/*auto 260px;*/
+  grid-template-columns: 270px auto ; /*auto 260px;*/
 }
 h1{
   font-size: 16px;
