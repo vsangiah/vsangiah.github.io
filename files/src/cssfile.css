@@ -8,7 +8,7 @@
   margin:0px;
   padding:0px;
   color:inherit;
-  font-size:15px;
+  font-size:14px;
   text-align:left;
   line-height:1.4;
   text-decoration:none;
@@ -46,12 +46,16 @@ ul.simple>li {
   margin-bottom:2px;
 }
 li.o{
-  margin-left:10px;
+  margin-left:15px;
   list-style-type:circle;
 }
 li.n{
-  margin-left:15px;
+  margin-left:0px;
   list-style-type:none;
+  margin-bottom:2px;
+}
+li.n:not(:last-child) {
+  margin-bottom:8px;
 }
 
 /*******************************************************************************
@@ -59,13 +63,13 @@ li.n{
 *******************************************************************************/
 
 .title{
-  font-size:32px;
+  font-size:30px;
   font-weight:bold;
   text-align:center;
-  margin:0px 0px 5px 0px;
+  margin-bottom: 5px;
 }
 .subtitle{
-  font-size:20px;
+  font-size:18px;
   font-weight:normal;
   text-align:center;
 }
@@ -76,7 +80,7 @@ li.n{
 
 .section{
   width:90%;
-  max-width: 1100px;
+  max-width: 990px;
   border: 2px solid grey;
   background-color: white;
   margin: 0px auto 20px auto;
@@ -91,7 +95,7 @@ li.n{
   grid-template-columns: 270px auto ; /*auto 260px;*/
 }
 h1{
-  font-size: 16px;
+  font-size: 15px;
   font-weight:bold;
   margin: 0px 0px 5px 0px;
 }
@@ -106,14 +110,8 @@ h2{
 html{
   color:#494949;
 }
-.title,h1,h2,color,paper{
-  color:#006400;
-  color:royalblue;
-  color:#494949;
-}
-paper{
-  color:royalblue;
-  color:#494949;
+.title,h1,h2,color,paper,b{
+  color:#494949;color:royalblue;color:#006400;
 }
 .subtitle{
   color:grey;
@@ -125,7 +123,7 @@ a{
   color:#374A74;
 }
 a:hover{
-  color:#0026A1;
+  color:royalblue;
 }
 
 /*******************************************************************************
