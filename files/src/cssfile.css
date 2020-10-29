@@ -118,6 +118,13 @@ html{
 }
 journal{
   color:#882d17;
+  color:#880000;
+  color:#920000;
+  font-style:italic;
+}
+alert{
+  color:#B26900;
+  font-style:italic;
 }
 a{
   color:#374A74;
