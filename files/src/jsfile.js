@@ -21,6 +21,7 @@ $('a[id=tonibraun]'    ).attr('href','https://www.frbatlanta.org/research/econom
 
 $('a[id=fertility_wp]' ).attr('href','files/papers/petit_childtax.pdf');
 $('a[id=firing_wp]'    ).attr('href','files/papers/petit_firing.pdf');
+$('a[id=firing_code]'  ).attr('href','files/papers/petit_firing_codes.zip');
 $('a[id=lpw_wp]'       ).attr('href','files/papers/costainnakovpetit_lpw.pdf');
 $('a[id=lpw_cepr]'     ).attr('href','https://cepr.org/active/publications/discussion_papers/dp.php?dpno=13398');
 $('a[id=lpw_ecb]'      ).attr('href','https://www.ecb.europa.eu/pub/pdf/scpwps/ecb.wp2272~38362298bc.en.pdf?19821a6f04d4080adbe82c2b99c72e16');
