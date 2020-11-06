@@ -12,7 +12,7 @@ $('a[id=jim]'          ).attr('href','https://sites.google.com/site/jimcostain/'
 $('a[id=anton]'        ).attr('href','https://sites.google.com/site/antonnakov/');
 $('a[id=josep]'        ).attr('href','https://www.cemfi.es/~pijoan/Welcome.html');
 $('a[id=nezih]'        ).attr('href','https://www.cemfi.es/~guner/');
-$('a[id=jc]'           ).attr('href','https://www.cemfi.es/~ruiz-garcia/');
+$('a[id=jc]'           ).attr('href','http://www.econ.cam.ac.uk/people/postdoc/jcrg2');
 $('a[id=javi]'         ).attr('href','https://www.cemfi.es/studies/phd/lopez.asp');
 $('a[id=enriquemoral]' ).attr('href','https://moralbenito.weebly.com/');
 $('a[id=tonibraun]'    ).attr('href','https://www.frbatlanta.org/research/economists/braun-anton.aspx');
@@ -37,6 +37,7 @@ $('a[id=mastercemfi]'  ).attr('href','https://www.cemfi.es/studies/master/index.
 /* Defined links options *******************************************************/
 
 $('a'                  ).attr('target','_blank');
+$('a[class=boton]'     ).attr('target','_blank');
 $('a[class=simple]'    ).attr('target','_self');
 $('a[class=toc]'       ).attr('target','_self');
 $('a[class=toca]'      ).attr('target','_self');
@@ -54,5 +55,6 @@ $(document).on("click", "a.minus", function(event){
     $(this).next('.hidden').slideUp('slow');
     $(this).attr('class', 'plus');
 });
+
 
 /******************************************************************************/
