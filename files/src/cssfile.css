@@ -4,7 +4,7 @@
 *******************************************************************************/
 
 *{
-  font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;
+  font-family:Helvetica,Arial,sans-serif;
   margin:0px;
   padding:0px;
   color:inherit;
@@ -63,10 +63,11 @@ li.n:not(:last-child) {
 *******************************************************************************/
 
 .title{
-  font-size:30px;
+  font-size:28px;
   font-weight:bold;
   text-align:center;
   margin-bottom: 5px;
+  margin-top:0px;
 }
 .subtitle{
   font-size:18px;
