@@ -14,12 +14,8 @@
   text-decoration:none;
   -webkit-text-size-adjust:none;
 }
-header{
-  position:fixed;
-  top:0;
-  left:0;
-  width:100%;
-  height:85px;
+html{
+  color:#494949;
 }
 body{
   background-color:#F7F7F7;
@@ -31,7 +27,11 @@ div,p,span,a,i,ul,ol,lis{
 p,div{
   margin-top:3px;
 }
+a{
+  color:#374A74;
+}
 a:hover{
+  color:royalblue;
   cursor:pointer;
   text-decoration:underline;
 }
@@ -57,9 +57,15 @@ li.n{
 li.n:not(:last-child) {
   margin-bottom:8px;
 }
+.justify{
+  text-align:justify;
+}
+.hidden{
+  display:none;
+}
 
 /*******************************************************************************
- NAVIGATION BAR
+STRUCTURE OF THE WEBSITE
 *******************************************************************************/
 
 .title{
@@ -68,17 +74,14 @@ li.n:not(:last-child) {
   text-align:center;
   margin-bottom:0px;
   margin-top:-5px;
+  color:#006400;
 }
 .subtitle{
   font-size:18px;
   font-weight:normal;
   text-align:center;
+  color:grey;
 }
-
-/*******************************************************************************
- BODY OF THE WEBSITE
-*******************************************************************************/
-
 .section{
   width:90%;
   max-width: 990px;
@@ -99,61 +102,40 @@ h1{
   font-size: 15px;
   font-weight:bold;
   margin: 0px 0px 5px 0px;
+  color:#006400;
 }
 h2{
   font-weight:bold;
+  color:#006400;
 }
 
 /*******************************************************************************
- COLORS
+ NEW ELEMENTS
 *******************************************************************************/
 
-html{
-  color:#494949;
-}
-.title,h1,h2,color,paper,b{
-  color:#494949;color:royalblue;color:#006400;
-}
-.subtitle{
-  color:grey;
+paper{
+  color:#006400;
+  font-weight:normal;
 }
 journal{
   color:#882d17;
   color:#880000;
   color:#920000;
-  font-style:italic;
+  font-size:85%;
 }
 alert{
   color:#B26900;
-  /*font-style:italic;*/
   font-size:85%;
+}
+color{
+  color:#006400;
 }
 red{
   color:red;
 }
-a{
-  color:#374A74;
-}
-a:hover{
-  color:royalblue;
-}
 
 /*******************************************************************************
- OTHER COMMANDS
-*******************************************************************************/
-
-.justify{
-  text-align:justify;
-}
-.hidden{
-  display:none;
-}
-paper{
-  font-weight:bold;
-}
-
-/*******************************************************************************
- SHOW MORE BOTTONS
+ "SHOW MORE" BOTONS
 *******************************************************************************/
 
 a.plus,a.minus{
@@ -173,15 +155,6 @@ a.minus::after{
   content: url('icon_hide.gif');
 }
 a.boton{
-  /*border:solid 0.5px gray;
-  cursor:pointer;
-  text-decoration:none;
-  font-size:74%;
-  padding:1px 3px 1px 3px;
-  background-color:#F6F6F6;
-  border-radius:3px;
-  font-variant:small-caps;
-  text-decoration:none;*/
   cursor:pointer;
   font-size:90%;
 }
@@ -194,16 +167,10 @@ a.boton{
   html,header,body,a,div,p,h1,h2,h3,h4,ul,ol,li{
     font-size:14px;
   }
-  html,header,body{
+  html,body{
     width:95%;
     margin:auto;
     padding:0px;
-  }
-  header{
-    position:static;
-    height:auto;
-    width:auto;
-    margin-bottom:10px;
   }
   body{
     margin: 20px auto 250px auto;
