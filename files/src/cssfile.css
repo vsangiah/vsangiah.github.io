@@ -8,7 +8,7 @@
   margin:0px;
   padding:0px;
   color:inherit;
-  font-size:14px;
+  font-size:16px;
   text-align:left;
   line-height:1.4;
   text-decoration:none;
@@ -16,10 +16,41 @@
 }
 html{
   color:#494949;
+  background-color:#F8F8F8;
+  padding:0px 0px 100px 0px;
+}
+header{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  margin:auto;
+  height:auto;
+  background-color:lightgrey;
+  color:#006400;
+  border-bottom:3px solid grey;
+  padding:20px 60px 20px 60px;
+  display:grid;
+  grid-column-gap:40px;
+  grid-template-areas:
+      "a b b b b b b b"
+      "a c c c c c c e"
+      "a d d d d d d d";
+}
+.item1{
+  grid-area:a;
+  font-weight:bold;
+  font-size:30px;
+}
+.item2{
+  font-size:17px;
+  grid-area:c;
+  text-align:right;
+  align-self:right;
 }
 body{
-  background-color:#F7F7F7;
-  margin: 50px 0px 600px 0px;
+  width:950px;
+  margin: 130px auto 600px auto;
 }
 div,p,span,a,i,ul,ol,lis{
   font-size:inherit;
@@ -32,8 +63,21 @@ a{
 }
 a:hover{
   color:royalblue;
+}
+a:hover{
   cursor:pointer;
   text-decoration:underline;
+}
+a.toc{
+  color:grey;
+}
+a.toca{
+  color:#006400;
+}
+a.toca:hover,a.toc:hover{
+  color:#006400;
+  text-decoration:none;
+  font-weight:bold;
 }
 ul{
   padding: 5px 0px 0px 20px;
@@ -57,6 +101,29 @@ li.n{
 li.n:not(:last-child) {
   margin-bottom:8px;
 }
+
+/*******************************************************************************
+ BODY OF THE WEBSITE
+*******************************************************************************/
+
+.section{
+  padding: 0px 0px 0px 0px;
+}
+.indexbox{
+  display:grid;
+  grid-column-gap:40px;
+  grid-template-columns: auto 270px;
+}
+h1{
+  margin: 0px 0px 5px 0px;
+  font-weight:bold;
+  font-size: 17px;
+  color:#006400;
+}
+div.paper{
+  margin-top:15px;
+}
+
 .justify{
   text-align:justify;
 }
@@ -65,52 +132,7 @@ li.n:not(:last-child) {
 }
 
 /*******************************************************************************
-STRUCTURE OF THE WEBSITE
-*******************************************************************************/
-
-.title{
-  font-size:28px;
-  font-weight:bold;
-  text-align:center;
-  margin-bottom:0px;
-  margin-top:-5px;
-  color:#006400;
-}
-.subtitle{
-  font-size:18px;
-  font-weight:normal;
-  text-align:center;
-  color:grey;
-}
-.section{
-  width:90%;
-  max-width: 990px;
-  border: 2px solid grey;
-  background-color: white;
-  margin: 0px auto 20px auto;
-  padding: 20px 25px 20px 25px;
-}
-.subsection{
-  margin-top:12px;
-}
-.indexbox{
-  display:grid;
-  grid-column-gap:40px;
-  grid-template-columns: auto 270px;
-}
-h1{
-  font-size: 15px;
-  font-weight:bold;
-  margin: 0px 0px 5px 0px;
-  color:#006400;
-}
-h2{
-  font-weight:bold;
-  color:#006400;
-}
-
-/*******************************************************************************
- NEW ELEMENTS
+ OTHER COMMANDS
 *******************************************************************************/
 
 paper{
@@ -118,10 +140,8 @@ paper{
   font-weight:normal;
 }
 journal{
-  color:#882d17;
-  color:#880000;
   color:#920000;
-  font-size:85%;
+  font-size:90%;
 }
 alert{
   color:#B26900;
@@ -164,7 +184,7 @@ a.boton{
 *******************************************************************************/
 
 @media (hover: none) and (pointer: coarse) , screen and (max-width:700px) {
-  html,header,body,a,div,p,h1,h2,h3,h4,ul,ol,li{
+  html,body,a,div,p,h1,h2,h3,h4,ul,ol,li,paper,color{
     font-size:14px;
   }
   html,body{
@@ -172,21 +192,30 @@ a.boton{
     margin:auto;
     padding:0px;
   }
+  /*header{
+    position:static;
+    height:auto;
+    width:auto;
+    margin-bottom:10px;
+  }*/
+  header{
+    padding:5px 5px 5px 5px;
+    display:block;
+  }
+  .item1{
+    text-align:center;
+    font-size:18px;
+    padding:0px;
+  }
+  .item2{
+    text-align:center;
+    padding:0px;
+  }
   body{
-    margin: 20px auto 250px auto;
-  }
-  .title{
-    font-size: 26px;
-    margin:0px 0px 0px 0px;
-  }
-  .subtitle{
-    font-size: 17px;
+    margin:95px auto 250px auto;
   }
   .section{
-    margin: 0px 0px 15px 0px;
-  }
-  .subsection{
-    margin-top:15px;
+    margin: 0px 0px 5px 0px;
   }
   h1{
     margin: 0px 0px 0px 0px;
