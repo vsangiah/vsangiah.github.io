@@ -44,6 +44,19 @@ $('a[class=toca]'      ).attr('target','_self');
 
 /* Show/Hide functions *********************************************************/
 
+$(document).on("click", "a.plusall", function(event){
+    event.preventDefault();
+    $('.hidden').slideDown('slow');
+    $('a.plus').attr('class', 'minus');
+    $(this).attr('class', 'minusall');
+});
+$(document).on("click", "a.minusall", function(event){
+    event.preventDefault();
+    $('.hidden').slideUp('slow');
+    $('a.minus').attr('class', 'plus');
+    $(this).attr('class', 'plusall');
+});
+
 $(document).on("click", "a.plus", function(event){
     event.preventDefault();
     $(this).next('.hidden').slideDown('slow');
@@ -55,6 +68,5 @@ $(document).on("click", "a.minus", function(event){
     $(this).next('.hidden').slideUp('slow');
     $(this).attr('class', 'plus');
 });
-
 
 /******************************************************************************/

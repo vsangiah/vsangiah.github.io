@@ -1,7 +1,4 @@
 
-/*******************************************************************************
- MAIN STRUCTURE
-*******************************************************************************/
 
 *{
   font-family:Helvetica,Arial,sans-serif;
@@ -14,37 +11,34 @@
   text-decoration:none;
   -webkit-text-size-adjust:none;
 }
+
+/*******************************************************************************
+ MAIN STRUCTURE
+*******************************************************************************/
+
 html{
   color:#494949;
   background-color:#F8F8F8;
   padding:0px 0px 100px 0px;
 }
 header{
-  position:fixed;
-  top:0;
-  left:0;
-  width:100%;
-  margin:auto;
-  height:auto;
-  background-color:lightgrey;
+  position:fixed; top:0; left:0; width:100%; margin:auto; height:auto;
   color:#006400;
+  background-color:lightgrey;
   border-bottom:3px solid grey;
   padding:20px 60px 20px 60px;
   display:grid;
   grid-column-gap:40px;
-  grid-template-areas:
-      "a b b b b b b b"
-      "a c c c c c c e"
-      "a d d d d d d d";
+  grid-template-areas: "a b b b b b b b" "a c c c c c c e" "a d d d d d d d";
 }
-.item1{
+.webtitle{
   grid-area:a;
   font-weight:bold;
   font-size:30px;
 }
-.item2{
-  font-size:17px;
+.nav{
   grid-area:c;
+  font-size:17px;
   text-align:right;
   align-self:right;
 }
@@ -52,19 +46,22 @@ body{
   width:950px;
   margin: 130px auto 600px auto;
 }
-div,p,span,a,i,ul,ol,lis{
+div,p,span,a,i,ul,ol,li{
   font-size:inherit;
 }
 p,div{
   margin-top:3px;
 }
+
+/*******************************************************************************
+ LINKS
+*******************************************************************************/
+
 a{
   color:#374A74;
 }
 a:hover{
   color:royalblue;
-}
-a:hover{
   cursor:pointer;
   text-decoration:underline;
 }
@@ -79,6 +76,42 @@ a.toca:hover,a.toc:hover{
   text-decoration:none;
   font-weight:bold;
 }
+a.boton{
+  cursor:pointer;
+  font-size:90%;
+}
+
+/*******************************************************************************
+ "SHOW/HIDE" LINKS
+*******************************************************************************/
+
+a.plus,a.minus,a.plusall,a.minusall{
+  margin-right:3px;
+  display: inline-block;
+  margin-top:4px;
+  font-size:85%;
+}
+a.plus::after,a.plusall::after{
+  margin-left:3px;
+  content: "\2295";
+  content: url('icon_show.gif');
+}
+a.minus::after,a.minusall::after{
+  margin-left:3px;
+  content:"\2296";
+  content: url('icon_hide.gif');
+}
+a.plusall::before{
+  content: "SHOW ABSTRACTS ";
+}
+a.minusall::before{
+  content:"HIDE ABSTRACTS ";
+}
+
+/*******************************************************************************
+ LISTS
+*******************************************************************************/
+
 ul{
   padding: 5px 0px 0px 20px;
   list-style-type:square;
@@ -109,10 +142,20 @@ li.n:not(:last-child) {
 .section{
   padding: 0px 0px 0px 0px;
 }
-.indexbox{
+.homebox{
+  display:grid;
   display:grid;
   grid-column-gap:40px;
-  grid-template-columns: auto 270px;
+  grid-template-areas: "a a a" "b b c"
+}
+.homeboxtitle{
+  grid-area:a;
+}
+.homeboxtext{
+  grid-area:b;
+}
+.homeboxphoto{
+  grid-area:c;
 }
 h1{
   margin: 0px 0px 5px 0px;
@@ -120,9 +163,13 @@ h1{
   font-size: 17px;
   color:#006400;
 }
-div.paper{
+.subsection{
   margin-top:15px;
 }
+
+/*******************************************************************************
+ OTHER COMMANDS
+*******************************************************************************/
 
 .justify{
   text-align:justify;
@@ -130,11 +177,6 @@ div.paper{
 .hidden{
   display:none;
 }
-
-/*******************************************************************************
- OTHER COMMANDS
-*******************************************************************************/
-
 paper{
   color:#006400;
   font-weight:normal;
@@ -155,35 +197,10 @@ red{
 }
 
 /*******************************************************************************
- "SHOW MORE" BOTONS
-*******************************************************************************/
-
-a.plus,a.minus{
-  margin-right:3px;
-  display: inline-block;
-  margin-top:4px;
-  font-size:85%;
-}
-a.plus::after{
-  margin-left:3px;
-  content: "\2295";
-  content: url('icon_show.gif');
-}
-a.minus::after{
-  margin-left:3px;
-  content:"\2296";
-  content: url('icon_hide.gif');
-}
-a.boton{
-  cursor:pointer;
-  font-size:90%;
-}
-
-/*******************************************************************************
  ADDAPT FOR MOBILE PHONES
 *******************************************************************************/
 
-@media (hover: none) and (pointer: coarse) , screen and (max-width:700px) {
+@media (hover: none) and (pointer: coarse) , screen and (max-width:800px) {
   html,body,a,div,p,h1,h2,h3,h4,ul,ol,li,paper,color{
     font-size:14px;
   }
@@ -192,27 +209,22 @@ a.boton{
     margin:auto;
     padding:0px;
   }
-  /*header{
-    position:static;
-    height:auto;
-    width:auto;
-    margin-bottom:10px;
-  }*/
   header{
     padding:5px 5px 5px 5px;
     display:block;
   }
-  .item1{
+  .webtitle{
     text-align:center;
     font-size:18px;
     padding:0px;
+    margin-bottom:8px;
   }
-  .item2{
+  .nav{
     text-align:center;
     padding:0px;
   }
   body{
-    margin:95px auto 250px auto;
+    margin:100px auto 250px auto;
   }
   .section{
     margin: 0px 0px 5px 0px;
@@ -220,16 +232,13 @@ a.boton{
   h1{
     margin: 0px 0px 0px 0px;
   }
-  h2{
-    margin: 0px 0px 5px 0px;
-  }
   ul.simple{
     padding: 3px 0px 0px 20px;
   }
-  a.minus,a.plus,.plusno,.hidemobile{
+  .hidemobile{
     display:none;
   }
-  .indexbox{
+  .homebox{
     display:block;
   }
 }
