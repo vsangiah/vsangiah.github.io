@@ -117,7 +117,7 @@ ul{
   list-style-type:square;
 }
 li:not(:last-child) {
-  margin-bottom:8px;
+  margin-bottom:15px;
 }
 ul.simple>li {
   margin-bottom:2px;
