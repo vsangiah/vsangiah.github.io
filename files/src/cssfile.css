@@ -21,7 +21,7 @@ html{
   background-color:#F8F8F8;
   padding:0px 0px 100px 0px;
 }
-header{
+/*header{
   position:fixed; top:0; left:0; width:100%; margin:auto; height:auto;
   color:#006400;
   background-color:lightgrey;
@@ -30,6 +30,16 @@ header{
   display:grid;
   grid-column-gap:40px;
   grid-template-areas: "a b b b b b b b" "a c c c c c c e" "a d d d d d d d";
+}*/
+header{
+  width:970px;
+  margin:1px auto 35px auto;
+  color:#006400;
+  border-bottom:3px solid grey;
+  padding:10px 0px 10px 0px;
+  display:grid;
+  grid-column-gap:40px;
+  grid-template-areas: "a b b b b b b b" "a c c c c c c c" "a d d d d d d d";
 }
 .webtitle{
   grid-area:a;
@@ -44,7 +54,7 @@ header{
 }
 body{
   width:950px;
-  margin: 130px auto 600px auto;
+  margin:30px auto 600px auto;
 }
 div,p,span,a,i,ul,ol,li{
   font-size:inherit;
@@ -67,14 +77,18 @@ a:hover{
 }
 a.toc{
   color:grey;
+  padding-top:5px;
 }
 a.toca{
   color:#006400;
+  border-top:3px solid #006400;
+  padding-top:5px;
 }
 a.toca:hover,a.toc:hover{
   color:#006400;
   text-decoration:none;
   font-weight:bold;
+  border-top:3px solid #006400;
 }
 a.boton{
   cursor:pointer;
@@ -90,6 +104,11 @@ a.plus,a.minus,a.plusall,a.minusall{
   display: inline-block;
   margin-top:4px;
   font-size:85%;
+}
+a.plusall,a.minusall{
+  margin-bottom:-25px;
+  display:block;
+  text-align:right;
 }
 a.plus::after,a.plusall::after{
   margin-left:3px;
@@ -145,11 +164,12 @@ li.n:not(:last-child) {
 .homebox{
   display:grid;
   display:grid;
-  grid-column-gap:40px;
+  grid-column-gap:0px;
   grid-template-areas: "a a a" "b b c"
 }
 .homeboxtitle{
   grid-area:a;
+  margin:0px;
 }
 .homeboxtext{
   grid-area:b;
@@ -209,8 +229,17 @@ red{
     margin:auto;
     padding:0px;
   }
-  header{
+  /*header{
     padding:5px 5px 5px 5px;
+    display:block;
+  }
+  */
+  header{
+    width:100%;
+    margin:1px auto 35px auto;
+    color:#006400;
+    border-bottom:5px solid grey;
+    padding:10px 0px 10px 0px;
     display:block;
   }
   .webtitle{
@@ -224,7 +253,7 @@ red{
     padding:0px;
   }
   body{
-    margin:115px auto 250px auto;
+    margin:20px auto 250px auto;
   }
   .section{
     margin: 0px 0px 5px 0px;
