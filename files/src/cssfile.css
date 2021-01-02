@@ -21,16 +21,6 @@ html{
   background-color:#F8F8F8;
   padding:0px 0px 100px 0px;
 }
-/*header{
-  position:fixed; top:0; left:0; width:100%; margin:auto; height:auto;
-  color:#006400;
-  background-color:lightgrey;
-  border-bottom:3px solid grey;
-  padding:20px 60px 20px 60px;
-  display:grid;
-  grid-column-gap:40px;
-  grid-template-areas: "a b b b b b b b" "a c c c c c c e" "a d d d d d d d";
-}*/
 header{
   width:970px;
   margin:1px auto 35px auto;
@@ -238,13 +228,13 @@ red{
     width:100%;
     margin:1px auto 35px auto;
     color:#006400;
-    border-bottom:5px solid grey;
+    border-bottom:2px solid grey;
     padding:10px 0px 10px 0px;
     display:block;
   }
   .webtitle{
     text-align:center;
-    font-size:18px;
+    font-size:22px;
     padding:0px;
     margin-bottom:12px;
   }
@@ -253,7 +243,7 @@ red{
     padding:0px;
   }
   body{
-    margin:20px auto 250px auto;
+    margin:15px auto 250px auto;
   }
   .section{
     margin: 0px 0px 5px 0px;
@@ -269,6 +259,9 @@ red{
   }
   .homebox{
     display:block;
+  }
+  a.toca,a.toca:hover,a.toc:hover{
+    border-top:0px solid #006400;
   }
 }
 
