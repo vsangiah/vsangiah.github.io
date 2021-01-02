@@ -17,18 +17,18 @@
 *******************************************************************************/
 
 html{
+  width:950px;
+  margin:35px auto 0px auto;
+  padding-bottom:600px;
   color:#494949;
-  background-color:#F8F8F8;
-  padding:0px 0px 100px 0px;
+  background-color:white;
 }
 header{
-  width:970px;
   margin:1px auto 35px auto;
   color:#006400;
   border-bottom:3px solid grey;
-  padding:10px 0px 10px 0px;
+  padding-bottom:10px;
   display:grid;
-  grid-column-gap:40px;
   grid-template-areas: "a b b b b b b b" "a c c c c c c c" "a d d d d d d d";
 }
 .webtitle{
@@ -38,13 +38,8 @@ header{
 }
 .nav{
   grid-area:c;
-  font-size:17px;
   text-align:right;
   align-self:right;
-}
-body{
-  width:950px;
-  margin:30px auto 600px auto;
 }
 div,p,span,a,i,ul,ol,li{
   font-size:inherit;
@@ -214,22 +209,13 @@ red{
   html,body,a,div,p,h1,h2,h3,h4,ul,ol,li,paper,color{
     font-size:14px;
   }
-  html,body{
-    width:95%;
-    margin:auto;
-    padding:0px;
+  html{
+    width:90%;
+    margin:25px auto 0px auto;
   }
-  /*header{
-    padding:5px 5px 5px 5px;
-    display:block;
-  }
-  */
   header{
-    width:100%;
-    margin:1px auto 35px auto;
-    color:#006400;
     border-bottom:2px solid grey;
-    padding:10px 0px 10px 0px;
+    padding-bottom:10px;
     display:block;
   }
   .webtitle{
@@ -241,9 +227,6 @@ red{
   .nav{
     text-align:center;
     padding:0px;
-  }
-  body{
-    margin:15px auto 250px auto;
   }
   .section{
     margin: 0px 0px 5px 0px;
