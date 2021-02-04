@@ -88,7 +88,7 @@ a.plus,a.minus,a.plusall,a.minusall{
   margin-right:3px;
   display: inline-block;
   margin-top:4px;
-  font-size:85%;
+  /*font-size:85%;*/
 }
 a.plusall,a.minusall{
   margin-bottom:-25px;
@@ -148,9 +148,8 @@ li.n:not(:last-child) {
 }
 .homebox{
   display:grid;
-  display:grid;
-  grid-column-gap:0px;
-  grid-template-areas: "a a a" "b b c"
+  grid-column-gap:20px;
+  grid-template-areas: "a a a a " "b b  c c" "d d d d"
 }
 .homeboxtitle{
   grid-area:a;
@@ -161,6 +160,9 @@ li.n:not(:last-child) {
 }
 .homeboxphoto{
   grid-area:c;
+}
+.homeboxcontact{
+  grid-area:d;
 }
 h1{
   margin: 0px 0px 5px 0px;
@@ -200,12 +202,19 @@ color{
 red{
   color:red;
 }
+.abstract{
+  /*border-left:5px solid lightgray;
+  padding: 0px 0px 0px 10px;
+  font-style:italic;*/
+  color:Gray;
+  margin-top:8px;
+}
 
 /*******************************************************************************
  ADDAPT FOR MOBILE PHONES
 *******************************************************************************/
 
-@media (hover: none) and (pointer: coarse) , screen and (max-width:800px) {
+@media (hover: none) and (pointer: coarse) , screen and (max-width:400px) {
   html,body,a,div,p,h1,h2,h3,h4,ul,ol,li,paper,color{
     font-size:14px;
   }
