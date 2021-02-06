@@ -209,13 +209,19 @@ red{
   color:Gray;
   margin-top:8px;
 }
+.grid-container {
+    display: grid;
+    grid-template-columns: 32% 32% 32%;
+    /*repeat(auto-fit, minmax(100px, 5fr));*/
+    grid-column-gap:15px;
+}
 
 /*******************************************************************************
  ADDAPT FOR MOBILE PHONES
 *******************************************************************************/
 
 /*@media (hover: none) and (pointer: coarse) , screen and (max-width:400px) {*/
-@media screen and (max-width:400px) {  
+@media screen and (max-width:400px) {
   html,body,a,div,p,h1,h2,h3,h4,ul,ol,li,paper,color{
     font-size:14px;
   }
