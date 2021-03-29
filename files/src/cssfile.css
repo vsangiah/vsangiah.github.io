@@ -18,13 +18,13 @@
 
 html{
   width:950px;
-  margin:35px auto 0px auto;
+  margin:50px auto 0px auto;
   padding-bottom:600px;
   color:#494949;
   background-color:white;
 }
 header{
-  margin:1px auto 35px auto;
+  margin:0px auto 35px auto;
   color:#006400;
   border-bottom:3px solid grey;
   padding-bottom:10px;
@@ -88,7 +88,6 @@ a.plus,a.minus,a.plusall,a.minusall{
   margin-right:3px;
   display: inline-block;
   margin-top:4px;
-  /*font-size:85%;*/
 }
 a.plusall,a.minusall{
   margin-bottom:-25px;
@@ -149,11 +148,7 @@ li.n:not(:last-child) {
 .homebox{
   display:grid;
   grid-column-gap:20px;
-  grid-template-areas: "a a a a " "b b  c c" "d d d d"
-}
-.homeboxtitle{
-  grid-area:a;
-  margin:0px;
+  grid-template-areas: "b b  c c" "d d d d"
 }
 .homeboxtext{
   grid-area:b;
@@ -167,7 +162,7 @@ li.n:not(:last-child) {
 h1{
   margin: 0px 0px 5px 0px;
   font-weight:bold;
-  font-size: 17px;
+  font-size: 16px;
   color:#006400;
 }
 .subsection{
@@ -194,7 +189,7 @@ journal{
 }
 alert{
   color:#B26900;
-  font-size:85%;
+  font-size:80%;
 }
 color{
   color:#006400;
@@ -203,16 +198,13 @@ red{
   color:red;
 }
 .abstract{
-  /*border-left:5px solid lightgray;
-  padding: 0px 0px 0px 10px;
-  font-style:italic;*/
-  color:Gray;
+  color:gray;
   margin-top:8px;
+  color:#616161;
 }
 .grid-container {
     display: grid;
     grid-template-columns: 32% 32% 32%;
-    /*repeat(auto-fit, minmax(100px, 5fr));*/
     grid-column-gap:15px;
 }
 
