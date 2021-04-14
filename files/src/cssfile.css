@@ -148,15 +148,18 @@ li.n:not(:last-child) {
 .homebox{
   display:grid;
   grid-column-gap:20px;
-  grid-template-areas: "b b  c c" "d d d d"
+  grid-template-areas: "a a a a" "b b  c c" "d d d d"
 }
-.homeboxtext{
+.toptext{
+  grid-area:a;
+}
+.lefttext{
   grid-area:b;
 }
-.homeboxphoto{
+.righttext{
   grid-area:c;
 }
-.homeboxcontact{
+.bottomtext{
   grid-area:d;
 }
 h1{
