@@ -20,7 +20,8 @@ html{
   background-color:#F2F2F2;
 }
 body{
-  width:950px;
+  width:90%;
+  max-width:950px;
   padding: 35px 40px 600px 40px;
   margin:0px auto 0px auto;
   color:#494949;
@@ -176,9 +177,9 @@ h1{
 }
 div.courses{
   display:grid;
-  grid-template-columns:33% 33% 33%;
   grid-column-gap:8px;
   grid-row-gap:8px;
+  grid-template-columns: repeat(auto-fill, minmax(425px, 1fr) ) ;
 }
 
 /*******************************************************************************
