@@ -88,31 +88,20 @@ a.boton{
  "SHOW/HIDE" LINKS
 *******************************************************************************/
 
-a.plus,a.minus,a.plusall,a.minusall{
+a.plus,a.minus{
   margin-right:3px;
   display: inline-block;
   margin-top:4px;
 }
-a.plusall,a.minusall{
-  margin-bottom:-25px;
-  display:block;
-  text-align:right;
-}
-a.plus::after,a.plusall::after{
+a.plus::after{
   margin-left:3px;
   content: "\2295";
   content: url('icon_show.gif');
 }
-a.minus::after,a.minusall::after{
+a.minus::after{
   margin-left:3px;
   content:"\2296";
   content: url('icon_hide.gif');
-}
-a.plusall::before{
-  content: "SHOW ABSTRACTS ";
-}
-a.minusall::before{
-  content:"HIDE ABSTRACTS ";
 }
 
 /*******************************************************************************
@@ -150,9 +139,10 @@ li.n:not(:last-child) {
   padding: 0px 0px 0px 0px;
 }
 .homebox{
+  margin-top:-10px;
   display:grid;
-  grid-column-gap:20px;
-  grid-template-areas: "a a a a" "b b  c c" "d d d d"
+  grid-column-gap:40px;
+  grid-template-areas: "a a a a" "b b c c" "d d d d"
 }
 .toptext{
   grid-area:a;
@@ -178,7 +168,7 @@ h1{
 div.courses{
   display:grid;
   grid-column-gap:8px;
-  grid-row-gap:8px;
+  grid-row-gap:0px;
   grid-template-columns: repeat(auto-fill, minmax(425px, 1fr) ) ;
 }
 
@@ -210,10 +200,34 @@ color{
 red{
   color:red;
 }
+u{
+  text-decoration:underline;
+  color:inherit;
+  font-size:inherit;
+  font-weight:inherit;
+  text-align:inherit;
+}
 .abstract{
   color:gray;
   margin-top:8px;
   color:#616161;
+}
+a.paper::before,a.slides::before,a.code::before,a.article::before{
+  font-family: "FontAwesome";
+  color:#006400;
+  margin-right:6px;
+}
+a.paper::before {
+  content: "\f1c1 ";
+}
+a.slides::before {
+  content: "\f080 ";
+}
+a.code::before {
+  content: "\f1c9 ";
+}
+a.article::before {
+  content: "\f0f6 ";
 }
 
 /*******************************************************************************
@@ -228,6 +242,12 @@ red{
   html{
     width:90%;
     margin:25px auto 0px auto;
+    background-color:white;
+  }
+  body{
+    width:100%;
+    padding:0px;
+    margin:0px;
   }
   header{
     border-bottom:2px solid grey;
