@@ -1,6 +1,6 @@
 
 *{
-  font-family:'Open Sans',Helvetica,Arial,sans-serif;
+  font-family:sans-serif,Helvetica,Arial,sans-serif,'Open Sans','Quattrocento Sans';
   margin:0px;
   padding:0px;
   color:inherit;
@@ -8,6 +8,7 @@
   text-align:left;
   line-height:1.4;
   text-decoration:none;
+  background-color:inherit;
   -webkit-text-size-adjust:none;
 }
 
@@ -16,7 +17,7 @@
 *******************************************************************************/
 
 html{
-  background-color:#F2F2F2;
+  /*background-color:#F2F2F2;*/
   background-color:white;
 }
 body{
@@ -33,23 +34,67 @@ header{
   border-bottom:3px solid grey;
   padding-bottom:10px;
   display:grid;
-  grid-template-areas: "a b b b b b b b" "a c c c c c c c" "a d d d d d d d";
+  grid-template-areas: "a b" "a c" "a d";
 }
 .webtitle{
   grid-area:a;
+  width:200px;
   font-weight:bold;
-  font-size:30px;
+  font-size:200%;
 }
 .nav{
   grid-area:c;
   text-align:right;
   align-self:right;
+  font-size:120%;
 }
 div,p,span,a,i,ul,ol,li{
   font-size:inherit;
 }
 p,div{
   margin-top:3px;
+}
+
+/*******************************************************************************
+ BODY OF THE WEBSITE
+*******************************************************************************/
+
+.section{
+  padding: 0px 0px 0px 0px;
+}
+.homebox{
+  margin-top:-10px;
+  display:grid;
+  grid-column-gap:40px;
+  grid-template-areas: "a a a a" "b b c c" "d d d d"
+}
+.toptext{
+  grid-area:a;
+}
+.lefttext{
+  grid-area:b;
+}
+.righttext{
+  grid-area:c;
+  max-width:500px;
+}
+.bottomtext{
+  grid-area:d;
+}
+h1{
+  margin: 0px 0px 5px 0px;
+  font-weight:bold;
+  font-size: 110%;
+  color:#006400;
+}
+.subsection{
+  margin-top:15px;
+}
+div.courses{
+  display:grid;
+  grid-column-gap:8px;
+  grid-row-gap:0px;
+  grid-template-columns: repeat(auto-fill, minmax(425px, 1fr) ) ;
 }
 
 /*******************************************************************************
@@ -132,48 +177,6 @@ li.n:not(:last-child) {
 }
 
 /*******************************************************************************
- BODY OF THE WEBSITE
-*******************************************************************************/
-
-.section{
-  padding: 0px 0px 0px 0px;
-}
-.homebox{
-  margin-top:-10px;
-  display:grid;
-  grid-column-gap:40px;
-  grid-template-areas: "a a a a" "b b c c" "d d d d"
-}
-.toptext{
-  grid-area:a;
-}
-.lefttext{
-  grid-area:b;
-}
-.righttext{
-  grid-area:c;
-  max-width:450px;
-}
-.bottomtext{
-  grid-area:d;
-}
-h1{
-  margin: 0px 0px 5px 0px;
-  font-weight:bold;
-  font-size: 16px;
-  color:#006400;
-}
-.subsection{
-  margin-top:15px;
-}
-div.courses{
-  display:grid;
-  grid-column-gap:8px;
-  grid-row-gap:0px;
-  grid-template-columns: repeat(auto-fill, minmax(425px, 1fr) ) ;
-}
-
-/*******************************************************************************
  OTHER COMMANDS
 *******************************************************************************/
 
@@ -206,6 +209,13 @@ u{
   color:inherit;
   font-size:inherit;
   font-weight:inherit;
+  text-align:inherit;
+}
+b{
+  text-decoration:inherit;
+  color:inherit;
+  font-size:inherit;
+  font-weight:bold;
   text-align:inherit;
 }
 .abstract{
