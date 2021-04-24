@@ -1,27 +1,6 @@
 
-@font-face {
-    font-family: "Computer Modern";
-    src: url('http://mirrors.ctan.org/fonts/cm-unicode/fonts/otf/cmunss.otf');
-  }
-  @font-face {
-    font-family: "Computer Modern";
-    src: url('http://mirrors.ctan.org/fonts/cm-unicode/fonts/otf/cmunsx.otf');
-    font-weight: bold;
-  }
-  @font-face {
-    font-family: "Computer Modern";
-    src: url('http://mirrors.ctan.org/fonts/cm-unicode/fonts/otf/cmunsi.otf');
-    font-style: italic, oblique;
-  }
-  @font-face {
-    font-family: "Computer Modern";
-    src: url('http://mirrors.ctan.org/fonts/cm-unicode/fonts/otf/cmunbxo.otf');
-    font-weight: bold;
-    font-style: italic, oblique;
-  }
-
 *{
-  font-family:"Computer Modern",Helvetica,Arial,sans-serif;
+  font-family:Verdana,Helvetica,Arial,sans-serif;
   margin:0px;
   padding:0px;
   color:inherit;
@@ -173,6 +152,7 @@ li.n:not(:last-child) {
 }
 .righttext{
   grid-area:c;
+  max-width:300px;
 }
 .bottomtext{
   grid-area:d;
