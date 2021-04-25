@@ -140,12 +140,10 @@ a.plus,a.minus{
 }
 a.plus::after{
   margin-left:3px;
-  content: "\2295";
   content: url('icon_show.gif');
 }
 a.minus::after{
   margin-left:3px;
-  content:"\2296";
   content: url('icon_hide.gif');
 }
 
@@ -188,7 +186,7 @@ li.n:not(:last-child) {
 }
 paper{
   color:#006400;
-  font-weight:normal;
+  font-weight:bold;
 }
 journal{
   color:#920000;
@@ -223,16 +221,17 @@ b{
   margin-top:8px;
   color:#616161;
 }
-a.paper::before,a.slides::before,a.code::before,a.article::before{
+a.pdf::before,a.slides::before,a.code::before,a.article::before{
   font-family: "FontAwesome";
   color:#006400;
   margin-right:6px;
+  margin-left:3px;
 }
-a.paper::before {
+a.pdf::before {
   content: "\f1c1 ";
 }
 a.slides::before {
-  content: "\f080 ";
+  content: "\f1c4 ";
 }
 a.code::before {
   content: "\f1c9 ";
