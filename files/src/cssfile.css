@@ -221,7 +221,7 @@ b{
   margin-top:8px;
   color:#616161;
 }
-a.pdf::before,a.slides::before,a.code::before,a.article::before{
+a.pdf::before,a.slides::before,a.code::before,a.article::before,a.github::before{
   font-family: "FontAwesome";
   color:#006400;
   margin-right:6px;
@@ -238,6 +238,9 @@ a.code::before {
 }
 a.article::before {
   content: "\f0f6 ";
+}
+a.github::before{
+  content:"\f09b"
 }
 
 /*******************************************************************************
