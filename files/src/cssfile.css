@@ -17,7 +17,6 @@
 *******************************************************************************/
 
 html{
-  /*background-color:#F2F2F2;*/
   background-color:white;
 }
 body{
@@ -36,6 +35,30 @@ header{
   display:grid;
   grid-template-areas: "a b" "a c" "a d";
 }
+div,p,span,a,i,ul,ol,li{
+  font-size:inherit;
+}
+p,div{
+  margin-top:3px;
+}
+a{
+  color:#374A74;
+}
+a:hover{
+  color:royalblue;
+  cursor:pointer;
+  text-decoration:underline;
+}
+a:hover{
+  color:blue;
+  cursor:pointer;
+  text-decoration:none;
+}
+
+/*******************************************************************************
+ HEADER
+*******************************************************************************/
+
 .webtitle{
   grid-area:a;
   width:200px;
@@ -48,20 +71,36 @@ header{
   align-self:right;
   font-size:120%;
 }
-div,p,span,a,i,ul,ol,li{
-  font-size:inherit;
+a.toc{
+  color:grey;
+  padding-top:5px;
 }
-p,div{
-  margin-top:3px;
+a.toca{
+  color:#006400;
+  border-top:3px solid #006400;
+  padding-top:5px;
+}
+a.toca:hover,a.toc:hover{
+  color:#006400;
+  text-decoration:none;
+  font-weight:normal;
+  border-top:3px solid #006400;
+}
+ul{
+  padding: 5px 0px 0px 20px;
+  list-style-type:square;
+}
+li{
+  margin-bottom:10px;
+}
+li:not(:last-child) {
+  margin-bottom:2px;
 }
 
 /*******************************************************************************
  BODY OF THE WEBSITE
 *******************************************************************************/
 
-.section{
-  padding: 0px 0px 0px 0px;
-}
 .homebox{
   margin-top:-10px;
   display:grid;
@@ -81,97 +120,17 @@ p,div{
 .bottomtext{
   grid-area:d;
 }
+.section{
+  padding: 0px 0px 0px 0px;
+}
+.subsection{
+  margin-top:15px;
+}
 h1{
   margin: 0px 0px 5px 0px;
   font-weight:bold;
   font-size: 110%;
   color:#006400;
-}
-.subsection{
-  margin-top:15px;
-}
-div.courses{
-  display:grid;
-  grid-column-gap:8px;
-  grid-row-gap:0px;
-  grid-template-columns: repeat(auto-fill, minmax(425px, 1fr) ) ;
-}
-
-/*******************************************************************************
- LINKS
-*******************************************************************************/
-
-a{
-  color:#374A74;
-}
-a:hover{
-  color:royalblue;
-  cursor:pointer;
-  text-decoration:underline;
-}
-a.toc{
-  color:grey;
-  padding-top:5px;
-}
-a.toca{
-  color:#006400;
-  border-top:3px solid #006400;
-  padding-top:5px;
-}
-a.toca:hover,a.toc:hover{
-  color:#006400;
-  text-decoration:none;
-  font-weight:bold;
-  border-top:3px solid #006400;
-}
-a.boton{
-  cursor:pointer;
-  font-size:100%;
-}
-
-/*******************************************************************************
- "SHOW/HIDE" LINKS
-*******************************************************************************/
-
-a.plus,a.minus{
-  margin-right:3px;
-  display: inline-block;
-  margin-top:4px;
-}
-a.plus::after{
-  margin-left:3px;
-  content: url('icon_show.gif');
-}
-a.minus::after{
-  margin-left:3px;
-  content: url('icon_hide.gif');
-}
-
-/*******************************************************************************
- LISTS
-*******************************************************************************/
-
-ul{
-  padding: 5px 0px 0px 20px;
-  list-style-type:square;
-}
-li:not(:last-child) {
-  margin-bottom:15px;
-}
-ul.simple>li {
-  margin-bottom:2px;
-}
-li.o{
-  margin-left:15px;
-  list-style-type:circle;
-}
-li.n{
-  margin-left:0px;
-  list-style-type:none;
-  margin-bottom:2px;
-}
-li.n:not(:last-child) {
-  margin-bottom:8px;
 }
 
 /*******************************************************************************
@@ -221,26 +180,39 @@ b{
   margin-top:8px;
   color:#616161;
 }
-a.pdf::before,a.slides::before,a.code::before,a.article::before,a.github::before{
+a.pdf,a.slides,a.code,a.article,a.github,a.more,a.less{
+  display:block;
+}
+a.pdf::before,a.slides::before,a.code::before,a.article::before,a.github::before,a.more::before,a.less::before{
   font-family: "FontAwesome";
   color:#006400;
   margin-right:6px;
   margin-left:3px;
 }
-a.pdf::before {
-  content: "\f1c1 ";
+
+a.pdf::before{     content: "\f1c1 ";}
+a.slides::before{  content: "\f1c4 ";}
+a.code::before{    content: "\f1c9 ";}
+a.article::before{ content: "\f0f6 ";}
+a.github::before{  content: "\f09b ";}
+a.more::before{    content: "\f196 ";}
+a.less::before{    content: "\f147 ";}
+
+a.plus,a.minus{
+  margin-right:3px;
+  display: inline-block;
+  margin-top:4px;
 }
-a.slides::before {
-  content: "\f1c4 ";
+a.plus::after,a.minus::after{
+  font-family: "FontAwesome";
+  margin-left:4px;
+  font-size:70%;
 }
-a.code::before {
-  content: "\f1c9 ";
+a.plus::after{
+  content:"\f196";
 }
-a.article::before {
-  content: "\f0f6 ";
-}
-a.github::before{
-  content:"\f09b"
+a.minus::after{
+  content:"\f147";
 }
 
 /*******************************************************************************
@@ -259,7 +231,7 @@ a.github::before{
   }
   body{
     width:100%;
-    padding:0px;
+    padding: 0px 0px 200px 0px;
     margin:0px;
   }
   header{
@@ -271,7 +243,8 @@ a.github::before{
     text-align:center;
     font-size:22px;
     padding:0px;
-    margin-bottom:12px;
+    margin-bottom:5px;
+    width:100%;
   }
   .nav{
     text-align:center;
@@ -283,7 +256,7 @@ a.github::before{
   h1{
     margin: 0px 0px 0px 0px;
   }
-  ul.simple{
+  ul{
     padding: 3px 0px 0px 20px;
   }
   .hidemobile{

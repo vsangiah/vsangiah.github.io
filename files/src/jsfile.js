@@ -20,7 +20,6 @@ $('a[id=tonibraun]'    ).attr('href','https://www.frbatlanta.org/research/econom
 /* Defined links options *******************************************************/
 
 $('a'                  ).attr('target','_blank');
-$('a[class=boton]'     ).attr('target','_blank');
 $('a[class=simple]'    ).attr('target','_self');
 $('a[class=toc]'       ).attr('target','_self');
 $('a[class=toca]'      ).attr('target','_self');
@@ -38,5 +37,24 @@ $(document).on("click", "a.minus", function(event){
     $(this).next('.hidden').slideUp('slow');
     $(this).attr('class', 'plus');
 });
+
+$(document).on("click", "a.more", function(event){
+    event.preventDefault();
+    $(this).attr('class', 'less');
+});
+
+$(document).on("click", "a.less", function(event){
+    event.preventDefault();
+    $(this).attr('class', 'more');
+});
+
+function showhide(xx) {
+  var x = document.getElementById(xx)
+  if (x.style.display === "none") {
+    $(x).slideDown('slow');
+  } else {
+    $(x).slideUp('slow');
+  }
+}
 
 /******************************************************************************/
