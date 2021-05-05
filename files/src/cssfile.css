@@ -178,9 +178,6 @@ b{
   color:#616161;
   text-align:justify;
 }
-a.pdf,a.slides,a.code,a.article,a.github,a.more,a.less{
-  display:block;
-}
 a.pdf::before,a.slides::before,a.code::before,a.article::before,a.github::before,a.more::before,a.less::before{
   font-family: "FontAwesome";
   color:#006400;
