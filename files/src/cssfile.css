@@ -45,11 +45,6 @@ a{
   color:#374A74;
 }
 a:hover{
-  color:royalblue;
-  cursor:pointer;
-  text-decoration:underline;
-}
-a:hover{
   color:blue;
   cursor:pointer;
   text-decoration:none;
@@ -62,7 +57,7 @@ a:hover{
 .webtitle{
   grid-area:a;
   width:200px;
-  font-weight:bold;
+  font-weight:normal;
   font-size:200%;
 }
 .nav{
@@ -128,8 +123,8 @@ li:not(:last-child) {
 }
 h1{
   margin: 0px 0px 5px 0px;
-  font-weight:bold;
-  font-size: 110%;
+  font-weight:normal;
+  font-size: 130%;
   color:#006400;
 }
 
@@ -142,7 +137,7 @@ h1{
 }
 paper{
   color:#006400;
-  font-weight:bold;
+  font-weight:normal;
 }
 journal{
   color:#920000;
@@ -180,6 +175,7 @@ b{
 }
 a.pdf::before,a.slides::before,a.code::before,a.article::before,a.github::before,a.link::before,a.more::before,a.less::before{
   font-family: "FontAwesome";
+  font-size:90%;
   color:#006400;
   margin-right:6px;
   margin-left:3px;
@@ -209,6 +205,15 @@ a.plus::after{
 }
 a.minus::after{
   content:"\f147";
+}
+a.empty{
+  color:lightgrey;
+}
+a.empty::before{
+  color:lightgrey;
+}
+a.empty:hover{
+  cursor:not-allowed;
 }
 
 /*******************************************************************************
