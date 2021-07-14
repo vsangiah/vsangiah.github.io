@@ -21,7 +21,7 @@ html{
 }
 body{
   width:90%;
-  max-width:950px;
+  max-width:1200px;
   padding: 35px 40px 600px 40px;
   margin:0px auto 0px auto;
   color:#494949;
@@ -107,10 +107,10 @@ li:not(:last-child) {
 }
 .lefttext{
   grid-area:b;
+  max-width:450px;
 }
 .righttext{
   grid-area:c;
-  max-width:500px;
 }
 .bottomtext{
   grid-area:d;
