@@ -1,10 +1,10 @@
 
 *{
-  font-family:'Noto Sans JP','Open Sans',sans-serif;
+  font-family:'Helvetica','Arial','Noto Sans JP','Open Sans',sans-serif;
   margin:0px;
   padding:0px;
   color:inherit;
-  font-size:15px;
+  font-size:16px;
   text-align:left;
   line-height:1.4;
   text-decoration:none;
@@ -20,7 +20,7 @@ html{
   background-color:white;
 }
 body{
-  width:90%;
+  width:1000px;
   max-width:1200px;
   padding: 35px 40px 600px 40px;
   margin:0px auto 0px auto;
@@ -30,8 +30,11 @@ body{
 header{
   margin:0px auto 35px auto;
   color:#006400;
+  /*border:3px solid grey;
+  padding:30px 30pt 30px 30px;*/
   border-bottom:3px solid grey;
-  padding-bottom:10px;
+  padding-top:20px ;
+  padding-bottom:20px ;
   display:grid;
   grid-template-areas: "a b" "a c" "a d";
 }
@@ -55,12 +58,15 @@ a:hover{
 *******************************************************************************/
 
 .webtitle{
+  margin:0px;padding:0px;
   grid-area:a;
-  width:200px;
+  width:300px;
   font-weight:normal;
-  font-size:200%;
+  font-size:250%;
 }
 .nav{
+  margin:0px;padding:0px;
+  padding-top:10px;
   grid-area:c;
   text-align:right;
   align-self:right;
@@ -97,7 +103,6 @@ li:not(:last-child) {
 *******************************************************************************/
 
 .homebox{
-  margin-top:-10px;
   display:grid;
   grid-column-gap:40px;
   grid-template-areas: "a a a a" "b b c c" "d d d d"
@@ -117,6 +122,10 @@ li:not(:last-child) {
 }
 .section{
   padding: 0px 0px 0px 0px;
+  /*border-left:3px solid grey;
+  border-top:3px solid grey;
+  padding:30px 30pt 10px 30px;*/
+  margin-bottom:30px;
 }
 .subsection{
   margin-top:15px;
