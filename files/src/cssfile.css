@@ -4,7 +4,7 @@
   margin:0px;
   padding:0px;
   color:inherit;
-  font-size:17px;
+  font-size:18px;
   text-align:left;
   line-height:1.4;
   text-decoration:none;
@@ -20,23 +20,22 @@ html{
   background-color:white;
 }
 body{
-  width:1000px;
-  max-width:1200px;
-  padding: 35px 40px 600px 40px;
+  /*width:1000px;
+  max-width:1200px;*/
+  min-width:900px;
   margin:0px auto 0px auto;
+  padding-bottom:500px;
   color:#494949;
   background-color:white;
 }
 header{
-  margin:0px auto 35px auto;
   color:#006400;
-  /*border:3px solid grey;
-  padding:30px 30pt 30px 30px;*/
   border-bottom:3px solid grey;
-  padding-top:20px ;
-  padding-bottom:20px ;
+  padding:30px 100px 20px 100px;
+  margin-bottom:10px;
   display:grid;
   grid-template-areas: "a b" "a c" "a d";
+  background-color:#F1F1F1;
 }
 div,p,span,a,i,ul,ol,li{
   font-size:inherit;
@@ -46,6 +45,7 @@ p,div{
 }
 a{
   color:#374A74;
+
 }
 a:hover{
   color:blue;
@@ -88,8 +88,7 @@ a.toca:hover,a.toc:hover{
   border-top:3px solid #006400;
 }
 ul{
-  padding: 5px 0px 0px 20px;
-  list-style-type:square;
+  padding: 5px 0px 0px 30px;
 }
 li{
   margin-bottom:10px;
@@ -112,7 +111,7 @@ li:not(:last-child) {
 }
 .lefttext{
   grid-area:b;
-  max-width:450px;
+  max-width:400px;
 }
 .righttext{
   grid-area:c;
@@ -120,21 +119,26 @@ li:not(:last-child) {
 .bottomtext{
   grid-area:d;
 }
-.section{
-  padding: 0px 0px 0px 0px;
-  /*border-left:3px solid grey;
-  border-top:3px solid grey;
-  padding:30px 30pt 10px 30px;*/
-  margin-bottom:30px;
-}
-.subsection{
-  margin-top:15px;
+.section,.sectiongrid{
+  padding:20px 100px 20px 100px;
+  margin-bottom:-15px;
 }
 h1{
-  margin: 0px 0px 5px 0px;
+  margin: 0px 0px 20px 0px;
   font-weight:normal;
   font-size: 130%;
   color:#006400;
+}
+.subsection{
+  margin-bottom:15px;
+}
+.sectiongrid{
+  display:grid;
+  grid-template-columns:150px auto;
+  grid-column-gap:70px;
+}
+.sectiongrid:nth-child(odd) {
+    background-color:#F8F8F8;
 }
 
 /*******************************************************************************
@@ -143,14 +147,16 @@ h1{
 
 .hidden{
   display:none;
+  font-size:inherit;
 }
 paper{
   color:#006400;
   font-weight:normal;
+  font-size:inherit;
 }
 journal{
   color:#920000;
-  font-size:100%;
+  font-size:inherit;
 }
 alert{
   color:#B26900;
@@ -158,9 +164,11 @@ alert{
 }
 color{
   color:#006400;
+  font-size:inherit;
 }
 red{
   color:red;
+  font-size:inherit;
 }
 u{
   text-decoration:underline;
