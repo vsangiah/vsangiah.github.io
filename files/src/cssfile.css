@@ -30,12 +30,11 @@ body{
 }
 header{
   color:#006400;
-  border-bottom:3px solid grey;
+  border-bottom:3px solid #006400;
   padding:30px 100px 20px 100px;
-  margin-bottom:10px;
   display:grid;
   grid-template-areas: "a b" "a c" "a d";
-  background-color:#F1F1F1;
+  background-color:#F8F8F8;
 }
 div,p,span,a,i,ul,ol,li{
   font-size:inherit;
@@ -120,17 +119,18 @@ li:not(:last-child) {
   grid-area:d;
 }
 .section,.sectiongrid{
-  padding:20px 100px 20px 100px;
-  margin-bottom:-15px;
+  padding:30px 100px 30px 100px;
+  margin-bottom:-20px;
 }
 h1{
   margin: 0px 0px 20px 0px;
   font-weight:normal;
   font-size: 130%;
   color:#006400;
+  padding-top:3px;
 }
 .subsection{
-  margin-bottom:15px;
+  margin-bottom:20px;
 }
 .sectiongrid{
   display:grid;
