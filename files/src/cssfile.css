@@ -253,7 +253,7 @@ a.empty:hover{
 /*@media (hover: none) and (pointer: coarse) , screen and (max-width:400px) {*/
 @media screen and (max-width:900px) {
   html,body,a,div,p,h1,h2,h3,h4,ul,ol,li,paper,color{
-    font-size:14px;
+    font-size:15px;
   }
   html{
     min-width:0px;
@@ -276,7 +276,7 @@ a.empty:hover{
   }
   .webtitle{
     text-align:center;
-    font-size:22px;
+    font-size:24px;
     padding:0px;
     margin-bottom:5px;
     width:100%;
