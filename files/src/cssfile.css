@@ -21,7 +21,8 @@ html{
 }
 body{
   min-width:900px;
-  margin:0px auto 0px auto;
+  max-width:990px;
+  margin:10px auto 500px auto;
   padding:0px auto 500px auto;
   color:#494949;
   background-color:white;
@@ -40,51 +41,6 @@ a:hover{
   cursor:pointer;
   text-decoration:none;
 }
-
-/*******************************************************************************
- HEADER
-*******************************************************************************/
-
-header{
-  color:#006400;
-  border-bottom:3px solid #006400;
-  padding:30px 100px 20px 100px;
-  display:grid;
-  grid-template-areas: "a b" "a c" "a d";
-  background-color:#F8F8F8;
-}
-.webtitle{
-  margin:0px;
-  padding:0px;
-  grid-area:a;
-  width:300px;
-  font-weight:normal;
-  font-size:250%;
-}
-.nav{
-  margin:0px;
-  padding:0px;
-  padding-top:10px;
-  grid-area:c;
-  text-align:right;
-  align-self:right;
-  font-size:120%;
-}
-a.toc{
-  color:grey;
-  padding-top:5px;
-}
-a.toca{
-  color:#006400;
-  border-top:3px solid #006400;
-  padding-top:5px;
-}
-a.toca:hover,a.toc:hover{
-  color:#006400;
-  text-decoration:none;
-  font-weight:normal;
-  border-top:3px solid #006400;
-}
 ul{
   padding: 5px 0px 0px 30px;
 }
@@ -96,35 +52,65 @@ li:not(:last-child) {
 }
 
 /*******************************************************************************
+ HEADER
+*******************************************************************************/
+
+header{
+  padding-top:30px;
+  margin-bottom:0px;
+  text-align:center;
+  color:#006400;
+}
+.title{
+  text-align:center;
+  font-weight:normal;
+  font-size:40px;
+  margin-bottom:10px;
+}
+.subtitle{
+  text-align:center;
+  font-weight:normal;
+  font-size:23px;
+  margin-bottom:20px;
+}
+.nav{
+  text-align:center;
+  padding-top:8px;
+  padding-bottom:8px;
+  border-top:3px solid #006400;
+  border-bottom:3px solid #006400;
+}
+a.toc,a.toca{
+  color:#006400;
+  padding:10px 20px 10px 20px;
+}
+a.toca,a.toc:hover{
+  background-color:#F2F2F2;
+}
+
+/*******************************************************************************
  BODY OF THE WEBSITE
 *******************************************************************************/
 
-.section,.sectiongrid{
-  padding:30px 100px 30px 100px;
-  margin-bottom:-20px;
+.section{
+  padding:30px;
+  border-bottom:1px grey solid;
 }
 .subsection{
-  margin-bottom:20px;
-}
-.sectiongrid{
-  display:grid;
-  grid-template-columns:150px auto;
-  grid-column-gap:70px;
-}
-.sectiongrid:nth-child(odd) {
-    background-color:#F8F8F8;
+  margin-top:20px;
 }
 h1{
   margin: 0px 0px 20px 0px;
-  font-weight:normal;
-  font-size: 130%;
+  font-weight:bold;
+  font-size: 105%;
   color:#006400;
-  padding-top:3px;
+  padding-top:0px;
 }
 .homebox{
   display:grid;
   grid-column-gap:40px;
-  grid-template-areas: "a a a a" "b b c c" "d d d d"
+  grid-template-areas: "a a a a" "b b c c" "d d d d";
+  border-bottom:0px grey solid;
 }
 .toptext{
   grid-area:a;
@@ -253,7 +239,7 @@ a.empty:hover{
 /*@media (hover: none) and (pointer: coarse) , screen and (max-width:400px) {*/
 @media screen and (max-width:900px) {
   html,body,a,div,p,h1,h2,h3,h4,ul,ol,li,paper,color{
-    font-size:15px;
+    font-size:16px;
   }
   html{
     min-width:0px;
@@ -270,47 +256,30 @@ a.empty:hover{
     min-width:0px;
     max-width:900px;
     display:block;
-    border-bottom:2px solid grey;
-    padding-bottom:10px;
-    padding:20px 0px 20px 0px;
   }
-  .webtitle{
-    text-align:center;
-    font-size:24px;
-    padding:0px;
+  .title{
+    font-size:28px;
     margin-bottom:5px;
-    width:100%;
   }
-  .nav{
-    text-align:center;
-    margin:0px;
-    margin-top:10px;
-    padding:0px;
-    text-align:center;
-    align-self:center;
-    font-size:100%;
+  .subtitle{
+    font-size:18px;
   }
-  .section,.sectiongrid{
-    padding:20px 30px 20px 30px;
-    margin-bottom:-20px;
+  a.toc,a.toca,a.toca:hover,a.toc:hover{
+    font-size:16px;
   }
   .section{
-    margin: 0px 0px 5px 0px;
-  }
-  .sectiongrid{
-    display:block;
+    /*padding:20px 30px 0px 30px;
+    margin: 0px 0px 0px 0px;*/
   }
   h1{
     margin: 0px 0px 20px 0px;
   }
   .homebox{
     display:block;
+    padding-top:20px;
   }
   ul{
     padding: 3px 0px 0px 20px;
-  }
-  a.toca,a.toca:hover,a.toc:hover{
-    border-top:0px solid #006400;
   }
   .hidemobile{
     display:none;
