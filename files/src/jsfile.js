@@ -23,7 +23,8 @@ $('a'                  ).attr('target','_blank');
 $('a[class=simple]'    ).attr('target','_self');
 $('a[class=toc]'       ).attr('target','_self');
 $('a[class=toca]'      ).attr('target','_self');
-$('a[class=new]'       ).attr('target','_blank');
+$('a[class=toccv]'     ).attr('target','_blank');
+$('a[class=title]'     ).attr('target','_self');
 
 /* Show/Hide functions *********************************************************/
 

@@ -66,12 +66,14 @@ header{
   font-weight:normal;
   font-size:40px;
   margin-bottom:10px;
+  color:#006400;
 }
 .subtitle{
   text-align:center;
   font-weight:normal;
   font-size:23px;
   margin-bottom:20px;
+  color:#006400;
 }
 .nav{
   text-align:center;
@@ -80,12 +82,17 @@ header{
   border-top:3px solid #006400;
   border-bottom:3px solid #006400;
 }
-a.toc,a.toca{
+a.toc,a.toca,a.tocv{
   color:#006400;
   padding:10px 20px 10px 20px;
+  border-top:3px solid #006400;
+  border-bottom:3px solid #006400;
 }
-a.toca,a.toc:hover{
+a.toca,a.tocv:hover,a.toc:hover{
   background-color:#F2F2F2;
+}
+a.title:hover{
+  color:#006400;
 }
 
 /*******************************************************************************
@@ -236,7 +243,6 @@ a.empty:hover{
  ADDAPT FOR MOBILE PHONES
 *******************************************************************************/
 
-/*@media (hover: none) and (pointer: coarse) , screen and (max-width:400px) {*/
 @media screen and (max-width:900px) {
   html,body,a,div,p,h1,h2,h3,h4,ul,ol,li,paper,color{
     font-size:16px;
@@ -282,6 +288,12 @@ a.empty:hover{
     padding: 3px 0px 0px 20px;
   }
   .hidemobile{
+    display:none;
+  }
+}
+
+@media screen and (max-width:500px) {
+  a.tocv,a.code{
     display:none;
   }
 }
