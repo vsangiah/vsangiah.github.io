@@ -85,8 +85,8 @@ header{
 a.toc,a.toca,a.tocv{
   color:#006400;
   padding:10px 20px 10px 20px;
-  border-top:3px solid #006400;
-  border-bottom:3px solid #006400;
+  /*border-top:3px solid #006400;
+  border-bottom:3px solid #006400;*/
 }
 a.toca,a.tocv:hover,a.toc:hover{
   background-color:#F2F2F2;
