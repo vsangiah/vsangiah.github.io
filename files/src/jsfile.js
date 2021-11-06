@@ -13,7 +13,7 @@ $('a[id=anton]'        ).attr('href','https://sites.google.com/site/antonnakov/'
 $('a[id=josep]'        ).attr('href','https://www.cemfi.es/~pijoan/Welcome.html');
 $('a[id=nezih]'        ).attr('href','https://www.cemfi.es/~guner/');
 $('a[id=jc]'           ).attr('href','https://jcruizgarcia.com/');
-$('a[id=javi]'         ).attr('href','https://www.cemfi.es/studies/phd/lopez.asp');
+$('a[id=javi]'         ).attr('href','https://sites.google.com/view/javierlopezsegovia/home?authuser=0');
 $('a[id=enriquemoral]' ).attr('href','https://moralbenito.weebly.com/');
 $('a[id=tonibraun]'    ).attr('href','https://www.frbatlanta.org/research/economists/braun-anton.aspx');
 

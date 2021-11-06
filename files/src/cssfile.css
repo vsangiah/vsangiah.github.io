@@ -22,13 +22,15 @@ html{
 body{
   min-width:900px;
   max-width:990px;
-  margin:10px auto 500px auto;
-  padding:0px auto 500px auto;
   color:#494949;
   background-color:white;
+  margin:10px auto 500px auto;
+  padding:0px auto 500px auto;
 }
 div,p,span,a,i,ul,ol,li{
   font-size:inherit;
+  color:inherit;
+  text-decoration:inherit;
 }
 p,div{
   margin-top:3px;
@@ -51,55 +53,39 @@ li:not(:last-child) {
   margin-bottom:2px;
 }
 
+
 /*******************************************************************************
  HEADER
 *******************************************************************************/
 
 header{
-  padding-top:20px;
+  padding:20px 15px 0px 15px;
   margin-bottom:0px;
   text-align:center;
   color:#006400;
   display:grid;
-  grid-template-areas: "a a a c c" ;
+  grid-template-areas: "a a a b b" ;
   border-bottom:3px solid #006400;
-  padding-left:15px;
-  padding-right:15px;
 }
 .title{
   grid-area:a;
   text-align:left;
-  font-weight:normal;
   font-size:40px;
   margin-bottom:10px;
-  color:#006400;
-}
-.subtitle{
-  grid-area:b;
-  text-align:left;
-  font-weight:normal;
-  font-size:23px;
-  margin-bottom:20px;
-  color:#006400;
 }
 .nav{
+  grid-area:b;
   font-size:20px;
-  grid-area:c;
   text-align:right;
-  padding-top:25px;
-  padding-bottom:10px;
+  padding:25px 0px 10px 0px;
 }
 a.toc,a.toca,a.tocv{
   color:#006400;
   padding:5px 0px 0px 0px;
-  margin-right:10px;
-  margin-left:10px;
+  margin:0px 10px 0px 10px;
 }
 a.toca,a.tocv:hover,a.toc:hover{
   border-top:3px solid gray;
-}
-a.title:hover{
-  color:#006400;
 }
 
 /*******************************************************************************
@@ -122,22 +108,16 @@ h1{
 }
 .homebox{
   display:grid;
-  grid-column-gap:40px;
-  grid-template-areas: "a a a a" "b b c c" "d d d d";
+  grid-column-gap:20px;
+  grid-template-areas: "a b b b";
   border-bottom:0px grey solid;
 }
-.toptext{
-  grid-area:a;
-}
 .lefttext{
-  grid-area:b;
+  grid-area:a;
   max-width:400px;
 }
 .righttext{
-  grid-area:c;
-}
-.bottomtext{
-  grid-area:d;
+  grid-area:b;
 }
 
 /*******************************************************************************
@@ -190,62 +170,6 @@ b{
   text-align:justify;
 }
 
-a.pdf::before,
-a.slides::before,
-a.code::before,
-a.paper::before,
-a.article::before,
-a.github::before,
-a.link::before,
-a.more::before,
-a.less::before,
-a.twitter::before,
-a.address::before{
-  font-family: "FontAwesome";
-  font-size:90%;
-  color:#006400;
-  margin-right:6px;
-  margin-left:3px;
-}
-
-a.paper::before{    content: "\f0f6 ";}
-a.article::before{  content: "\f02d ";}
-a.pdf::before{      content: "\f1c1 ";}
-a.slides::before{   content: "\f1c4 ";}
-a.code::before{     content: "\f1c9 ";}
-a.github::before{   content: "\f09b ";}
-a.more::before{     content: "\f196 ";}
-a.less::before{     content: "\f147 ";}
-a.link::before{     content: "\f08e ";}
-a.twitter::before{  content: "\f099 ";}
-a.address::before{  content: "\f003 ";}
-
-a.plus,a.minus{
-  margin-right:3px;
-  display: inline-block;
-  margin-top:4px;
-}
-a.plus::after,a.minus::after{
-  font-family: "FontAwesome";
-  margin-left:4px;
-  font-size:70%;
-}
-a.plus::after{
-  content:"\f196";
-}
-a.minus::after{
-  content:"\f147";
-}
-a.empty{
-  color:lightgrey;
-}
-a.empty::before{
-  color:lightgrey;
-}
-a.empty:hover{
-  cursor:not-allowed;
-}
-
 /*******************************************************************************
  ADDAPT FOR MOBILE PHONES
 *******************************************************************************/
@@ -285,6 +209,11 @@ a.empty:hover{
   a.toc,a.toca,a.toca:hover,a.toc:hover{
     font-size:18px;
   }
+  a.toca,a.tocv:hover,a.toc:hover{
+    border:none;
+    font-weight:bold;
+    color:gray
+  }
   h1{
     margin: 0px 0px 20px 0px;
   }
@@ -303,6 +232,24 @@ a.empty:hover{
 @media screen and (max-width:500px) {
   a.tocv,a.code{
     display:none;
+  }
+}
+
+@media screen and (max-width:500px) {
+  header{
+    min-width:0px;
+    max-width:900px;
+    display:block;
+  }
+  .title{
+    font-size:28px;
+    margin-bottom:5px;
+    padding:0px;
+    text-align:center;
+  }
+  .nav{
+    text-align:center;
+    padding:0px 5px 10px 5px;
   }
 }
 
