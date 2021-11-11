@@ -115,14 +115,14 @@ h1{
 .lefttext{
   grid-area:a;
   max-width:400px;
-  margin:5px 0px 20px 0px;
+  margin:5px 15px 20px -15px;
   padding:0px;
   text-align:center;
 }
 .righttext{
   grid-area:b;
   padding:0px;
-  margin:0px;
+  margin:0px -10px 0 10px;
   padding-top:5px
 }
 
@@ -232,10 +232,12 @@ b{
     grid-area:b;
     aling:center;
     max-width:100%;
+    margin:5px 0px 20px 0px;
   }
   .righttext{
     width:100%;
     grid-area:a;
+    margin:0px;
   }
   ul{
     padding: 3px 0px 0px 20px;
