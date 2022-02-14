@@ -110,7 +110,10 @@ a.toca,a.tocv:hover,a.toc:hover{
 *******************************************************************************/
 
 .section{
-  padding:25px;
+  padding-top:25px;
+  padding-bottom:25px;
+  padding-right:15px;
+  padding-left:15px;
   border-bottom:1px grey solid;
 }
 .subsection{
@@ -118,9 +121,8 @@ a.toca,a.tocv:hover,a.toc:hover{
 }
 h1{
   margin: 0px 0px 20px 0px;
-  font-weight:bold;
   font-weight:400;
-  font-size: 105%;
+  font-size: 110%;
   color:#006400;
   padding-top:0px;
 }
