@@ -138,6 +138,30 @@ h1{
 .grid>div{
   min-width:450px;
 }
+.teaching{
+  margin-top:-5px;
+  display:grid;
+  grid-template-columns: 32% 32% 32%;
+  grid-column-gap:20px;
+  grid-row-gap:15px;
+}
+.course{
+  border:3px solid lightgray;
+  padding:10px 15px 10px 15px;
+  text-align:left;
+  border-radius:0px;
+}
+.linkshome{
+  margin-top:0px;
+  text-align:center;
+  border-top:1px gray solid;
+  border-bottom:1px gray solid;
+  padding:5px;
+}
+.linkshome>a{
+  margin-left:8px;
+  margin-right:8px;
+}
 
 /*******************************************************************************
  OTHER COMMANDS
@@ -235,9 +259,6 @@ b{
     font-weight:bold;
     color:gray
   }
-  h1{
-    margin: 0px 0px 20px 0px;
-  }
   .homebox{
     padding-top:20px;
     display:grid;
@@ -245,20 +266,31 @@ b{
   }
   .lefttext{
     grid-area:b;
-    aling:center;
     max-width:100%;
-    margin:5px 0px 20px 0px;
+    margin:0px;
+    padding:0px;
   }
   .righttext{
     width:100%;
     grid-area:a;
     margin:0px;
+    padding:20px 0px 0px 0px;
+  }
+  .section{
+    padding-left:25px;
+    padding-right:25px;
+  }
+  h1{
+    margin: 0px 0px 20px 0px;
   }
   ul{
     padding: 3px 0px 0px 20px;
   }
   a.tocv,.hidemobile{
     display:none;
+  }
+  .teaching{
+    grid-template-columns: 47% 47%;
   }
 }
 
@@ -286,6 +318,18 @@ b{
   .nav{
     grid-area:a;
     padding:0px 0px 10px 0px;
+  }
+  .teaching{
+    grid-template-columns: 100%;
+  }
+  .linkshome{
+    margin-top:-10px;
+    padding-top:20px;
+    padding-bottom:20px;
+  }
+  .linkshome>a{
+    display:block;
+    margin-bottom:4px;
   }
 }
 
