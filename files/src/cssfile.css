@@ -55,7 +55,6 @@ li:not(:last-child) {
   margin-bottom:2px;
 }
 
-
 /*******************************************************************************
  HEADER
 *******************************************************************************/
@@ -115,20 +114,20 @@ h1{
 .homebox{
   display:grid;
   grid-column-gap:20px;
-  grid-template-areas: "a b b b";
+  grid-template-areas: "b b b a";
   border-bottom:0px grey solid;
 }
 .lefttext{
   grid-area:a;
   max-width:400px;
-  margin:5px 15px 20px -15px;
+  margin:0px;
   padding:0px;
   text-align:center;
 }
 .righttext{
   grid-area:b;
   padding:0px;
-  margin:0px -10px 0 10px;
+  margin:0px;
   padding-top:5px
 }
 .grid{
