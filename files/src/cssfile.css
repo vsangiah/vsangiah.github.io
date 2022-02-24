@@ -91,16 +91,16 @@ header{
 *******************************************************************************/
 
 .homebox{
-  padding-top:0px;
   display:grid;
-  grid-column-gap:20px;
+  grid-column-gap:30px;
+  grid-row-gap:0px;
   grid-template-areas: "b b b a";
+  background-color:#F0F0F0;
+  padding:40px 40px 40px 40px;
+  margin:20px 0px 20px 0px;
 }
 .presentation{
   grid-area:b;
-  padding:0px;
-  margin:0px 10px 0px 0px;
-  padding-top:5px
 }
 .linkshome{
   margin-top:20px;
@@ -113,13 +113,11 @@ header{
 .fotografia{
   grid-area:a;
   max-width:400px;
-  margin:0px;
-  padding:0px;
   text-align:center;
 }
-.homebox>.img{
+.fotografia>img{
   width:230px;
-  margin:15px 0px 0px 0px;
+  margin:0px 0px 0px 0px;
   padding:0px 0px 0px 0px;
   border:3px grey solid;
   border-radius:100%
