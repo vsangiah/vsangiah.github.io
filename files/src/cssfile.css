@@ -20,13 +20,15 @@
 
 html{
   background-color:white;
+  padding:30px;
+  padding-top:50px;
 }
 body{
-  min-width:900px;
+  min-width:880px;
   max-width:990px;
   color:#494949;
   background-color:white;
-  margin:10px auto 500px auto;
+  margin:0px auto 500px auto;
   padding:0px auto 500px auto;
 }
 div,p,span,a,i,ul,ol,li{
@@ -60,34 +62,67 @@ li:not(:last-child) {
 *******************************************************************************/
 
 header{
-  padding:20px 15px 3px 15px;
-  margin-bottom:0px;
-  text-align:left;
-  color:#006400;
-  display:grid;
-  grid-template-areas: "a a b b" ;
-  border-bottom:3px solid #006400;
+  margin:0px 0px 0px 0px;
+  padding:0px 0px 0px 0px;
+  border-bottom:0px solid #006400;
 }
 .title{
-  grid-area:a;
+  color:#006400;
   text-align:left;
   font-size:35px;
   font-weight:400;
-  margin-bottom:5px;
+  margin:0px 0px 0px 0px;
+  padding:0px 0px 0px 0px;
 }
-.nav{
-  grid-area:b;
-  font-size:18px;
-  text-align:right;
-  padding:15px 0px 5px 0px;
-}
-a.toc,a.toca,a.tocv{
+.subtitle{
   color:#006400;
-  padding:5px 0px 0px 0px;
-  margin:0px 10px 0px 10px;
+  color:gray;
+  text-align:left;
+  font-size:25px;
+  font-weight:400;
+  margin:0px 0px 5px 0px;
+  padding:0px 0px 0px 0px;
+  font-variant-caps: small-caps;
+  font-variant-caps: all-petite-caps;
 }
-a.toca,a.tocv:hover,a.toc:hover{
-  border-top:3px solid gray;
+
+/*******************************************************************************
+ PRESENTATION
+*******************************************************************************/
+
+.homebox{
+  padding-top:0px;
+  display:grid;
+  grid-column-gap:20px;
+  grid-template-areas: "b b b a";
+}
+.presentation{
+  grid-area:b;
+  padding:0px;
+  margin:0px 10px 0px 0px;
+  padding-top:5px
+}
+.linkshome{
+  margin-top:20px;
+  padding:5px;
+  column-count:3;
+}
+.linkshome>a{
+  display:block;
+}
+.fotografia{
+  grid-area:a;
+  max-width:400px;
+  margin:0px;
+  padding:0px;
+  text-align:center;
+}
+.homebox>.img{
+  width:230px;
+  margin:15px 0px 0px 0px;
+  padding:0px 0px 0px 0px;
+  border:3px grey solid;
+  border-radius:100%
 }
 
 /*******************************************************************************
@@ -95,40 +130,22 @@ a.toca,a.tocv:hover,a.toc:hover{
 *******************************************************************************/
 
 .section{
-  padding-top:25px;
-  padding-bottom:25px;
-  padding-right:15px;
-  padding-left:15px;
-  border-bottom:1px grey solid;
+  margin: 0px 0px 25px 0px;
+  padding: 15px 0px 15px 0px;
+}
+h1{
+  margin: 0px 0px 10px 0px;
+  padding: 0px 0px 0px 0px;
+  font-weight:bold;
+  font-size: 130%;
+  color:#006400;
+  color:gray;
+}
+.seccontent{
+  padding:0px;
 }
 .subsection{
   margin-top:20px;
-}
-h1{
-  margin: 0px 0px 20px 0px;
-  font-weight:400;
-  font-size: 110%;
-  color:#006400;
-  padding-top:0px;
-}
-.homebox{
-  display:grid;
-  grid-column-gap:20px;
-  grid-template-areas: "b b b a";
-  border-bottom:0px grey solid;
-}
-.lefttext{
-  grid-area:a;
-  max-width:400px;
-  margin:0px;
-  padding:0px;
-  text-align:center;
-}
-.righttext{
-  grid-area:b;
-  padding:0px;
-  margin:0px;
-  padding-top:5px
 }
 .grid{
   display:grid;
@@ -138,7 +155,7 @@ h1{
   min-width:450px;
 }
 .teaching{
-  margin-top:-5px;
+  padding-top:10px;
   display:grid;
   grid-template-columns: 32% 32% 32%;
   grid-column-gap:20px;
@@ -149,17 +166,6 @@ h1{
   padding:10px 15px 10px 15px;
   text-align:left;
   border-radius:0px;
-}
-.linkshome{
-  margin-top:0px;
-  text-align:center;
-  border-top:1px gray solid;
-  border-bottom:1px gray solid;
-  padding:5px;
-}
-.linkshome>a{
-  margin-left:8px;
-  margin-right:8px;
 }
 
 /*******************************************************************************
@@ -213,123 +219,3 @@ b{
   color:#616161;
   text-align:justify;
 }
-
-/*******************************************************************************
- ADDAPT FOR MOBILE PHONES
-*******************************************************************************/
-
-@media screen and (max-width:900px) {
-  html,body,a,div,p,h1,h2,h3,h4,ul,ol,li,paper,color{
-    font-size:16px;
-  }
-  html{
-    min-width:0px;
-    margin:0px auto 0px auto;
-    background-color:white;
-    padding:0px;
-  }
-  body{
-    margin:0px;
-    min-width:0px;
-    padding:0px 0px 200px 0px;
-  }
-  header{
-    min-width:0px;
-    max-width:900px;
-    display:grid;
-    grid-template-areas: "a c c" ;
-  }
-  .title{
-    grid-area:a;
-    width:150px;
-    font-size:28px;
-    margin:0px 0px 5px 0px;
-    padding:0px 0px 0px 10px;
-  }
-  .nav{
-    grid-area:c;
-    padding:7px 10px 10px 0px;
-  }
-  a.toc,a.toca,a.toca:hover,a.toc:hover{
-    font-size:18px;
-  }
-  a.toca,a.tocv:hover,a.toc:hover{
-    border:none;
-    font-weight:bold;
-    color:gray
-  }
-  .homebox{
-    padding-top:20px;
-    display:grid;
-    grid-template-areas: "b b" "a a";
-  }
-  .lefttext{
-    grid-area:b;
-    max-width:100%;
-    margin:0px;
-    padding:0px;
-  }
-  .righttext{
-    width:100%;
-    grid-area:a;
-    margin:0px;
-    padding:20px 0px 0px 0px;
-  }
-  .section{
-    padding-left:25px;
-    padding-right:25px;
-  }
-  h1{
-    margin: 0px 0px 20px 0px;
-  }
-  ul{
-    padding: 3px 0px 0px 20px;
-  }
-  a.tocv,.hidemobile{
-    display:none;
-  }
-  .teaching{
-    grid-template-columns: 47% 47%;
-  }
-}
-
-@media screen and (max-width:500px) {
-  a.code{
-    display:none;
-  }
-  header{
-    min-width:0px;
-    max-width:500px;
-    display:grid;
-    grid-template-areas: "b" "a";
-  }
-  .title,.nav{
-    width:100%;
-    text-align:center;
-    margin:0px;
-    padding:0px;
-  }
-  .title{
-    grid-area:b;
-    font-size:28px;
-    margin-bottom:5px;
-  }
-  .nav{
-    grid-area:a;
-    padding:0px 0px 10px 0px;
-  }
-  .teaching{
-    grid-template-columns: 100%;
-  }
-  .linkshome{
-    margin-top:-10px;
-    padding-top:20px;
-    padding-bottom:20px;
-  }
-  .linkshome>a{
-    display:block;
-    margin-bottom:4px;
-  }
-}
-
-/******************************************************************************/

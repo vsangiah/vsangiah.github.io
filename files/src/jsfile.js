@@ -21,6 +21,8 @@ $('a[id=tonibraun]'    ).attr('href','https://www.frbatlanta.org/research/econom
 
 $('a'                  ).attr('target','_blank');
 $('a[class=simple]'    ).attr('target','_self');
+$('a[class=top]'       ).attr('target','_self');
+$('a[class=down]'      ).attr('target','_self');
 $('a[class=toc]'       ).attr('target','_self');
 $('a[class=toca]'      ).attr('target','_self');
 $('a[class=toccv]'     ).attr('target','_blank');

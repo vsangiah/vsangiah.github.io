@@ -1,0 +1,28 @@
+
+@media screen and (max-width:550px) {
+  html{
+    padding:10px;
+  }
+  a.code{
+    display:none;
+  }
+  header{
+    min-width:0px;
+    max-width:500px;
+  }
+  .title{
+    text-align:center;
+    margin:0px;
+    padding:0px;
+    font-size:28px;
+    margin-bottom:5px;
+  }
+  .teaching{
+    grid-template-columns: 100%;
+  }
+  .linkshome{
+    margin-top:20px;
+    padding:5px;
+    column-count:1;
+  }
+}

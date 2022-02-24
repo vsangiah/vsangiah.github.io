@@ -1,0 +1,107 @@
+
+/*******************************************************************************
+ ADDAPT FOR MOBILE PHONES
+*******************************************************************************/
+
+@media screen and (max-width:900px) {
+
+/******************************************************************************/
+
+  *{
+    font-size:16px;
+  }
+
+/******************************************************************************/
+
+  html{
+    padding:20px;
+  }
+  body{
+    margin:0px;
+    min-width:0px;
+    padding:0px 20px 200px 20px;
+  }
+  div,p,span,a,i,ul,ol,li{
+  }
+  p,div{
+  }
+  a{
+  }
+  a:hover{
+  }
+  ul{
+    padding: 3px 0px 0px 20px;
+  }
+  li{
+  }
+  li:not(:last-child) {
+  }
+
+/******************************************************************************/
+
+  header{
+  }
+  .title{
+    text-align:center;
+    font-size:28px;
+    margin:0px 0px 5px 0px;
+    padding:0px 0px 0px 10px;
+  }
+  .subtitle{
+    text-align:center;
+    font-size:20px;
+    margin:0px 0px 5px 0px;
+    padding:0px 0px 0px 10px;
+  }
+
+/******************************************************************************/
+
+  .homebox{
+    padding-top:0px;
+    display:grid;
+    grid-template-areas: "b b" "a a";
+  }
+  .fotografia{
+    grid-area:b;
+    max-width:100%;
+  }
+  .linkshome{
+    column-count:3;
+  }
+  .presentation{
+    grid-area:a;
+    padding:20px 0px 0px 0px;
+  }
+  .homebox>.img{
+    margin:5px 0px 0px 0px;
+  }
+
+/******************************************************************************/
+
+  .section{
+    margin: 0px 0px 10px 0px;
+  }
+  h1{
+    font-size:120%
+  }
+  .seccontent{
+  }
+  .subsection{
+  }
+  .grid{
+  }
+  .grid>div{
+  }
+  .teaching{
+    grid-template-columns: 47% 47%;
+  }
+  .course{
+  }
+
+/******************************************************************************/
+
+  .hidemobile{
+    display:none;
+  }
+
+}
