@@ -19,7 +19,7 @@
   body{
     margin:0px;
     min-width:0px;
-    padding:0px 20px 200px 20px;
+    padding:20px 20px 200px 20px;
   }
   div,p,span,a,i,ul,ol,li{
   }
@@ -61,28 +61,28 @@
     display:grid;
     grid-template-areas: "b b" "a a";
   }
-  .fotografia{
-    grid-area:b;
-    max-width:100%;
-  }
-  .linkshome{
-    column-count:3;
-  }
   .presentation{
     grid-area:a;
     padding:20px 0px 0px 0px;
   }
+  .linkshome{
+    column-count:3;
+  }
+  .fotografia{
+    grid-area:b;
+    max-width:100%;
+  }
   .homebox>.img{
-    margin:5px 0px 0px 0px;
+    margin:0px 0px 0px 0px;
   }
 
 /******************************************************************************/
 
   .section{
-    margin: 0px 0px 10px 0px;
+    margin:20px 0px 30px 0px;
   }
   h1{
-    font-size:120%
+    font-size:120%;
   }
   .seccontent{
   }

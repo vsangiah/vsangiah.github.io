@@ -1,11 +1,28 @@
 
 @media screen and (max-width:550px) {
+  
   html{
     padding:10px;
   }
-  a.code{
-    display:none;
+  body{
   }
+  div,p,span,a,i,ul,ol,li{
+  }
+  p,div{
+  }
+  a{
+  }
+  a:hover{
+  }
+  ul{
+  }
+  li{
+  }
+  li:not(:last-child) {
+  }
+
+/******************************************************************************/
+
   header{
     min-width:0px;
     max-width:500px;
@@ -17,12 +34,49 @@
     font-size:28px;
     margin-bottom:5px;
   }
-  .teaching{
-    grid-template-columns: 100%;
+  .subtitle{
+  }
+
+  /******************************************************************************/
+
+  .homebox{
+  }
+  .presentation{
   }
   .linkshome{
     margin-top:20px;
     padding:5px;
     column-count:1;
   }
+  .fotografia{
+  }
+  .homebox>.img{
+  }
+
+    /******************************************************************************/
+
+  .section{
+  }
+  h1{
+  }
+  .seccontent{
+  }
+  .subsection{
+  }
+  .grid{
+  }
+  .grid>div{
+  }
+
+  .teaching{
+    grid-template-columns: 100%;
+  }
+  .course{
+  }
+    /******************************************************************************/
+
+  a.code{
+    display:none;
+  }
+
 }
