@@ -95,7 +95,7 @@ header{
   grid-column-gap:30px;
   grid-row-gap:0px;
   grid-template-areas: "b b b a";
-  background-color:#F0F0F0;
+  background-color:#F4F4F4;
   padding:40px 40px 40px 40px;
   margin:20px 0px 20px 0px;
 }
@@ -129,6 +129,8 @@ header{
 
 .section{
   margin:35px 0px 35px 0px;
+  background-color:#F4F4F4;
+  padding:30px 30px 30px 30px;
 }
 h1{
   margin: 0px 0px 10px 0px;

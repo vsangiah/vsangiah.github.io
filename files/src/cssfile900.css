@@ -60,6 +60,7 @@
     padding-top:0px;
     display:grid;
     grid-template-areas: "b b" "a a";
+    margin:20px 0px 30px 0px;
   }
   .presentation{
     grid-area:a;
