@@ -21,11 +21,10 @@
 html{
   background-color:white;
   padding:30px;
-  padding-top:40px;
 }
 body{
   min-width:880px;
-  max-width:990px;
+  max-width:1100px;
   color:#494949;
   background-color:white;
   margin:0px auto 500px auto;
@@ -49,41 +48,13 @@ a:hover{
 }
 ul{
   padding: 5px 0px 0px 30px;
+  margin:0px;
 }
 li{
   margin-bottom:10px;
 }
 li:not(:last-child) {
   margin-bottom:2px;
-}
-
-/*******************************************************************************
- HEADER
-*******************************************************************************/
-
-header{
-  margin:0px 0px 0px 0px;
-  padding:0px 0px 0px 0px;
-  border-bottom:0px solid #006400;
-}
-.title{
-  color:#006400;
-  text-align:left;
-  font-size:35px;
-  font-weight:400;
-  margin:0px 0px 0px 0px;
-  padding:0px 0px 0px 0px;
-}
-.subtitle{
-  color:#006400;
-  color:gray;
-  text-align:left;
-  font-size:25px;
-  font-weight:400;
-  margin:0px 0px 5px 0px;
-  padding:0px 0px 0px 0px;
-  font-variant-caps: small-caps;
-  font-variant-caps: all-petite-caps;
 }
 
 /*******************************************************************************
@@ -94,10 +65,34 @@ header{
   display:grid;
   grid-column-gap:30px;
   grid-row-gap:0px;
-  grid-template-areas: "b b b a";
+  grid-template-areas: "c c c c" "b b b a";
   background-color:#F4F4F4;
-  padding:40px 40px 40px 40px;
   margin:20px 0px 20px 0px;
+  padding:25px 35px 35px 30px;
+}
+header{
+  grid-area:c;
+}
+.title{
+  color:#006400;
+  text-align:left;
+  font-size:35px;
+  font-weight:400;
+  margin:0px 0px 0px 0px;
+  padding:0px 0px 0px 0px;
+  font-size:40px;
+  font-weight:200;
+}
+.subtitle{
+  color:#006400;
+  color:gray;
+  text-align:left;
+  font-size:28px;
+  font-weight:200;
+  margin:0px 0px 5px 0px;
+  padding:0px 0px 0px 0px;
+  font-variant-caps: small-caps;
+  font-variant-caps: all-petite-caps;
 }
 .presentation{
   grid-area:b;
@@ -130,41 +125,23 @@ header{
 .section{
   margin:35px 0px 35px 0px;
   background-color:#F4F4F4;
-  padding:30px 30px 30px 30px;
+  padding:15px 30px 25px 30px;
 }
 h1{
-  margin: 0px 0px 10px 0px;
+  margin: 5px 0px 10px 0px;
   padding: 0px 0px 0px 0px;
   font-weight:bold;
   font-size: 130%;
   color:#006400;
   color:gray;
+  font-size:26px;
+  font-weight:200;
 }
 .seccontent{
   padding:0px;
 }
 .subsection{
   margin-top:20px;
-}
-.grid{
-  display:grid;
-  grid-template-columns: 50% 50%;
-}
-.grid>div{
-  min-width:450px;
-}
-.teaching{
-  padding-top:10px;
-  display:grid;
-  grid-template-columns: 32% 32% 32%;
-  grid-column-gap:20px;
-  grid-row-gap:15px;
-}
-.course{
-  border:3px solid lightgray;
-  padding:10px 15px 10px 15px;
-  text-align:left;
-  border-radius:0px;
 }
 
 /*******************************************************************************
@@ -177,12 +154,11 @@ h1{
 }
 paper{
   color:#006400;
-  font-weight:400;
+  /* font-weight:400; */
   font-size:inherit;
 }
 journal{
   color:#920000;
-  font-weight:400;
   font-size:inherit;
 }
 alert{
