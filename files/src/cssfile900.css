@@ -5,13 +5,13 @@
 
 @media screen and (max-width:900px) {
 
-  /******************************************************************************/
-
   *{
-    font-size:16px;
+    font-size: 14px;
   }
 
-  /******************************************************************************/
+  /*******************************************************************************
+   MAIN ELEMENTS
+  *******************************************************************************/
 
   html{
     padding:20px;
@@ -29,79 +29,82 @@
   }
   a:hover{
   }
+  a.button{
+  }
   ul{
-    padding: 3px 0px 0px 20px;
   }
   li{
   }
   li:not(:last-child) {
   }
+  u{
+  }
+  b{
+  }
 
-  /******************************************************************************/
+  /*******************************************************************************
+   STRUCTURE OF THE LAYOUT
+   Header-Header-Header
+   Picture  MainContent
+  *******************************************************************************/
 
-  .homebox{
-    padding-top:0px;
+  body{
     display:grid;
-    grid-template-areas: "c c" "b b" "a a";
-    margin:20px 0px 30px 0px;
+    grid-template-areas: "h h h h" "p m m m";
+    grid-column-gap:50px;
+    grid-row-gap:10px;
   }
   header{
-    grid-area:c;
-    padding:10px 0px 10px 0px;
-  }
-  .title{
-    text-align:center;
-    font-size:30px;
-    margin:0px 0px 0px 0px;
-    padding:0px 0px 0px 0px;
-  }
-  .subtitle{
-    text-align:center;
-    font-size:25px;
-    margin:0px 0px 5px 0px;
-    padding:0px 0px 0px 0px;
-  }
-  .presentation{
-    grid-area:a;
-    padding:10px 0px 0px 0px;
-  }
-  .linkshome{
-    column-count:3;
+  grid-area:h;
   }
   .fotografia{
-    grid-area:b;
-    max-width:100%;
+    grid-area:p;
+    width:150px;
   }
-  .homebox>.img{
-    margin:0px 0px 0px 0px;
+  .fotografia>img{
+    width:100%;
+  }
+  .maincontent{
+    display:block;
   }
 
-  /******************************************************************************/
+  /*******************************************************************************
+   HEADER
+  *******************************************************************************/
+
+  .title{
+  }
+  .subtitle{
+  }
+
+  /*******************************************************************************
+   MAIN CONTENT
+  *******************************************************************************/
 
   .section{
-    margin:20px 0px 30px 0px;
   }
   h1{
-    font-size:130%;
-  }
-  .seccontent{
   }
   .subsection{
   }
-  .grid{
-  }
-  .grid>div{
-  }
-  .teaching{
-    grid-template-columns: 47% 47%;
-  }
-  .course{
-  }
 
-  /******************************************************************************/
+  /*******************************************************************************
+   OTHER COMMANDS
+  *******************************************************************************/
 
-  .hidemobile{
-    display:none;
+  .hidden{
+  }
+  paper{
+  }
+  journal{
+  }
+  alert{
+  }
+  color{
+  }
+  red{
+  }
+  .abstract{
   }
 
 }

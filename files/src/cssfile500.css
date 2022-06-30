@@ -1,79 +1,100 @@
 
 @media screen and (max-width:550px) {
 
-  html{
-    padding:10px;
-  }
-  body{
-  }
-  div,p,span,a,i,ul,ol,li{
-  }
-  p,div{
-  }
-  a{
-  }
-  a:hover{
-  }
-  ul{
-  }
-  li{
-  }
-  li:not(:last-child) {
-  }
 
-  /******************************************************************************/
+    *{
+      font-size: 13px;
+    }
 
-  .homebox{
-  }
-  header{
-    min-width:0px;
-    max-width:500px;
-  }
-  .title{
-    text-align:center;
-    margin:0px;
-    padding:0px;
-    font-size:28px;
-    margin-bottom:5px;
-  }
-  .subtitle{
-  }
-  .presentation{
-  }
-  .linkshome{
-    margin-top:20px;
-    padding:5px;
-    column-count:1;
-  }
-  .fotografia{
-  }
-  .homebox>.img{
-  }
+    /*******************************************************************************
+     MAIN ELEMENTS
+    *******************************************************************************/
 
-  /******************************************************************************/
+    html{
+      padding:10px;
+    }
+    body{
+    }
+    div,p,span,a,i,ul,ol,li{
+    }
+    p,div{
+    }
+    a{
+    }
+    a:hover{
+    }
+    a.button{
+    }
+    ul{
+    }
+    li{
+    }
+    li:not(:last-child) {
+    }
+    u{
+    }
+    b{
+    }
 
-  .section{
-  }
-  h1{
-  }
-  .seccontent{
-  }
-  .subsection{
-  }
-  .grid{
-  }
-  .grid>div{
-  }
+    /*******************************************************************************
+     STRUCTURE OF THE LAYOUT
+     Header-Header-Header
+     Picture  MainContent
+    *******************************************************************************/
 
-  .teaching{
-    grid-template-columns: 100%;
-  }
-  .course{
-  }
-  /******************************************************************************/
+    body{
+      display:block;
+    }
+    header{
+      display:block;
+    }
+    .fotografia{
+      display:none;
+    }
+    .fotografia>img{
+      display:none;
+    }
+    .maincontent{
+      display:block;
+    }
 
-  a.code{
-    display:none;
-  }
+    /*******************************************************************************
+     HEADER
+    *******************************************************************************/
+
+    .title{
+    }
+    .subtitle{
+    }
+
+    /*******************************************************************************
+     MAIN CONTENT
+    *******************************************************************************/
+
+    .section{
+    }
+    h1{
+    }
+    .subsection{
+    }
+
+    /*******************************************************************************
+     OTHER COMMANDS
+    *******************************************************************************/
+
+    .hidden{
+    }
+    paper{
+    }
+    journal{
+    }
+    alert{
+    }
+    color{
+    }
+    red{
+    }
+    .abstract{
+    }
 
 }

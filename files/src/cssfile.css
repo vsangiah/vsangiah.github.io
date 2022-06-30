@@ -1,12 +1,15 @@
 
 
 @import url("http://fonts.googleapis.com/css?family=Helvetica:200,300italic,400,400italic,500,500italic,600,600italic");
+
+@import url("http://fonts.googleapis.com/css?family=Roboto:300,300italic,400,400italic,500,500italic,600,600italic");
+
 *{
-  font-family:'Helvetica',sans-serif;
+  font-family:'Roboto','Helvetica',sans-serif;
   margin:0px;
   padding:0px;
   color:inherit;
-  font-size: 17px;
+  font-size: 16px;
   font-weight: 200;
   line-height: 1.4em;
   text-decoration:none;
@@ -15,7 +18,7 @@
 }
 
 /*******************************************************************************
- MAIN STRUCTURE
+ MAIN ELEMENTS
 *******************************************************************************/
 
 html{
@@ -46,6 +49,15 @@ a:hover{
   cursor:pointer;
   text-decoration:none;
 }
+a.button{
+  border: 1px gray solid;
+  border-radius:5%;
+  background-color: #F1F1F1;
+  padding: 2px 10px;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
 ul{
   padding: 5px 0px 0px 30px;
   margin:0px;
@@ -56,92 +68,90 @@ li{
 li:not(:last-child) {
   margin-bottom:2px;
 }
+u{
+  text-decoration:underline;
+  color:inherit;
+  font-size:inherit;
+  font-weight:inherit;
+  text-align:inherit;
+}
+b{
+  text-decoration:inherit;
+  color:inherit;
+  font-size:inherit;
+  font-weight:bold;
+  text-align:inherit;
+}
 
 /*******************************************************************************
- PRESENTATION
+ STRUCTURE OF THE LAYOUT
+ Header-Header-Header
+ Picture  MainContent
 *******************************************************************************/
 
-.homebox{
+body{
   display:grid;
-  grid-column-gap:30px;
-  grid-row-gap:0px;
-  grid-template-areas: "c c c c" "b b b a";
-  background-color:#F4F4F4;
-  margin:20px 0px 20px 0px;
-  padding:25px 35px 35px 30px;
+  grid-template-areas: "h h h h" "p m m m";
+  grid-column-gap:50px;
+  grid-row-gap:10px;
 }
 header{
-  grid-area:c;
-}
-.title{
-  color:#006400;
-  text-align:left;
-  font-size:35px;
-  font-weight:400;
-  margin:0px 0px 0px 0px;
-  padding:0px 0px 0px 0px;
-  font-size:40px;
-  font-weight:200;
-}
-.subtitle{
-  color:#006400;
-  color:gray;
-  text-align:left;
-  font-size:28px;
-  font-weight:200;
-  margin:0px 0px 5px 0px;
-  padding:0px 0px 0px 0px;
-  font-variant-caps: small-caps;
-  font-variant-caps: all-petite-caps;
-}
-.presentation{
-  grid-area:b;
-}
-.linkshome{
-  margin-top:20px;
-  padding:5px;
-  column-count:3;
-}
-.linkshome>a{
-  display:block;
+  grid-area:h;
 }
 .fotografia{
-  grid-area:a;
-  max-width:400px;
+  grid-area:p;
+  max-width:300px;
   text-align:center;
+  margin:0px auto 0px auto;
 }
 .fotografia>img{
-  width:230px;
-  margin:0px 0px 0px 0px;
+  width:200px;
+  margin:20px 0px 2px 0px;
   padding:0px 0px 0px 0px;
   border:3px grey solid;
   border-radius:100%
 }
+.maincontent{
+  grid-area:m;
+  min-width:300px;
+}
 
 /*******************************************************************************
- BODY OF THE WEBSITE
+ HEADER
+*******************************************************************************/
+
+.title{
+  color:#006400;
+  text-align:left;
+  font-size:250%;
+  font-weight:200;
+}
+.subtitle{
+  color:gray;
+  text-align:left;
+  font-size:175%;
+  font-weight:200;
+  font-variant-caps: all-petite-caps;
+  line-height:1;
+}
+
+/*******************************************************************************
+ MAIN CONTENT
 *******************************************************************************/
 
 .section{
-  margin:35px 0px 35px 0px;
-  background-color:#F4F4F4;
-  padding:15px 30px 25px 30px;
+  padding:0px 0px 20px 0px;
 }
 h1{
   margin: 5px 0px 10px 0px;
   padding: 0px 0px 0px 0px;
-  font-weight:bold;
-  font-size: 130%;
   color:#006400;
-  color:gray;
-  font-size:26px;
+  font-size:140%;
   font-weight:200;
-}
-.seccontent{
-  padding:0px;
 }
 .subsection{
   margin-top:20px;
+  line-height:1.6;
 }
 
 /*******************************************************************************
@@ -154,7 +164,6 @@ h1{
 }
 paper{
   color:#006400;
-  /* font-weight:400; */
   font-size:inherit;
 }
 journal{
@@ -173,20 +182,6 @@ color{
 red{
   color:red;
   font-size:inherit;
-}
-u{
-  text-decoration:underline;
-  color:inherit;
-  font-size:inherit;
-  font-weight:inherit;
-  text-align:inherit;
-}
-b{
-  text-decoration:inherit;
-  color:inherit;
-  font-size:inherit;
-  font-weight:bold;
-  text-align:inherit;
 }
 .abstract{
   color:gray;
