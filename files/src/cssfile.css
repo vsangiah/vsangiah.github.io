@@ -61,6 +61,7 @@ a.button{
 ul{
   padding: 5px 0px 0px 30px;
   margin:0px;
+  list-style: circle;
 }
 li{
   margin-bottom:10px;
@@ -92,28 +93,31 @@ b{
 body{
   display:grid;
   grid-template-areas: "h h h h" "p m m m";
-  grid-column-gap:50px;
-  grid-row-gap:10px;
+  grid-column-gap:0px;
+  grid-row-gap:0px;
 }
 header{
   grid-area:h;
-}
-.fotografia{
-  grid-area:p;
-  max-width:300px;
-  text-align:center;
-  margin:0px auto 0px auto;
-}
-.fotografia>img{
-  width:200px;
-  margin:20px 0px 2px 0px;
-  padding:0px 0px 0px 0px;
-  border:3px grey solid;
-  border-radius:100%
+  padding-bottom:15px;
+  border-bottom:2px solid gray;
 }
 .maincontent{
   grid-area:m;
-  min-width:300px;
+  padding-left:25px;
+  padding-top:20px;
+}
+.fotografia{
+  grid-area:p;
+  text-align:center;
+  width:200px;
+  margin:0px auto 0px auto;
+  padding: 20px 25px 0px 0px;
+}
+.mainpic{
+  width:100%;
+  margin:0px 0px 2px 0px;
+  border:3px grey solid;
+  border-radius:100%
 }
 
 /*******************************************************************************
@@ -124,15 +128,14 @@ header{
   color:#006400;
   text-align:left;
   font-size:250%;
-  font-weight:200;
+  display:block;
 }
 .subtitle{
   color:gray;
   text-align:left;
-  font-size:175%;
-  font-weight:200;
-  font-variant-caps: all-petite-caps;
+  font-size:140%;
   line-height:1;
+  display:block;
 }
 
 /*******************************************************************************
@@ -140,17 +143,16 @@ header{
 *******************************************************************************/
 
 .section{
-  padding:0px 0px 20px 0px;
+  margin-bottom:25px;
 }
 h1{
-  margin: 5px 0px 10px 0px;
-  padding: 0px 0px 0px 0px;
+  margin-bottom:15px;
   color:#006400;
   font-size:140%;
   font-weight:200;
 }
 .subsection{
-  margin-top:20px;
+  margin-bottom:15px;
   line-height:1.6;
 }
 
