@@ -59,7 +59,7 @@ a.button{
   cursor: pointer;
 }
 ul{
-  padding: 5px 0px 0px 30px;
+  padding: 7px 0px 0px 30px;
   margin:0px;
   list-style: circle;
 }
@@ -68,6 +68,9 @@ li{
 }
 li:not(:last-child) {
   margin-bottom:2px;
+}
+ul.space > li{
+  margin-bottom:5px;
 }
 u{
   text-decoration:underline;
