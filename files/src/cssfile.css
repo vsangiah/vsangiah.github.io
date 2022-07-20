@@ -95,32 +95,31 @@ b{
 
 body{
   display:grid;
-  grid-template-areas: "h h h h" "p m m m";
-  grid-column-gap:0px;
-  grid-row-gap:0px;
+  grid-template-columns: 200px auto;
+  grid-column-gap:40px;
+  grid-row-gap:20px;
 }
 header{
-  grid-area:h;
+  grid-column: 1/3;
   padding-bottom:15px;
   border-bottom:2px solid gray;
+  background-color:white;
 }
 .maincontent{
-  grid-area:m;
-  padding-left:25px;
-  padding-top:20px;
+  grid-column: 2;
+  background-color:white;
 }
 .fotografia{
-  grid-area:p;
+  grid-column: 1;
+  background-color:white;
   text-align:center;
-  width:200px;
-  margin:0px auto 0px auto;
-  padding: 20px 25px 0px 0px;
 }
 .mainpic{
   width:100%;
-  margin:0px 0px 2px 0px;
+  margin:0px auto 2px auto;
   border:3px grey solid;
-  border-radius:100%
+  border-radius:100%;
+  text-align:center;
 }
 
 /*******************************************************************************
@@ -147,6 +146,7 @@ header{
 
 .section{
   margin-bottom:25px;
+  width:100%;
 }
 h1{
   margin-bottom:15px;
@@ -157,6 +157,7 @@ h1{
 .subsection{
   margin-bottom:15px;
   line-height:1.6;
+  width:100%;
 }
 
 /*******************************************************************************
@@ -193,4 +194,16 @@ red{
   margin-top:8px;
   color:#616161;
   text-align:justify;
+  /* border :1px dashed gray;
+  padding:4px 8px 4px 8px; */
+}
+button{
+  padding:1px 6px 1px 6px;
+  margin-right:6px;
+  border:solid 1px gray;
+}
+button:hover{
+  background-color:#F1F1F1;
+  color: #006400;
+  border:solid 1px #006400;
 }

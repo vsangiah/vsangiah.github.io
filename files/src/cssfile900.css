@@ -49,18 +49,15 @@
   *******************************************************************************/
 
   body{
+    grid-template-columns: 150px auto;
   }
   header{
-  grid-area:h;
-  }
-  .fotografia{
-    grid-area:p;
-    width:150px;
-  }
-  .fotografia>img{
-    width:100%;
   }
   .maincontent{
+  }
+  .fotografia{
+  }
+  .mainpic{
   }
 
 
