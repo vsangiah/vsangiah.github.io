@@ -10,7 +10,6 @@
   <link rel="stylesheet" type="text/css" href="files/src/cssfile.css">
   <link rel="stylesheet" type="text/css" href="files/src/cssfile900.css">
   <link rel="stylesheet" type="text/css" href="files/src/cssfile500.css">
-  <link rel="stylesheet" type="text/css" href="files/src/links.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -19,6 +18,18 @@
 </head>
 
 <body>
+
+<!--
+ header - header - header - header
+ - - - - - - - - - - - - - - - - -
+ fotografía |      maincontent
+    ...     |         ...
+    ...     |         ...
+ -->
+
+ <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+ <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+ <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
 
 <header>
   <div class="title">
@@ -29,29 +40,47 @@
   </div>
 </header>
 
-<div class="fotografia">
-  <div class="subsection"><img class="mainpic" src="files/img/foto.jpeg" alt="Borja Petit" align="middle"></div>
-  <div class="subsection"><a class="address" href="mailto:bpetit@cunef.edu">bpetit [at] cunef.edu</a></div>
-  <div class="subsection"><em>CUNEF Universidad<br>Calle Pirineos, 55<br>28040 Madrid</em><br></div>
-  <div class="subsection">
-    <a class="github" href="https://github.com/borjapetit">Github page</a><br>
-    <a class="google" href="https://scholar.google.com/citations?user=ySzuvdUAAAAJ&hl=es">Google Scholar</a><br>
-    <a class="cunef"  href="https://www.cunef.edu/en/claustro/petit-zarzalejos-borja-maria/">CUNEF profile</a><br>
-    <a class="twitter" href="https://twitter.com/borjapetit">Twitter profile</a>
-  </div>
-</div>
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
 
-<div class="maincontent">
+<photo>
+  <div class="subsection">
+    <img class="mainpic" src="files/img/foto.jpeg" alt="Borja Petit" align="middle">
+  </div>
+  <div class="subsection">
+    <a class="address" href="mailto:bpetit@cunef.edu">bpetit [at] cunef.edu</a>
+  </div>
+  <div class="subsection" style="text-decoration:italic;">
+      CUNEF Universidad<br>
+      Calle Pirineos, 55<br>
+      28040 Madrid
+  </div>
+  <div class="subsection">
+    <a style="display:block;" class="github" href="https://github.com/borjapetit">Github page</a>
+    <a style="display:block;" class="google" href="https://scholar.google.com/citations?user=ySzuvdUAAAAJ&hl=es">Google Scholar</a>
+    <a style="display:block;" class="cunef"  href="https://www.cunef.edu/en/claustro/petit-zarzalejos-borja-maria/">CUNEF profile</a>
+    <a style="display:block;" class="twitter" href="https://twitter.com/borjapetit">Twitter profile</a>
+  </div>
+</photo>
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+
+<maincontent>
 
 <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
 <!-- ABOUT SECTION-->
 
 <div class="section">
 
+  <!-- short description -->
   <div class="subsection">
     I received my <color>Ph.D. in Economics from <a id="cemfi">CEMFI</a></color> in July 2019, where I worked under the supervision of Profs. <a id="nezih">Nezih Guner</a> and <a id="josep">Josep Pijoan-Mas</a>.
   </div>
 
+  <!-- research interests -->
   <div class="subsection">
     I'm a quantitative macroeconomist with <color>research interests</color> in the fields of:
     <ul>
@@ -61,6 +90,7 @@
     </ul>
   </div>
 
+  <!-- download curriculum -->
   <div class="subsection">
     <a class="pdf" href="files/borjapetit_cv.pdf">Download my curriculum vitae</a>
   </div>
@@ -75,7 +105,7 @@
 <div class="section" id="publications" style="display:block">
 
   <div class="subsection">
-    <paper>Flattening of the Phillips curve with state-dependent prices and wages</paper><br>
+    <h2>Flattening of the Phillips curve with state-dependent prices and wages</h2>
     w/ <a id="jim">James Costain</a> and <a id="anton">Anton Nakov</a>.<br>
     <journal>The Economic Journal</journal>, Volume 132, No. 642, February 2022, 546-581.<br>
     <a class="more" onclick="showhide('abs1')">Abstract</a>&nbsp;
@@ -89,7 +119,7 @@
   </div>
 
   <div class="subsection">
-    <paper>Aggregate effects of firing costs with endogenous firm productivity growth</paper><br>
+    <h2>Aggregate effects of firing costs with endogenous firm productivity growth</h2>
     <journal>Macroeconomic Dynamics</journal>, <i>forthcoming</i>.<br>
     <a class="more" onclick="showhide('absfiring')">Abstract</a>&nbsp;
     <a class="paper" href="files/papers/petit_firing.pdf">Working Paper</a>&nbsp;
@@ -111,7 +141,7 @@
 <div class="section" id="working" style="display:block">
 
   <div class="subsection">
-    <paper>Intergenerational effects of child-related tax benefits in the US</paper><br>
+    <h2>Intergenerational effects of child-related tax benefits in the US</h2>
     <em>New draft coming soon</em>.<br>
     <a class="more" onclick="showhide('absjmp')">Abstract</a>&nbsp;
     <a class="paper" href="files/papers/petit_childtax.pdf">Working Paper</a>&nbsp;
@@ -123,7 +153,7 @@
   </div>
 
   <div class="subsection">
-    <paper>Intergenerational persistence in welfare program participation</paper><br>
+    <h2>Intergenerational persistence in welfare program participation</h2>
     w/ <a id="javi">Javier López Segovia</a><br>
     <a class="more" onclick="showhide('abswelfare')">Abstract</a>&nbsp;
     <a class="paper empty">Working Paper</a>&nbsp;
@@ -135,7 +165,7 @@
   </div>
 
   <div class="subsection">
-    <paper>Endogenous non-linear productivity dynamics in a standard firm dynamics model</paper><br>
+    <h2>Endogenous non-linear productivity dynamics in a standard firm dynamics model</h2>
     w/ <a id="jc">Juan Carlos Ruiz-Garcia</a>.<br>
     <a class="more empty">Abstract</a>&nbsp;
     <a class="paper empty">Working Paper</a>&nbsp;
@@ -147,7 +177,7 @@
   </div>
 
   <div class="subsection">
-    <paper>Size-dependent regulations in Spain</paper><br>
+    <h2>Size-dependent regulations in Spain</h2>
     w/ <a id="almunia">Miguel Almunia</a>, <a id="juanfranjim">Juan F. Jimeno</a> and <a id="davidlopez">David López Rodriguez</a>.<br>
     <a class="more empty">Abstract</a>&nbsp;
     <a class="paper empty">Working Paper</a>&nbsp;
@@ -168,16 +198,15 @@
 <div class="section" id="teaching" style="display:block">
 
   <div class="subsection">
-
-    <p>Courses taught at <color>CUNEF Universidad</color>:</p>
-    
+    Courses taught at <color>CUNEF Universidad</color>:
     <ul>
       <li><color>Bachelor's thesis</color>, Supervisor, BA in Business Administration &nbsp;&mdash;&nbsp; 2022</li>
       <li><color>Macroeconomics</color>, Instructor, BA in Business Administration &nbsp;&mdash;&nbsp; 2022, 2021, 2020</li>
     </ul>
+  </div>
 
-    <p>Courses taught at <color>CEMFI</color>:</p>
-
+  <div class="subsection">
+    Courses taught at <color>CEMFI</color>:
     <ul>
       <li><color>Macroeconomics II</color>, TA to <a id="tonibraun">R. Anton Braun</a>, Master in Economics & Finance &nbsp;&mdash;&nbsp; 2019</li>
       <li><color>Quantitative Methods</color>, TA to <a id="enriquemoral">Enrique Moral-Benito</a>, Master in Banking Supervision &nbsp;&mdash;&nbsp; 2019, 2018, 2017</li>
@@ -196,7 +225,7 @@
 
   <div class="subsection">
     External consultant at <a id=airef>AIReF</a> &nbsp;&mdash;&nbsp; 2022
-    <ul class="space">
+    <ul>
       <li>Project: Evaluation of the Spanish Minimum Income Scheme (<em>Ingreso Mínimo Vital</em>)</li>
       <li>Downloads: <a class="paper" href="https://www.airef.es/en/centro-documental/opinions-centro-documental/airef-publishes-its-first-opinion-on-minimum-living-income/">Report</a> (in Spanish)</li>
     </ul>
@@ -204,7 +233,7 @@
 
   <div class="subsection">
     Analyst at <a id=airef>AIReF</a> &nbsp;&mdash;&nbsp; 2019-2020
-    <ul class="space">
+    <ul>
       <li>Project: Evaluation of tax benefits in Spanish income taxes.</li>
       <li>Downloads: <a class="paper" href="https://www.airef.es/en/document-center/studies-document-center/tax-benefits/">Report</a></li>
     </ul>
@@ -213,7 +242,12 @@
 </div>
 <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
 
-<script src="files/src/jsfile.js"></script>
-</div>
+</maincontent>
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+
 </body>
+<script src="files/src/jsfile.js"></script>
 </html>

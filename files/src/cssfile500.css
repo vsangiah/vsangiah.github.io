@@ -48,13 +48,13 @@
     header{
       display:block;
     }
-    .fotografia{
+    photo{
       display:none;
     }
-    .fotografia>img{
+    photo>img{
       display:none;
     }
-    .maincontent{
+    maincontent{
       display:block;
       padding-left:0px;
       padding-top:15px;
@@ -76,6 +76,8 @@
     .section{
     }
     h1{
+    }
+    h2{
     }
     .subsection{
     }

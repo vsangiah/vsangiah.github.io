@@ -53,9 +53,9 @@
   }
   header{
   }
-  .maincontent{
+  maincontent{
   }
-  .fotografia{
+  photo{
   }
   .mainpic{
   }
@@ -79,6 +79,8 @@
   }
   h1{
     margin-bottom:10px;
+  }
+  h2{
   }
   .subsection{
     margin-bottom:10px;
