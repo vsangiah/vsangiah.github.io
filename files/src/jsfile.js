@@ -9,7 +9,7 @@ $('a[id=ucm]'          ).attr('href','https://economicasyempresariales.ucm.es');
 /* People *********************************************************************/
 
 $('a[id=jim]'          ).attr('href','https://sites.google.com/site/jimcostain/');
-$('a[id=anton]'        ).attr('href','https://sites.google.com/site/antonnakov/');
+$('a[id=anton]'        ).attr('href','https://anakov.github.io/');
 $('a[id=josep]'        ).attr('href','https://www.cemfi.es/~pijoan/Welcome.html');
 $('a[id=nezih]'        ).attr('href','https://www.cemfi.es/~guner/');
 $('a[id=jc]'           ).attr('href','https://jcruizgarcia.com/');

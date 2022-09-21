@@ -1,8 +1,27 @@
+/*******************************************************************************
+ DEFINE COLORS
+*******************************************************************************/
 
+:root {
+  --main: #006400;
+  --link: #374A74;
+  --linkhover: blue;
+  --journal: #6A1806;
+  --background: white;
+  --font:#494949;
+  --fontbis:gray;
+}
 
-@import url("http://fonts.googleapis.com/css?family=Helvetica:200,300italic,400,400italic,500,500italic,600,600italic");
+/*******************************************************************************
+ LOAD FONTS
+*******************************************************************************/
 
 @import url("http://fonts.googleapis.com/css?family=Roboto:300,300italic,400,400italic,500,500italic,600,600italic");
+@import url("http://fonts.googleapis.com/css?family=Helvetica:200,300italic,400,400italic,500,500italic,600,600italic");
+
+/*******************************************************************************
+ INITIALIZE SETTINGS
+*******************************************************************************/
 
 *{
   font-family:'Roboto','Helvetica',sans-serif;
@@ -28,8 +47,8 @@ html{
 body{
   min-width:880px;
   max-width:1100px;
-  color:#494949;
-  background-color:white;
+  color:var(--font);
+  background-color:var(--background);
   margin:0px auto 500px auto;
   padding:0px auto 500px auto;
 }
@@ -42,21 +61,12 @@ p,div{
   margin-top:3px;
 }
 a{
-  color:#374A74;
+  color:var(--link);
 }
 a:hover{
-  color:blue;
+  color:var(--linkhover);
   cursor:pointer;
   text-decoration:none;
-}
-a.button{
-  border: 1px gray solid;
-  border-radius:5%;
-  background-color: #F1F1F1;
-  padding: 2px 10px;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
 }
 ul{
   padding: 7px 0px 0px 30px;
@@ -104,11 +114,11 @@ header{
 }
 maincontent{
   grid-column: 2;
-  background-color:white;
+  background-color:var(--background);
 }
 photo{
   grid-column: 1;
-  background-color:white;
+  background-color:var(--background);
   text-align:center;
 }
 .mainpic{
@@ -124,7 +134,7 @@ photo{
 *******************************************************************************/
 
 .title{
-  color:#006400;
+  color:var(--main);
   text-align:left;
   font-size:250%;
   display:block;
@@ -147,12 +157,12 @@ photo{
 }
 h1{
   margin-bottom:15px;
-  color:#006400;
+  color:var(--main);
   font-size:140%;
   font-weight:200;
 }
 h2{ /*paper*/
-  color:#006400;
+  color:var(--main);
   font-size:inherit;
 }
 .subsection{
@@ -169,33 +179,19 @@ h2{ /*paper*/
   display:none;
   font-size:inherit;
 }
-paper{
-  color:#006400;
-  font-size:inherit;
-}
 journal{
-  color:#920000;
+  color:var(--journal);
   font-size:inherit;
 }
 color{
-  color:#006400;
+  color:var(--main);
   font-size:inherit;
 }
 .abstract{
-  color:gray;
+  color:var(--fontbis);
   margin-top:8px;
   color:#616161;
   text-align:justify;
-}
-button{
-  padding:1px 6px 1px 6px;
-  margin-right:6px;
-  border:solid 1px gray;
-}
-button:hover{
-  background-color:#F1F1F1;
-  color: #006400;
-  border:solid 1px #006400;
 }
 
 /*******************************************************************************
@@ -217,7 +213,7 @@ a.cunef::before,
 a.address::before{
   font-family: "FontAwesome";
   font-size:80%;
-  color:#006400;
+  color:var(--main);
   margin:0px;
   padding:0px;
   margin-right:6px;
