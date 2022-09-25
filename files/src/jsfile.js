@@ -33,18 +33,6 @@ $('a[class=title]'     ).attr('target','_self');
 
 /* Show/Hide functions *********************************************************/
 
-$(document).on("click", "a.plus", function(event){
-    event.preventDefault();
-    $(this).next('.hidden').slideDown('slow');
-    $(this).attr('class', 'minus');
-});
-
-$(document).on("click", "a.minus", function(event){
-    event.preventDefault();
-    $(this).next('.hidden').slideUp('slow');
-    $(this).attr('class', 'plus');
-});
-
 $(document).on("click", "a.more", function(event){
     event.preventDefault();
     $(this).attr('class', 'less');
@@ -53,6 +41,16 @@ $(document).on("click", "a.more", function(event){
 $(document).on("click", "a.less", function(event){
     event.preventDefault();
     $(this).attr('class', 'more');
+});
+
+$(document).on("click", "a.moresec", function(event){
+    event.preventDefault();
+    $(this).attr('class', 'lesssec');
+});
+
+$(document).on("click", "a.lesssec", function(event){
+    event.preventDefault();
+    $(this).attr('class', 'moresec');
 });
 
 function showhide(xx) {
