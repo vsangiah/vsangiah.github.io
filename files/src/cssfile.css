@@ -219,6 +219,10 @@ a.address::before{
   margin-right:6px;
   margin-left:3px;
 }
+a.moresec,
+a.lesssec{
+  color:inherit;
+}
 a.moresec::after,
 a.lesssec::after{
   font-family: "FontAwesome";

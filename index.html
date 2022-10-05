@@ -19,16 +19,16 @@
 
 <body>
 
-<!--
- header - header - header - header
+<!-- - - - - - - - - - - - - - - -
+ <header> .............. </header>
  - - - - - - - - - - - - - - - - -
- fotografía |      maincontent
-    ...     |         ...
-    ...     |         ...
- -->
+   <photo>   |     <maincontent>
+     ...     |         ...
+  </photo>   |     </maincontent>
+ - - - - - - - - - - - - - - - - -->
 
  <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
- <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+ <!-- HEADER %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
  <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
 
 <header>
@@ -41,39 +41,48 @@
 </header>
 
 <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
-<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- LEFT COLUMN %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
 <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
 
 <photo>
+
+  <!-- picture -->
   <div class="subsection">
     <img class="mainpic" src="files/img/foto.jpeg" alt="Borja Petit" align="middle">
   </div>
+
+  <!-- email -->
   <div class="subsection">
     <a class="address" href="mailto:bpetit@cunef.edu">bpetit [at] cunef.edu</a>
   </div>
+
+  <!-- Contact -->
   <div class="subsection" style="text-decoration:italic;">
-      CUNEF Universidad<br>
-      Calle Pirineos, 55<br>
-      28040 Madrid
+    CUNEF Universidad<br>
+    Calle Pirineos, 55<br>
+    28040 Madrid
   </div>
+
+  <!-- links -->
   <div class="subsection">
-    <a style="display:block;" class="github" href="https://github.com/borjapetit">Github page</a>
-    <a style="display:block;" class="google" href="https://scholar.google.com/citations?user=ySzuvdUAAAAJ&hl=es">Google Scholar</a>
-    <a style="display:block;" class="cunef"  href="https://www.cunef.edu/en/claustro/petit-zarzalejos-borja-maria/">CUNEF profile</a>
+    <a style="display:block;" class="github"  href="https://github.com/borjapetit">Github page</a>
+    <a style="display:block;" class="google"  href="https://scholar.google.com/citations?user=ySzuvdUAAAAJ&hl=es">Google Scholar</a>
+    <a style="display:block;" class="cunef"   href="https://www.cunef.edu/en/claustro/petit-zarzalejos-borja-maria/">CUNEF profile</a>
     <a style="display:block;" class="twitter" href="https://twitter.com/borjapetit">Twitter profile</a>
   </div>
+
 </photo>
 
 <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
-<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- RIGHT COLUMN %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
 <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
 
 <maincontent>
 
 <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
-<!-- ABOUT SECTION-->
+<!-- ABOUT -->
 
-<div class="section" id="about" style="display:block">
+<div class="section" id="about">
 
   <!-- short description -->
   <div class="subsection">
@@ -98,11 +107,11 @@
 </div>
 
 <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
-<!-- PUBLICATIONS SECTION-->
+<!-- PUBLICATIONS -->
 
 <h1>Publications</h1>
 
-<div class="section" id="publications" style="display:block">
+<div class="section" id="publications">
 
   <div class="subsection">
     <h2>Flattening of the Phillips curve with state-dependent prices and wages</h2>
@@ -134,11 +143,11 @@
 </div>
 
 <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
-<!-- WORKING PAPERS SECTION -->
+<!-- WORKING PAPERS  -->
 
 <h1>Working papers & work in progress</h1>
 
-<div class="section" id="working" style="display:block">
+<div class="section" id="working">
 
   <div class="subsection">
     <h2>Intergenerational effects of child-related tax benefits in the US</h2>
@@ -179,23 +188,23 @@
   <div class="subsection">
     <h2>Size-dependent regulations in Spain</h2>
     w/ <a id="almunia">Miguel Almunia</a>, <a id="juanfranjim">Juan F. Jimeno</a> and <a id="davidlopez">David López Rodriguez</a>.<br>
-    <a class="more empty">Abstract</a>&nbsp;
+    <a class="more" onclick="showhide('abssizedependent')">Abstract</a>&nbsp;
     <a class="paper empty">Working Paper</a>&nbsp;
     <a class="slides empty">Slides</a>&nbsp;
     <a class="code empty">Codes</a>
     <p id="abssizedependent" class="abstract" style="display:none">
-      [...]
+      We study the effects of two size-dependent regulations applicable in Spain: firms with more than 50 employees are subject to more onerous labor regulations, while firms with annual operating revenue above €6 million are subject to stricter tax monitoring. We find substantial bunching of firms just below the revenue threshold and a modest response to the employment threshold. However, the amount of bunching at the employment threshold is substantial when focusing on firms that are close to crossing the revenue threshold, suggesting an interaction effect of the two regulations. We specify a simple model of firm dynamics that replicates the patterns observed in the data and we use the model to quantify the aggregate effect of these regulations, and to evaluate alternative policies.
     </p>
   </div>
 
 </div>
 
 <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
-<!-- TEACHING SECTION -->
+<!-- TEACHING -->
 
 <h1>Teaching</h1>
 
-<div class="section" id="teaching" style="display:block">
+<div class="section" id="teaching">
 
   <div class="subsection">
     Courses taught at <color>CUNEF Universidad</color>:
@@ -217,11 +226,11 @@
 </div>
 
 <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
-<!-- POLICY SECTION -->
+<!-- POLICY -->
 
-<h1>Policy work</h1>
+<h1><a class="moresec" onclick="showhide('policy')">Policy work</a></h1>
 
-<div class="section" id="policy" style="display:block">
+<div class="section" id="policy" style="display:none">
 
   <div class="subsection">
     External consultant at <a id=airef>AIReF</a> &nbsp;&mdash;&nbsp; 2022
@@ -240,8 +249,25 @@
   </div>
 
 </div>
-<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
 
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- CODES -->
+
+<h1><a class="moresec" onclick="showhide('gitrepos')">Codes</a></h1>
+
+<div class="section" id="gitrepos" style="display:none">
+  LaTex:
+  <ul>
+    <li><a href="https://github.com/borjapetit/tex_template_paper">A LaTex template for academic paper</a>.</li>
+    <li><a href="https://github.com/borjapetit/tex_template_slides">A Beamer template for academic presentations</a>.</li>
+  </ul>
+  Others:
+  <ul>
+    <li><a href="https://github.com/borjapetit/borjapetit.github.io">My website's codes</a>.</li>
+  </ul>
+</div>
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
 </maincontent>
 
 <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
