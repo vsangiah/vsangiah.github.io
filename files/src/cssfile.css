@@ -21,7 +21,7 @@
   margin:0px;
   padding:0px;
   color:inherit;
-  font-size: 17.5px;
+  font-size: 17px;
   font-weight: 400;
   line-height: 1.4em;
   text-decoration:none;
@@ -140,13 +140,14 @@ photo{
 .title{
   color:var(--main);
   text-align:left;
-  font-size:250%;
+  font-weight:bold;
+  font-size:160%;
   display:block;
 }
 .subtitle{
   color:gray;
   text-align:left;
-  font-size:140%;
+  font-size:120%;
   line-height:1;
   display:block;
 }
@@ -162,8 +163,8 @@ photo{
 h1{
   margin-bottom:15px;
   color:var(--main);
-  font-size:140%;
-  /* font-weight:200; */
+  font-size:120%;
+  font-weight:bold;
 }
 h2{ /*paper*/
   color:var(--main);
