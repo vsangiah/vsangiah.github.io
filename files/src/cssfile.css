@@ -1,28 +1,31 @@
+
 /*******************************************************************************
  DEFINE COLORS
 *******************************************************************************/
 
+/* define colors */
 :root {
   --main: #006400;
   --link: #374A74;
   --linkhover: blue;
   --journal: #6A1806;
   --background: white;
-  --font:#494949;
-  --fontbis:gray;
+  --fontmain:rgb(79,76,76);
+  --fontabstract:#616161;
 }
 
 /*******************************************************************************
  INITIALIZE SETTINGS
 *******************************************************************************/
 
+/* set global parameters */
 *{
-  font-family:'Source Sans Pro','Roboto','Helvetica',sans-serif;
+  font-family:'Roboto','Helvetica',sans-serif,'Source Sans Pro';
   margin:0px;
   padding:0px;
   color:inherit;
   font-size: 17px;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1.4em;
   text-decoration:none;
   background-color:inherit;
@@ -34,21 +37,23 @@
 *******************************************************************************/
 
 html{
-  background-color:white;
+  background-color:var(--background);
   padding:30px;
 }
 body{
   min-width:880px;
   max-width:1100px;
-  color:var(--font);
+  color:var(--fontmain);
   background-color:var(--background);
   margin:0px auto auto auto;
   padding:0px auto auto auto;
 }
-div,p,span,a,i,ul,ol,li{
+div,p,span,a,a:hover,i,ul,ol,li{
   font-size:inherit;
   color:inherit;
   text-decoration:inherit;
+  font-weight:inherit;
+  text-align:inherit;
 }
 p,div{
   margin-top:3px;
@@ -59,12 +64,11 @@ a{
 a:hover{
   color:var(--linkhover);
   cursor:pointer;
-  text-decoration:none;
 }
 ul{
   padding: 7px 0px 0px 30px;
   margin:0px;
-  list-style: circle;
+  list-style:circle;
 }
 li{
   margin-bottom:10px;
@@ -74,17 +78,9 @@ li:not(:last-child) {
 }
 u{
   text-decoration:underline;
-  color:inherit;
-  font-size:inherit;
-  font-weight:inherit;
-  text-align:inherit;
 }
 b{
-  text-decoration:inherit;
-  color:inherit;
-  font-size:inherit;
   font-weight:bold;
-  text-align:inherit;
 }
 
 /*******************************************************************************
@@ -102,29 +98,33 @@ body{
 header{
   grid-column: 1/3;
   padding-bottom:15px;
-  border-bottom:2px solid gray;
-  background-color:white;
+  border-bottom:2px solid var(--fontmain);
+  background-color:var(--background);
 }
 footer{
-  margin-top:100px;
+  margin-top:50px;
   text-align:right;
   grid-column: 1/3;
   font-size:80%;
   padding-top:5px;
 }
-maincontent{
+/* right column: main sections */
+maincontent{ 
   grid-column: 2;
   background-color:var(--background);
 }
-maincontentbis{
+/* tection the whole screen width */
+wide{ 
   grid-column: 1/3;
   background-color:var(--background);
 }
-photo{
+/* left colun: picture, contact */
+photo{ 
   grid-column: 1;
   background-color:var(--background);
   text-align:center;
 }
+/* format for the picture in right column */
 .mainpic{
   width:100%;
   margin:0px auto 8px auto;
@@ -140,14 +140,14 @@ photo{
 .title{
   color:var(--main);
   text-align:left;
-  font-weight:bold;
-  font-size:160%;
+
+  font-size:250%;
   display:block;
 }
 .subtitle{
-  color:gray;
+  color:var(--fontmain);
   text-align:left;
-  font-size:120%;
+  font-size:140%;
   line-height:1;
   display:block;
 }
@@ -160,20 +160,21 @@ photo{
   margin-bottom:25px;
   width:100%;
 }
-h1{
-  margin-bottom:15px;
-  color:var(--main);
-  font-size:120%;
-  font-weight:bold;
-}
-h2{ /*paper*/
-  color:var(--main);
-  font-size:inherit;
-}
 .subsection{
   margin-bottom:15px;
   line-height:1.6;
   width:100%;
+}
+/* section headings */
+h1{
+  margin-bottom:15px;
+  color:var(--main);
+  font-size:140%;
+}
+/* this heading is used for paper titles */
+h2{ 
+  color:var(--main);
+  font-size:inherit;
 }
 
 /*******************************************************************************
@@ -193,7 +194,7 @@ color{
   font-size:inherit;
 }
 .abstract{
-  color:var(--fontbis);
+  color:var(--fontabstract);
   margin-top:8px;
   color:#616161;
   text-align:justify;
@@ -232,7 +233,6 @@ a.moresec::after,
 a.lesssec::after{
   font-family: "FontAwesome";
   font-size:70%;
-  color:gray;
   margin:0px;
   padding:0px;
   margin-left:6px;
