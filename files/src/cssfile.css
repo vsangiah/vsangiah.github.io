@@ -20,7 +20,8 @@
 
 /* set global parameters */
 *{
-  font-family:'Roboto','Helvetica',sans-serif,'Source Sans Pro';
+  font-family: sans-serif;
+  /* font-family: 'Helvetica','Source Sans Pro','Loto','Roboto',sans-serif; */
   margin:0px;
   padding:0px;
   color:inherit;
@@ -113,7 +114,7 @@ maincontent{
   grid-column: 2;
   background-color:var(--background);
 }
-/* tection the whole screen width */
+/* section the whole screen width */
 wide{ 
   grid-column: 1/3;
   background-color:var(--background);
@@ -138,9 +139,9 @@ photo{
 *******************************************************************************/
 
 .title{
+  color:GREY;
   color:var(--main);
   text-align:left;
-
   font-size:250%;
   display:block;
 }
@@ -157,7 +158,7 @@ photo{
 *******************************************************************************/
 
 .section{
-  margin-bottom:25px;
+  margin-bottom:30px;
   width:100%;
 }
 .subsection{
@@ -169,7 +170,9 @@ photo{
 h1{
   margin-bottom:15px;
   color:var(--main);
-  font-size:140%;
+  font-size:150%;
+  /* font-weight:bold; */
+  border-bottom:1px solid darkgray;
 }
 /* this heading is used for paper titles */
 h2{ 
@@ -229,15 +232,21 @@ a.moresec,
 a.lesssec{
   color:inherit;
 }
-a.moresec::after,
+/* a.moresec::after,
 a.lesssec::after{
   font-family: "FontAwesome";
-  font-size:70%;
+  font-size:50%;
   margin:0px;
   padding:0px;
   margin-left:6px;
   margin-right:3px;
-}
+  padding-bottom:20px;
+} */
+
+a.moresec:hover,
+a.lesssec:hover{
+  color:blue;
+} 
 
 a.paper::before{    content: "\f0f6 ";}
 a.article::before{  content: "\f02d ";}
@@ -252,8 +261,8 @@ a.twitter::before{  content: "\f099 ";}
 a.address::before{  content: "\f003 ";}
 a.google::before{   content: "\f1a0 ";}
 a.cunef::before{    content: "\f19c ";}
-a.moresec::after{   content: "\f196 ";}
-a.lesssec::after{   content: "\f147 ";}
+/* a.moresec::after{   content: "\f196 ";}
+a.lesssec::after{   content: "\f147 ";} */
 
 a.plus,a.minus{
   margin-right:3px;
