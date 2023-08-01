@@ -1,17 +1,34 @@
 
+
+/* Source Sans Pro font */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;500;600&display=swap');
+/* Lato font */
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+/* Helvetica font */
+@import url("http://fonts.googleapis.com/css?family=Helvetica:200,200italic,300,300italic,400,400italic,500,500italic,600,600italic");
+/* Roboto font */
+@import url("http://fonts.googleapis.com/css?family=Roboto:200,200italic,300,300italic,400,400italic,500,500italic,600,600italic");
+
 /*******************************************************************************
  DEFINE COLORS
 *******************************************************************************/
 
 /* define colors */
 :root {
-  --main: #006400;
-  --link: #374A74;
-  --linkhover: blue;
-  --journal: #6A1806;
-  --background: white;
+  /* color for title and section headers */
+  --main: rgb(0,100,0);
+  /* color for links */
+  --link: rgb(55,74,116);
+  /* color for links (hover) */
+  --linkhover: rgb(0,0,255);
+  /* color for journals */
+  --journal: rgb(106,24,6);
+  /* color for html background */
+  --background: rgb(100,100,100,0.05);
+  /* color for main text */
   --fontmain:rgb(79,76,76);
-  --fontabstract:#616161;
+  /* color for abstracts */
+  --fontabstract:rgb(97,97,97);
 }
 
 /*******************************************************************************
@@ -21,13 +38,12 @@
 /* set global parameters */
 *{
   font-family: sans-serif;
-  /* font-family: 'Helvetica','Source Sans Pro','Loto','Roboto',sans-serif; */
   margin:0px;
   padding:0px;
-  color:inherit;
-  font-size: 17px;
-  font-weight: 300;
   line-height: 1.4em;
+  color:inherit;
+  font-size: inherit; 
+  font-weight: inherit;
   text-decoration:none;
   background-color:inherit;
   -webkit-text-size-adjust:none;
@@ -38,23 +54,22 @@
 *******************************************************************************/
 
 html{
-  background-color:var(--background);
-  padding:30px;
+  /* background-color:var(--background);
+  padding:0px 30px 0px 30px; */
+  font-size: 17px;
+  font-weight: 200;
 }
 body{
   min-width:880px;
   max-width:1100px;
   color:var(--fontmain);
-  background-color:var(--background);
+  background-color:white;
   margin:0px auto auto auto;
-  padding:0px auto auto auto;
-}
-div,p,span,a,a:hover,i,ul,ol,li{
-  font-size:inherit;
-  color:inherit;
-  text-decoration:inherit;
-  font-weight:inherit;
-  text-align:inherit;
+  padding:30px;
+  display:grid;
+  grid-template-columns: 200px auto;
+  grid-column-gap:40px;
+  grid-row-gap:20px;
 }
 p,div{
   margin-top:3px;
@@ -85,82 +100,58 @@ b{
 }
 
 /*******************************************************************************
- STRUCTURE OF THE LAYOUT
- Header-Header-Header
- Picture  MainContent
+ STRUCTURE
 *******************************************************************************/
 
-body{
-  display:grid;
-  grid-template-columns: 200px auto;
-  grid-column-gap:40px;
-  grid-row-gap:20px;
-}
-header{
+.header{
   grid-column: 1/3;
   padding-bottom:15px;
   border-bottom:2px solid var(--fontmain);
-  background-color:var(--background);
 }
-footer{
-  margin-top:50px;
+.footer{
   text-align:right;
   grid-column: 1/3;
   font-size:80%;
   padding-top:5px;
 }
 /* right column: main sections */
-maincontent{ 
+.maincontent{ 
   grid-column: 2;
-  background-color:var(--background);
+}
+/* left column: picture, contact */
+.photo{ 
+  grid-column: 1;
+  text-align:center;
 }
 /* section the whole screen width */
-wide{ 
+.wide{ 
   grid-column: 1/3;
-  background-color:var(--background);
 }
-/* left colun: picture, contact */
-photo{ 
-  grid-column: 1;
-  background-color:var(--background);
-  text-align:center;
-}
-/* format for the picture in right column */
-.mainpic{
-  width:100%;
-  margin:0px auto 8px auto;
-  border:3px grey solid;
-  border-radius:100%;
-  text-align:center;
-}
-
-/*******************************************************************************
- HEADER
-*******************************************************************************/
-
+/* title of the website */
 .title{
-  color:GREY;
   color:var(--main);
   text-align:left;
   font-size:250%;
-  display:block;
 }
+/* subtitle of the website */
 .subtitle{
-  color:var(--fontmain);
+  color:gray;
   text-align:left;
   font-size:140%;
-  line-height:1;
+}
+/* picture */
+.pic{
+  margin:3px auto 20px auto;
+  border:3px grey solid;
+  text-align:center;
   display:block;
 }
-
-/*******************************************************************************
- MAIN CONTENT
-*******************************************************************************/
-
+/* div for research, teaching, etc */
 .section{
   margin-bottom:30px;
   width:100%;
 }
+/* div for each item in sections */
 .subsection{
   margin-bottom:15px;
   line-height:1.6;
@@ -168,34 +159,33 @@ photo{
 }
 /* section headings */
 h1{
-  margin-bottom:15px;
+  margin-bottom:20px;
+  padding-bottom:5px;
   color:var(--main);
   font-size:150%;
-  /* font-weight:bold; */
-  border-bottom:1px solid darkgray;
+  border-bottom:1px solid var(--main);
 }
-/* this heading is used for paper titles */
+/* paper titles */
 h2{ 
   color:var(--main);
   font-size:inherit;
 }
 
 /*******************************************************************************
- OTHER COMMANDS
+ OTHER ELEMENTS
 *******************************************************************************/
 
-.hidden{
-  display:none;
-  font-size:inherit;
-}
+/* for journals */
 journal{
   color:var(--journal);
   font-size:inherit;
 }
+/* to set the color to main */
 color{
   color:var(--main);
   font-size:inherit;
 }
+/* for papers' abstracts */
 .abstract{
   color:var(--fontabstract);
   margin-top:8px;
@@ -204,14 +194,14 @@ color{
 }
 
 /*******************************************************************************
- FORMAT OF LINKS
+ LINKS' ICONS
 *******************************************************************************/
 
+/* to show a small icon next to links depending on their content */
 a.pdf::before,
 a.slides::before,
 a.code::before,
 a.paper::before,
-a.article::before,
 a.github::before,
 a.more::before,
 a.link::before,
@@ -223,31 +213,9 @@ a.address::before{
   font-family: "FontAwesome";
   font-size:80%;
   color:var(--main);
-  margin:0px;
+  margin:0px 6px 0px 3px;
   padding:0px;
-  margin-right:6px;
-  margin-left:3px;
 }
-a.moresec,
-a.lesssec{
-  color:inherit;
-}
-/* a.moresec::after,
-a.lesssec::after{
-  font-family: "FontAwesome";
-  font-size:50%;
-  margin:0px;
-  padding:0px;
-  margin-left:6px;
-  margin-right:3px;
-  padding-bottom:20px;
-} */
-
-a.moresec:hover,
-a.lesssec:hover{
-  color:blue;
-} 
-
 a.paper::before{    content: "\f0f6 ";}
 a.article::before{  content: "\f02d ";}
 a.pdf::before{      content: "\f1c1 ";}
@@ -261,9 +229,8 @@ a.twitter::before{  content: "\f099 ";}
 a.address::before{  content: "\f003 ";}
 a.google::before{   content: "\f1a0 ";}
 a.cunef::before{    content: "\f19c ";}
-/* a.moresec::after{   content: "\f196 ";}
-a.lesssec::after{   content: "\f147 ";} */
 
+/* for the "show more" and "show less" bottoms */
 a.plus,a.minus{
   margin-right:3px;
   display: inline-block;
@@ -280,6 +247,8 @@ a.plus::after{
 a.minus::after{
   content:"\f147";
 }
+
+/* for links without href - add it to the class attribute */
 a.empty{
   color:lightgrey;
 }
@@ -288,4 +257,74 @@ a.empty::before{
 }
 a.empty:hover{
   cursor:not-allowed;
+}
+
+.calendar::before{
+  font-family: "FontAwesome";
+  font-size:100%;
+  color:var(--main);
+  margin:0px 10px 0px 0px;
+  padding:0px;
+  line-height: 1em;
+  content: "\f073 "; 
+}
+
+/*******************************************************************************
+ ADAPT LAYOUT FOR SCREENS OF 900 px OR LESS
+*******************************************************************************/
+
+@media screen and (max-width:1000px) {
+  *{
+    font-size: 14px;
+  }
+  html{
+    padding:20px;
+  }
+  body{
+    margin:0px;
+    min-width:0px;
+    padding:0px 20px 200px 20px;
+  }
+  body{
+    grid-template-columns: 150px auto;
+  }
+  .section{
+    margin-bottom:20px;
+  }
+  .subsection{
+    margin-bottom:10px;
+  }
+  h1{
+    margin-bottom:10px;
+  }
+}
+
+/*******************************************************************************
+ ADAPT LAYOUT FOR SCREENS OF 500 px OR LESS
+*******************************************************************************/
+
+@media screen and (max-width:550px) {
+  *{
+    font-size: 13px;
+  }
+  html{
+    padding:10px;
+  }
+  body{
+    display:block;
+  }
+  .header{
+    display:block;
+  }
+  .photo{
+    display:none;
+  }
+  .photo>img{
+    display:none;
+  }
+  .maincontent{
+    display:block;
+    padding-left:0px;
+    padding-top:15px;
+  }
 }
