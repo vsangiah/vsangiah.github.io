@@ -43,15 +43,16 @@ $(document).on("click", "a.less", function(event){
     $(this).attr('class', 'more');
 });
 
-$(document).on("click", "a.moresec", function(event){
-    event.preventDefault();
-    $(this).attr('class', 'lesssec');
+$(document).on("click", "h1.more", function(event){
+  event.preventDefault();
+  $(this).attr('class', 'less');
 });
 
-$(document).on("click", "a.lesssec", function(event){
-    event.preventDefault();
-    $(this).attr('class', 'moresec');
+$(document).on("click", "h1.less", function(event){
+  event.preventDefault();
+  $(this).attr('class', 'more');
 });
+
 
 function showhide(xx) {
   var x = document.getElementById(xx)
