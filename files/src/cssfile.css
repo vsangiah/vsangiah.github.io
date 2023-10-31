@@ -64,6 +64,7 @@ body{
   background-color:white;
   margin:0px auto auto auto;
   padding:20px;
+  padding-bottom:100px;
   display:grid;
   grid-template-columns: 200px auto;
   grid-column-gap:40px;
@@ -110,7 +111,10 @@ b{
   text-align:right;
   grid-column: 1/3;
   font-size:80%;
-  padding-top:5px;
+  margin-top:20px;
+  padding-top:10px;
+  padding-bottom:10px;
+  border-top:2px solid #F0F0F0;
 }
 /* right column: main sections */
 .maincontent{ 
@@ -161,8 +165,8 @@ h1{
   padding:5px;
   color:var(--main);
   font-size:150%;
-  /* margin-bottom:10px;
-  border-bottom:1px solid var(--main); */
+  margin-bottom:10px;
+  border-bottom:2px solid #F0F0F0;
 }
 /* paper titles */
 h2{ 
