@@ -37,7 +37,7 @@
 
 /* set global parameters */
 *{
-  font-family: sans-serif;
+  font-family: 'Helvetica',sans-serif;
   margin:0px;
   padding:0px;
   line-height: 1.4em;
@@ -56,6 +56,7 @@
 html{
   font-size: 17px;
   font-weight: 200;
+  padding:30px;
 }
 body{
   min-width:880px;
@@ -63,12 +64,12 @@ body{
   color:var(--fontmain);
   background-color:white;
   margin:0px auto auto auto;
-  padding:20px;
+  /* padding:20px; */
   padding-bottom:100px;
   display:grid;
   grid-template-columns: 200px auto;
-  grid-column-gap:40px;
-  grid-row-gap:20px;
+  grid-column-gap:50px;
+  grid-row-gap:15px;
 }
 p,div{
   margin-top:3px;
@@ -137,7 +138,7 @@ b{
 }
 /* subtitle of the website */
 .subtitle{
-  color:gray;
+  color:var(--fontmain);
   text-align:left;
   font-size:140%;
 }
@@ -164,9 +165,8 @@ b{
 h1{
   padding:5px;
   color:var(--main);
-  font-size:150%;
-  margin-bottom:10px;
-  border-bottom:2px solid #F0F0F0;
+  font-size:140%;
+  margin-bottom:0px;
 }
 /* paper titles */
 h2{ 
