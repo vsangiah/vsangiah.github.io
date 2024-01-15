@@ -1,13 +1,13 @@
 
 
 /* Source Sans Pro font */
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;500;600&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;500;600&display=swap'); */
 /* Lato font */
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap'); */
 /* Helvetica font */
-@import url("http://fonts.googleapis.com/css?family=Helvetica:200,200italic,300,300italic,400,400italic,500,500italic,600,600italic");
+/* @import url("http://fonts.googleapis.com/css?family=Helvetica:200,200italic,300,300italic,400,400italic,500,500italic,600,600italic"); */
 /* Roboto font */
-@import url("http://fonts.googleapis.com/css?family=Roboto:200,200italic,300,300italic,400,400italic,500,500italic,600,600italic");
+/* @import url("http://fonts.googleapis.com/css?family=Roboto:200,200italic,300,300italic,400,400italic,500,500italic,600,600italic"); */
 /* Barlow font */
 @import url("http://fonts.googleapis.com/css?family=Barlow:200,200italic,300,300italic,400,400italic,500,500italic,600,600italic");
 
@@ -41,8 +41,8 @@
 
 /* set global parameters */
 *{
-  /* font-family: 'Helvetica',sans-serif; */
-  font-family: 'Barlow','Helvetica','Source Sans Pro',sans-serif;
+  /* font-family: 'Helvetica','Source Sans Pro',sans-serif */
+  font-family: 'Barlow',sans-serif;
   margin:0px;
   padding:0px;
   line-height: 1.6em;
