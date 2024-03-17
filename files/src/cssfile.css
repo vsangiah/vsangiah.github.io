@@ -144,6 +144,7 @@ color{
 .header{
   padding-bottom:15px;
   border-bottom:2px solid var(--main);
+  border-bottom:3px solid #c3c3c3;
 }
 .title{
   margin:0px;
@@ -162,7 +163,7 @@ color{
   margin-top:40px;
   padding-top:10px;
   padding-bottom:10px;
-  border-top:2px solid #F0F0F0;
+  border-top:0px solid #c3c3c3;
 }
 /* div for research, teaching, etc */
 .section,.subsection{
@@ -176,7 +177,7 @@ h1{
   font-size:140%;
   margin:0px;
   margin-top:25px;
-  border-bottom:2px solid #F0F0F0;
+  border-bottom:3px solid #c3c3c3;
 }
 /* paper titles */
 h2{ 
