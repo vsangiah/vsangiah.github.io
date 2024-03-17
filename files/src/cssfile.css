@@ -175,7 +175,7 @@ color{
 h1{
   color:var(--main);
   font-size:140%;
-  margin:0px;
+  margin:0px ;
   margin-top:25px;
   border-bottom:3px solid #c3c3c3;
 }
