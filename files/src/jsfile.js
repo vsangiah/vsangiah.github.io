@@ -23,6 +23,8 @@ $('a[id=almunia]'      ).attr('href','https://malmunia.github.io/');
 /* Defined links options *******************************************************/
 
 $('a'                  ).attr('target','_blank');
+$('a[class=anav]'      ).attr('target','_self');
+$('a[class=anavs]'     ).attr('target','_self');
 $('a[class=simple]'    ).attr('target','_self');
 $('a[class=top]'       ).attr('target','_self');
 $('a[class=down]'      ).attr('target','_self');
@@ -32,16 +34,6 @@ $('a[class=toccv]'     ).attr('target','_blank');
 $('a[class=title]'     ).attr('target','_self');
 
 /* Show/Hide functions *********************************************************/
-
-$(document).on("click", "a.more", function(event){
-    event.preventDefault();
-    $(this).attr('class', 'less');
-});
-
-$(document).on("click", "a.less", function(event){
-    event.preventDefault();
-    $(this).attr('class', 'more');
-});
 
 $(document).on("click", "h1.more", function(event){
   event.preventDefault();
@@ -53,6 +45,15 @@ $(document).on("click", "h1.less", function(event){
   $(this).attr('class', 'more');
 });
 
+$(document).on("click", "a.more", function(event){
+  event.preventDefault();
+  $(this).attr('class', 'less');
+});
+
+$(document).on("click", "a.less", function(event){
+  event.preventDefault();
+  $(this).attr('class', 'more');
+});
 
 function showhide(xx) {
   var x = document.getElementById(xx)

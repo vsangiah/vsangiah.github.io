@@ -6,13 +6,12 @@
 /* define colors */
 :root {
   /* color for title and section headers */
+  --main: navy;
   --main: rgb(0,100,0);
   /* color for links */
   --link: rgb(55,74,116);
   /* color for links (hover) */
   --linkhover: rgb(0,0,255);
-  /* color for papers */
-  --paper: rgb(0,100,0);
   /* color for journals */
   --journal: rgb(106,24,6);
   /* color for html background */
@@ -29,17 +28,16 @@
 
 /* set global parameters */
 *{
-  /* font-family: 'Helvetica','Source Sans Pro',sans-serif */
-  font-family: 'Barlow',sans-serif;
-  margin:0px;
-  padding:0px;
-  line-height: 1.6em;
-  color:inherit;
+  font-family: 'Barlow','Helvetica',sans-serif,'Roboto','Source Sans Pro';
+  margin: 0px;
+  padding: 0px;
+  line-height: 1.4em;
+  color: inherit;
   font-size: inherit; 
   font-weight: inherit;
-  text-decoration:none;
-  background-color:inherit;
-  -webkit-text-size-adjust:none;
+  text-decoration: none;
+  background-color: inherit;
+  -webkit-text-size-adjust: none;
 }
 
 /*******************************************************************************
@@ -47,19 +45,20 @@
 *******************************************************************************/
 
 html{
-  padding: 30px;
   font-size: 18px;
   font-weight: 400;
+  padding-bottom: 400px;
 }
 body{
   min-width:880px;
-  max-width:1100px;
+  max-width:1000px;
   color:var(--fontmain);
   background-color:white;
   margin:0px auto auto auto;
+  padding:20px;
   padding-bottom:100px;
   display:grid;
-  grid-template-columns: 200px auto auto;
+  grid-template-columns: 200px auto;
   grid-column-gap:50px;
   grid-row-gap:15px;
 }
@@ -73,13 +72,13 @@ body{
   grid-column: 3;
 }
 .grid12{
-  grid-column: 1/3;
+  grid-column: 1/2;
 }
 .grid23{
-  grid-column: 2/4;
+  grid-column: 2/3;
 }
 .grid13{
-  grid-column: 1/4;
+  grid-column: 1/3;
 }
 p,div{
   margin-top:3px;
@@ -97,10 +96,10 @@ ul{
   list-style:circle;
 }
 li{
-  margin-bottom:0px;
+  margin-bottom:10px;
 }
 li:not(:last-child) {
-  margin-bottom:0px;
+  margin-bottom:2px;
 }
 u{
   text-decoration:underline;
@@ -108,81 +107,116 @@ u{
 b{
   font-weight:bold;
 }
-paper{
-  color:var(--paper);
-  font-size:inherit;
-  display:block;
-}
-paper::before{
-  content: open-quote;
-}
-paper::after{
-  content: close-quote;
-}
-journal{
-  color:var(--journal);
-  font-size:inherit;
-  font-style:italic;
-}
-color{
-  color:var(--main);
-  font-size:inherit;
-}
-.abstract{
-  color:var(--fontabstract);
-  margin-top:8px;
-  text-align:justify;
-  line-height: 1.3em;
-  font-size: 95%;
-  padding-bottom:8px;
-}
 
 /*******************************************************************************
  STRUCTURE
 *******************************************************************************/
 
+/* header */
 .header{
   padding-bottom:15px;
-  border-bottom:2px solid var(--main);
-  border-bottom:3px solid #c3c3c3;
 }
+/* title of the website */
 .title{
-  margin:0px;
-  font-size:250%;
   color:var(--main);
+  text-align:center;
+  font-size:250%;
 }
+/* subtitle of the website */
 .subtitle{
-  margin:0px;
   color:gray;
-  font-size:140%;
-  color:var(--fontmain);
+  text-align:center;
+  font-size:130%;
 }
+/* navigatio  var */
+.nav{
+  text-align:center;
+  margin-top:15px;
+  padding-top:10px;
+  padding-bottom:10px;
+  border-top:2px solid var(--main); 
+  border-bottom:2px solid var(--main); 
+}
+/* links in navigation bar */
+.anav,.anavs{
+  color: var(--fontmain);
+  padding-left:10px;
+  padding-right:10px;
+  min-width:100px;
+  display:inline-block;
+}
+/* links in navigation bar --> hover */
+.anav:hover,.anavs,.anavs:hover{
+  color: var(--main);
+  font-weight:bold;
+}
+/* footer */
 .footer{
   text-align:right;
   font-size:80%;
-  margin-top:40px;
+  margin-top:20px;
   padding-top:10px;
   padding-bottom:10px;
-  border-top:0px solid #c3c3c3;
+}
+/* picture */
+.pic{
+  margin:3px auto 20px auto;
+  border:3px grey solid;
+  text-align:center;
+  display:block;
 }
 /* div for research, teaching, etc */
-.section,.subsection{
+.section{
+  margin-top:0px;
   width:100%;
-  margin-top:10px;
-  margin-bottom:0px;
+}
+/* div for each item in sections */
+.subsection{
+  margin-bottom:15px;
+  line-height:1.6;
+  width:100%;
 }
 /* section headings */
 h1{
   color:var(--main);
-  font-size:140%;
-  margin:0px ;
-  margin-top:25px;
-  border-bottom:3px solid #c3c3c3;
+  font-size:150%;
+  margin-bottom:15px;
+  margin-top:0px;
 }
 /* paper titles */
 h2{ 
   color:var(--main);
   font-size:inherit;
+}
+
+/*******************************************************************************
+ OTHER ELEMENTS
+*******************************************************************************/
+
+/* to set the color to main */
+paper{
+  color:var(--main);
+  font-size:inherit;
+}
+paper::before{ content: open-quote;}
+paper::after{ content: close-quote;}
+/* for journals */
+journal{
+  color:var(--journal);
+  font-size: inherit;
+  font-style: italic;
+}
+/* to set the color to main */
+color{
+  color:var(--main);
+  font-size:inherit;
+}
+/* for papers' abstracts */
+.abstract{
+  color:var(--fontabstract);
+  margin-top:8px;
+  color:#616161;
+  text-align:justify;
 }
 
 /*******************************************************************************
@@ -222,6 +256,7 @@ a.address::before{  content: "\f003 ";}
 a.google::before{   content: "\f1a0 ";}
 a.cunef::before{    content: "\f19c ";}
 
+/* for links without href - add it to the class attribute */
 a.empty{
   color:lightgrey;
 }
@@ -231,8 +266,15 @@ a.empty::before{
 a.empty:hover{
   cursor:not-allowed;
 }
-.shown{
-  display:none;
+
+.calendar::before{
+  font-family: "FontAwesome";
+  font-size:100%;
+  color:var(--main);
+  margin:0px 10px 0px 0px;
+  padding:0px;
+  line-height: 1em;
+  content: "\f073 "; 
 }
 
 /*******************************************************************************
@@ -240,25 +282,57 @@ a.empty:hover{
 *******************************************************************************/
 
 @media screen and (max-width:1000px) {
-  *{ font-size: 16px; }
-  html{ padding:20px; }
-  body{ margin:0px; min-width:0px; padding:0px 20px 200px 20px; grid-template-columns: 150px auto auto; }
-  .title{ font-size:200%; }
-  .subtitle{ font-size:120%; }
-  .section{ margin-bottom:0px;}
-  .subsection{ margin-top:8px; }
+  *{
+    font-size: 14px;
+  }
+  html{
+    padding:20px;
+  }
+  body{
+    margin:0px;
+    min-width:0px;
+    padding:0px 20px 200px 20px;
+  }
+  body{
+    grid-template-columns: 150px auto;
+  }
+  .section{
+    margin-bottom:20px;
+  }
+  .subsection{
+    margin-bottom:10px;
+  }
+  h1{
+    margin-bottom:10px;
+  }
 }
 
 /*******************************************************************************
- ADAPT LAYOUT FOR SCREENS OF 650px px OR LESS
+ ADAPT LAYOUT FOR SCREENS OF 500 px OR LESS
 *******************************************************************************/
 
-@media screen and (max-width:650px) {
-  *{ font-size: 15px; }
-  html{ padding:10px; }
-  .hiden{ display:none; }
-  .shown{ display:inherit; }
-  .grid1 , .grid2 , .grid3, .grid12, .grid23,.grid13 { grid-column: 1/4; }
-  .section{ margin-top:0px; }
-  .subsection{ margin-top:8px; }
+@media screen and (max-width:550px) {
+  *{
+    font-size: 13px;
+  }
+  html{
+    padding:10px;
+  }
+  body{
+    display:block;
+  }
+  .header{
+    display:block;
+  }
+  .photo{
+    display:none;
+  }
+  .photo>img{
+    display:none;
+  }
+  .maincontent{
+    display:block;
+    padding-left:0px;
+    padding-top:15px;
+  }
 }
