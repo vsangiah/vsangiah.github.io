@@ -7,19 +7,21 @@
 :root {
   /* color for title and section headers */
   --main: navy;
-  --main: rgb(0,100,0);
+  --main: rgb(9, 78, 9);
   /* color for links */
-  --link: rgb(55,74,116);
+  --link: rgb(13, 55, 180);
   /* color for links (hover) */
-  --linkhover: rgb(0,0,255);
+  --linkhover: rgb(39, 90, 230);
   /* color for journals */
   --journal: rgb(106,24,6);
   /* color for html background */
-  --background: rgb(100,100,100,0.05);
+  --background: rgb(255, 255, 245);
   /* color for main text */
-  --fontmain:rgb(79,76,76);
+  --fontmain:rgb(52, 61, 52);
   /* color for abstracts' text */
-  --fontabstract:rgb(97,97,97);
+  --fontabstract:rgb(29, 44, 38);
+  /*headshot border*/
+  --picborder: rgb(0, 0, 0);
 }
 
 /*******************************************************************************
@@ -28,10 +30,10 @@
 
 /* set global parameters */
 *{
-  font-family: 'Barlow','Helvetica',sans-serif,'Roboto','Source Sans Pro';
+  font-family: 'Montserrat';
   margin: 0px;
   padding: 0px;
-  line-height: 1.4em;
+  line-height: 1.5em;
   color: inherit;
   font-size: inherit; 
   font-weight: inherit;
@@ -53,10 +55,10 @@ body{
   min-width:880px;
   max-width:1000px;
   color:var(--fontmain);
-  background-color:white;
+  background-color:var(--background);
   margin:0px auto auto auto;
   padding:20px;
-  padding-bottom:100px;
+  padding-bottom:20px;
   display:grid;
   grid-template-columns: 200px auto;
   grid-column-gap:50px;
@@ -114,65 +116,100 @@ b{
 
 /* header */
 .header{
-  padding-bottom:15px;
+  padding-bottom:15px;  
 }
 /* title of the website */
 .title{
   color:var(--main);
-  text-align:center;
+  text-align:right;
+  font-family:"Barlow Condensed";
   font-size:250%;
+  font-weight:bolder;
+  padding-right:15px;
 }
 /* subtitle of the website */
 .subtitle{
-  color:gray;
-  text-align:center;
-  font-size:130%;
+  color:var(--main);
+  text-align:right;
+  font-size:120%;
+  padding-right:15px;
 }
-/* navigatio  var */
+
+/*coordinates*/
+.coordinates{
+  color:gray;
+  text-align:right;
+  font-size:60%;
+}
+/* navigation  var */
 .nav{
-  text-align:center;
+  text-align:right;
   margin-top:15px;
   padding-top:10px;
-  padding-bottom:10px;
-  border-top:2px solid var(--main); 
-  border-bottom:2px solid var(--main); 
+  padding-bottom:5px;
+  border-bottom:1px solid var(--main);
 }
 /* links in navigation bar */
-.anav,.anavs{
+.home,.codes,.cv{
   color: var(--fontmain);
-  padding-left:10px;
-  padding-right:10px;
-  min-width:100px;
+  text-align: center;
+  padding-left:7px;
+  padding-right:15px;
+  width:50px;
   display:inline-block;
 }
-/* links in navigation bar --> hover */
-.anav:hover,.anavs,.anavs:hover{
-  color: var(--main);
-  font-weight:bold;
+
+.home-curr,.codes-curr{
+  color: var(--fontmain);
+  text-align: center;
+  padding-left:7px;
+  padding-right:15px;
+  width:50px;
+  display:inline-block;
+  border-top: 1px solid var(--fontmain);
 }
+
 /* footer */
 .footer{
-  text-align:center;
-  padding:5px;
+  text-align:right;
+  padding-top:5px;
   border-top:1px solid var(--fontmain);
-  border-bottom:1px solid var(--fontmain);
   margin-top:30px;
 } 
 .footer > a {
   display:inline-block;
   padding:5px
 }
-/* picture */
-.pic{
+/* Styling for the image */
+.pic {
   margin:0px auto 20px auto;
-  border:0px grey solid;
   text-align:center;
   display:block;
+  border-radius: 5%;
+  width: 100%;
+  display: block; /* Prevent image from having extra spacing below */
+}
+
+/* Styling for the hyperlink inside the image */
+.map-link {
+  position: relative;
+  top: -13%;  /* Position the link 8% from the top of the image */
+  right: -86%;  /* Position the link 8% from the right of the image */
+  font-size: 80%;
+  background-color: rgb(255, 255, 255, 0.45); /* Semi-transparent white background */
+  padding: 5px 5px;  /* Add padding around the text */
+  border-radius: 5px; /* Optional: rounded corners for the link */
+  /*box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: shadow for better visibility */
+}
+
+.map-link:hover {
+  background-color: rgb(255, 255, 255, 0.70);
 }
 /* div for research, teaching, etc */
 .section{
   margin-top:0px;
   width:100%;
+  text-align: justify;
 }
 /* div for each item in sections */
 .subsection{
@@ -238,8 +275,9 @@ a.more::before,
 a.less::before,
 a.twitter::before,
 a.google::before,
-a.cunef::before,
-a.address::before{
+a.address::before,
+a.linkedin::before,
+a.coordinates::before{
   font-family: "FontAwesome";
   font-size:80%;
   color:var(--main);
@@ -251,14 +289,15 @@ a.article::before{  content: "\f02d ";}
 a.pdf::before{      content: "\f1c1 ";}
 a.slides::before{   content: "\f1c4 ";}
 a.code::before{     content: "\f1c9 ";}
-a.github::before{   content: "\f09b ";}
+a.github::before{   content: "\f092 ";}
 a.more::before{     content: "\f196 ";}
 a.less::before{     content: "\f147 ";}
 a.link::before{     content: "\f08e ";}
 a.twitter::before{  content: "\f099 ";}
-a.address::before{  content: "\f003 ";}
+a.address::before{  content: "\f0e0 ";}
 a.google::before{   content: "\f1a0 ";}
-a.cunef::before{    content: "\f19c ";}
+a.linkedin::before{ content: "\f08c ";}
+a.coordinates::before{content: "\f041";}
 
 /* for links without href - add it to the class attribute */
 a.empty{
@@ -301,7 +340,7 @@ a.empty:hover{
     grid-template-columns: 150px auto;
     display:block;
   }
-  .anav,.anavs{
+  .home,.home-curr,.cv,.codes,.codes-curr{
     color: var(--fontmain);
     padding-left:1px;
     padding-right:1px;
@@ -329,7 +368,7 @@ a.empty:hover{
   .footer > a {
     display:none;
   }
-  .footer > a.address, a.github , a.twitter{
+  .footer > a.address, a.github , a.linkedin{
     display:inline-block;
   }
 }
@@ -349,7 +388,7 @@ a.empty:hover{
     display:block;
   }
   .header{
-    display:block;
+    display:none;
   }
   .title{
     font-size:150%;
@@ -365,7 +404,7 @@ a.empty:hover{
     padding-top:0px;
     padding-bottom:0px;
   }
-  .anav,.anavs{
+  .home,.home-curr,.cv,.codes,.codes-curr{
     padding-left:1px;
     padding-right:1px;
   }

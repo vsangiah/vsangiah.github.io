@@ -1,10 +1,12 @@
 
 /* Institutions ***************************************************************/
 
-$('a[id=cemfi]'        ).attr('href','https://www.cemfi.es/');
-$('a[id=cunef]'        ).attr('href','https://www.cunef.edu/en/');
-$('a[id=airef]'        ).attr('href','https://www.airef.es/en/');
-$('a[id=ucm]'          ).attr('href','https://economicasyempresariales.ucm.es');
+$('a[id=uw]'   ).attr('href','https://uwaterloo.ca/');
+$('a[id=mw]'   ).attr('href','https://in.mathworks.com');
+$('a[id=amath]').attr('href','https://uwaterloo.ca/applied-mathematics/research-areas');
+$('a[id=iitm]' ).attr('href','https://www.iitm.ac.in');
+$('a[id=vssc]' ).attr('href','https://www.isro.gov.in/VSSC.html');
+
 
 /* People *********************************************************************/
 
@@ -23,8 +25,11 @@ $('a[id=almunia]'      ).attr('href','https://malmunia.github.io/');
 /* Defined links options *******************************************************/
 
 $('a'                  ).attr('target','_blank');
-$('a[class=anav]'      ).attr('target','_self');
-$('a[class=anavs]'     ).attr('target','_self');
+$('a[class=home]'      ).attr('target','_self');
+$('a[class=home-curr]' ).attr('target','_self');
+$('a[class=codes]'     ).attr('target','_self');
+$('a[class=codes-curr]').attr('target','_self');
+$('a[class=cv]'        ).attr('target','_self');
 $('a[class=simple]'    ).attr('target','_self');
 $('a[class=top]'       ).attr('target','_self');
 $('a[class=down]'      ).attr('target','_self');
