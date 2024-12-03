@@ -1,6 +1,6 @@
 This repository contains all the HTML, CSS, and associated files for my personal GitHub page: https://vsangiah.github.io.
 
-Acknowledgments
+Acknowledgments:
 I would like to thank Dr. Borja Petit, CUNEF Universidad, for inspiring this project's design with his clean, minimalistic, and functional GitHub page: https://borjapetit.github.io.
 
 License:
