@@ -9,9 +9,9 @@
   --main: navy;
   --main: rgb(9, 78, 9);
   /* color for links */
-  --link: rgb(13, 55, 180);
+  --link: rgb(10, 37, 119);
   /* color for links (hover) */
-  --linkhover: rgb(39, 90, 230);
+  --linkhover: rgb(23, 66, 194);
   /* color for journals */
   --journal: rgb(106,24,6);
   /* color for html background */
@@ -55,8 +55,6 @@ body{
   color:var(--fontmain);
   background-color:var(--background);
   margin:0px auto auto auto;
-  padding:20px;
-  padding-bottom:20px;
   display:grid;
   grid-template-columns: 200px;
   grid-column-gap:55px;
@@ -87,13 +85,18 @@ a{
   color:var(--link);
 }
 a:hover{
-  color:var(--link);
+  color:var(--linkhover);
   cursor:pointer;
 }
 
 a.address:hover,a.github:hover,a.linkedin:hover{
-  text-decoration:darkblue;  
+  font-weight:bold  
 }
+
+a.address-cv:hover,a.github-cv:hover,a.linkedin-cv:hover{
+  font-weight:normal  
+}
+
 
 ul{
   padding: 7px 0px 0px 30px;
@@ -152,8 +155,26 @@ b{
   padding-bottom:5px;
   border-bottom:1px solid var(--main);
 }
+
+.nav {
+  text-align: right;
+  margin-top: 15px;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid var(--main);
+  overflow: hidden; /* Clears the floats */
+}
+
+.nav a.home-cv {
+  float: right; /* Moves the "Home" link to the right */
+}
+
+.nav a.github-cv, .nav a.linkedin-cv, .nav a.address-cv {
+  float: left; /* Keeps all other links on the left */
+}
+
 /* links in navigation bar */
-.home,.codes,.cv{
+.onav,.home-cv{
   color: var(--fontmain);
   text-align: center;
   padding-left:7px;
@@ -162,7 +183,7 @@ b{
   display:inline-block;
 }
 
-.home-curr,.codes-curr{
+.onav-curr{
   color: var(--fontmain);
   text-align: center;
   padding-left:7px;
@@ -172,7 +193,7 @@ b{
   display:inline-block;
 }
 
-.home-curr:hover, .codes-curr:hover{
+.onav-curr:hover{
   color: var(--fontmain);
   font-weight: bold; 
   cursor:pointer
@@ -202,8 +223,8 @@ b{
 /* Styling for the hyperlink inside the image */
 .map-link {
   position: relative;
-  top: -13%;  /* Position the link 8% from the top of the image */
-  right: -86%;  /* Position the link 8% from the right of the image */
+  top: -15%;  /* Position the link 8% from the top of the image */
+  right: -83%;  /* Position the link 8% from the right of the image */
   font-size: 80%;
   background-color: rgb(255, 255, 255, 0.45); /* Semi-transparent white background */
   padding: 5px 5px;  /* Add padding around the text */
@@ -238,6 +259,29 @@ h2{
   color:var(--main);
   font-size:inherit;
 }
+
+/*CV html section*/
+.cvitem{
+  display:flex;
+  justify-content:space-between;
+}
+.cvitem .heading{
+  color:var(--main);
+  text-align: left;
+  font-weight: bold;
+}
+.cvitem .year {
+  color:var(--fontmain);
+  text-align: right;
+  font-style: italic;
+  font-weight:normal;
+}
+.cvsubitem{
+  text-align: left;
+  padding-left:5px;
+  color:var(--fontmain);
+}
+
 
 /*******************************************************************************
  OTHER ELEMENTS
@@ -279,14 +323,18 @@ a.slides::before,
 a.code::before,
 a.paper::before,
 a.github::before,
+a.github-cv::before,
 a.link::before,
 a.more::before,
 a.less::before,
 a.twitter::before,
 a.google::before,
 a.address::before,
+a.address-cv::before,
 a.linkedin::before,
-a.coordinates::before{
+a.linkedin-cv::before,
+a.coordinates::before,
+.cvsubitem::before{
   font-family: "FontAwesome";
   font-size:80%;
   color:var(--main);
@@ -298,16 +346,19 @@ a.article::before{  content: "\f02d ";}
 a.pdf::before{      content: "\f1c1 ";}
 a.slides::before{   content: "\f1c4 ";}
 a.code::before{     content: "\f1c9 ";}
-a.github::before{   content: "\f092 ";}
+a.github::before,
+a.github-cv::before{   content: "\f092 ";}
 a.more::before{     content: "\f196 ";}
 a.less::before{     content: "\f147 ";}
 a.link::before{     content: "\f08e ";}
 a.twitter::before{  content: "\f099 ";}
-a.address::before{  content: "\f0e0 ";}
+a.address::before,
+a.address-cv::before{  content: "\f0e0 ";}
 a.google::before{   content: "\f1a0 ";}
-a.linkedin::before{ content: "\f08c ";}
+a.linkedin::before,
+a.linkedin-cv::before{ content: "\f08c ";}
 a.coordinates::before{content: "\f041";}
-
+.cvsubitem::before{content:"\f0da "}
 /* for links without href - add it to the class attribute */
 a.empty{
   color:lightgrey;
@@ -349,11 +400,7 @@ a.empty:hover{
     grid-template-columns: 150px auto;
     display:block;
   }
-  .home,.home-curr,.cv,.codes,.codes-curr{
-    color: var(--fontmain);
-    padding-left:1px;
-    padding-right:1px;
-  }
+
   .photo{
     display:none;
   }
@@ -413,10 +460,7 @@ a.empty:hover{
     padding-top:0px;
     padding-bottom:0px;
   }
-  .home,.home-curr,.cv,.codes,.codes-curr{
-    padding-left:1px;
-    padding-right:1px;
-  }
+
   .photo{
     display:none;
   }
